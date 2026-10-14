@@ -138,13 +138,17 @@ def _import_lexicon(conn, key: str, lang: str) -> int:
 
 
 def import_lexicons(conn) -> dict[str, int]:
-    conn.execute("update lemma set root_id = null")
-    conn.execute("delete from lexicon_entry")
-    conn.execute("delete from lemma")
-    return {
-        "step-tbesh": _import_lexicon(conn, "step-tbesh", "heb"),
-        "step-tbesg": _import_lexicon(conn, "step-tbesg", "grc"),
-    }
+    # One transaction: a failure leaves the previous lexicon intact. The LXX bridge depends on lemma rows
+    # and is rebuilt afterwards by run_all (lxx.import_bridge).
+    with conn.transaction():
+        conn.execute("delete from lxx_bridge")
+        conn.execute("update lemma set root_id = null")
+        conn.execute("delete from lexicon_entry")
+        conn.execute("delete from lemma")
+        return {
+            "step-tbesh": _import_lexicon(conn, "step-tbesh", "heb"),
+            "step-tbesg": _import_lexicon(conn, "step-tbesg", "grc"),
+        }
 
 
 def import_morph_codes(conn) -> int:

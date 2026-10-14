@@ -36,6 +36,6 @@ Generated 2026-10-14 by `npm run etl`. Overall: ✅ all hard checks pass
 - **Cross references:** {'cross_references': 344794, 'skipped': 5}
 - **Proper names:** {'names': 4250}
 - **Church Fathers excerpts (public-domain translations only):** {'kept': 31169, 'excluded_not_public_domain': 59034, 'unmatched_refs': 24}
-- **LXX bridge pairs (Abbott-Smith notes):** {'pairs': 4608}
-- **Editorial content:** {'people': 50, 'works': 52, 'entries': 0, 'blocks': 0}
+- **LXX bridge pairs (Abbott-Smith notes):** {'pairs': 4705}
+- **Editorial content:** {'people': 136, 'works': 194, 'entries': 477, 'blocks': 1505}
 - **English source verses outside KJV versification (not imported)** (3): web:Rom.14.24, web:Rom.14.25, web:Rom.14.26

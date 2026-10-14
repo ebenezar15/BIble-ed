@@ -45,3 +45,20 @@ def test_roots_from_index_maps_members_to_strongs():
     roots = lexicons.roots_from_index(xml)
     assert roots["heb:חסד"]["members"] == {("2616", "a"), ("2616", "b"), ("2617", "a"), ("2617", "b")}
     assert roots["heb:חסד"]["gloss"] == "be good"
+
+
+def test_lexicon_reimport_succeeds_when_lxx_bridge_has_rows(conn):
+    from logos_etl.importers import lxx
+
+    if not conn.execute("select count(*) from lemma").fetchone()[0]:
+        import pytest
+
+        pytest.skip("lexicons not imported")
+    lexicons.import_lexicons(conn)
+    lexicons.import_roots(conn)
+    lxx.import_bridge(conn)
+    assert conn.execute("select count(*) from lxx_bridge").fetchone()[0] > 0
+    lexicons.import_lexicons(conn)  # must not violate lxx_bridge foreign keys
+    assert conn.execute("select count(*) from lexicon_entry").fetchone()[0] > 20000
+    lexicons.import_roots(conn)
+    lxx.import_bridge(conn)
