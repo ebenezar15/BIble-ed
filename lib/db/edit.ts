@@ -14,7 +14,11 @@ export type BlockInput = {
   reviewed?: boolean;
 };
 
-const SUBJECT = /^(lemma|verse|entry|person):(.+)$/;
+const SUBJECT = /^(lemma|verse|person):(.+)$|^(entry):([a-z_]+\/[a-z0-9-]+)$/;
+const parse = (subject: string) => {
+  const m = subject.match(SUBJECT);
+  return m ? (m[1] ? [m[1], m[2]] : [m[3], m[4]]) : null;
+};
 
 /** Returns an error message, or null when the input is valid. */
 export function validateBlockInput(b: BlockInput): string | null {
@@ -29,7 +33,7 @@ export function validateBlockInput(b: BlockInput): string | null {
 export async function saveBlock(b: BlockInput): Promise<number> {
   const err = validateBlockInput(b);
   if (err) throw new Error(err);
-  const [, kind, id] = b.subject.match(SUBJECT)!;
+  const [kind, id] = parse(b.subject)!;
   const status = b.reviewed ? "reviewed" : "draft";
   if (b.id) {
     await sql`update content_block set section = ${b.section}, type = ${b.type}, title = ${b.title ?? null},
@@ -44,7 +48,10 @@ export async function saveBlock(b: BlockInput): Promise<number> {
   return row.id;
 }
 
+/** Deleting a seeded block also suppresses it, so a re-import does not bring it back. */
 export async function deleteBlock(id: number): Promise<void> {
+  await sql`insert into seed_suppressed (seed_key)
+    select seed_key from content_block where id = ${id} and seed_key is not null on conflict do nothing`;
   await sql`delete from content_block where id = ${id}`;
 }
 
@@ -78,12 +85,12 @@ export type Note = {
 };
 
 export async function addNote(n: { subject: string; body: string; page?: string | null; workId?: string | null }) {
-  const m = n.subject.match(SUBJECT);
+  const m = parse(n.subject);
   if (!m) throw new Error("Unknown subject for this note.");
   if (!n.body.trim()) throw new Error("Write something before saving.");
   const [row] = await sql<{ id: number }[]>`
     insert into user_note (subject_kind, subject_id, work_id, page, body_md)
-    values (${m[1]}, ${m[2]}, ${n.workId || null}, ${n.page || null}, ${n.body}) returning id`;
+    values (${m[0]}, ${m[1]}, ${n.workId || null}, ${n.page || null}, ${n.body}) returning id`;
   return row.id;
 }
 
@@ -96,12 +103,12 @@ export async function deleteNote(id: number) {
 }
 
 export async function listNotes(subject?: string): Promise<Note[]> {
-  const m = subject?.match(SUBJECT);
+  const m = subject ? parse(subject) : null;
   const rows = await sql<Note[]>`
     select n.id, n.subject_kind as "subjectKind", n.subject_id as "subjectId", n.work_id as "workId",
       w.title as "workTitle", n.page, n.body_md as body, n.updated_at as "updatedAt"
     from user_note n left join work w on w.id = n.work_id
-    ${m ? sql`where n.subject_kind = ${m[1]} and n.subject_id = ${m[2]}` : sql``}
+    ${m ? sql`where n.subject_kind = ${m[0]} and n.subject_id = ${m[1]}` : sql``}
     order by n.updated_at desc`;
   return [...rows];
 }

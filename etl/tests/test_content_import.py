@@ -20,6 +20,8 @@ DOC = {
 @pytest.fixture
 def clean(conn):
     def wipe():
+        keys = [content.seed_key(b["subject"], b["section"], b.get("title"), 1) for b in DOC["blocks"]]
+        conn.execute("delete from seed_suppressed where seed_key = any(%s)", (keys,))
         conn.execute("delete from content_block where subject_id like '%zz-test%' or by_person like 'zz-test%'")
         conn.execute("delete from entry where slug like 'zz-test%'")
         conn.execute("delete from work where id like 'zz-test%'")
@@ -58,3 +60,17 @@ def test_entry_ranges_are_indexed(clean):
         " join verse e on e.id = r.verse_end where r.slug = 'zz-test'"
     ).fetchone()
     assert row == ("Luk.15.11", "Luk.15.32")
+
+
+def test_owner_edits_and_deletes_of_seeded_blocks_survive_reimport(clean):
+    conn = clean
+    content.import_docs(conn, [DOC], only_prefix="zz-test")
+    bid = conn.execute("select id from content_block where subject_id = 'parable/zz-test' and section = 'lens'").fetchone()[0]
+    conn.execute("update content_block set body_md = 'Owner rewrote this', author = 'owner' where id = %s", (bid,))
+    voices = conn.execute("select id from content_block where subject_id = 'parable/zz-test' and section = 'voices'").fetchone()[0]
+    content.suppress_and_delete(conn, voices)
+    content.import_docs(conn, [DOC], only_prefix="zz-test")
+    rows = conn.execute(
+        "select section, author, body_md from content_block where subject_id = 'parable/zz-test' order by section"
+    ).fetchall()
+    assert rows == [("lens", "owner", "Owner rewrote this")]

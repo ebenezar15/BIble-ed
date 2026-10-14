@@ -73,7 +73,8 @@ export default async function EditPage({ searchParams }: { searchParams: Promise
   if (!(await isOwner())) {
     return <main className="mx-auto max-w-prose px-4 py-16"><p>Sign in to edit.</p><Link href="/login?next=/edit" className="underline">Sign in</Link></main>;
   }
-  const m = subject.match(/^(lemma|verse|entry|person):(.+)$/);
+  const m = subject.match(/^(lemma|verse|person|entry):(.+)$/);
+  if (m && m[1] === "entry" && !m[2].includes("/")) return <main className="mx-auto max-w-prose px-4 py-16"><p>That page address is not recognised.</p></main>;
   if (!m) {
     return (
       <main className="mx-auto max-w-prose px-4 py-16">

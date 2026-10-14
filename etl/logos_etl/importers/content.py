@@ -3,6 +3,7 @@
 Re-running replaces seeded blocks and upserts seeded people/works/entries, but never touches rows
 the owner created or edited (author='owner').
 """
+import hashlib
 import json
 from pathlib import Path
 
@@ -13,6 +14,20 @@ from ..content_check import CONTENT, load_all
 
 def _like(prefix: str | None) -> str:
     return f"%{prefix}%" if prefix else "%"
+
+
+def seed_key(subject: str, section: str, title: str | None, ordinal: int) -> str:
+    return hashlib.sha1(f"{subject}|{section}|{title or ''}|{ordinal}".encode()).hexdigest()
+
+
+def suppress_and_delete(conn, block_id: int) -> None:
+    """Delete a block; if it came from the seed, remember that so re-imports don't revive it."""
+    conn.execute(
+        "insert into seed_suppressed (seed_key) select seed_key from content_block"
+        " where id = %s and seed_key is not null on conflict do nothing",
+        (block_id,),
+    )
+    conn.execute("delete from content_block where id = %s", (block_id,))
 
 
 def import_docs(conn, docs: list[dict], only_prefix: str | None = None) -> dict[str, int]:
@@ -79,15 +94,21 @@ def import_docs(conn, docs: list[dict], only_prefix: str | None = None) -> dict[
         )
         order: dict[tuple, int] = {}
         blocks = 0
+        taken = {r[0] for r in conn.execute(
+            "select seed_key from content_block where author = 'owner' and seed_key is not null"
+            " union select seed_key from seed_suppressed")}
         for b in merged["blocks"]:
             kind, _, ident = b["subject"].partition(":")
             key = (kind, ident, b["section"])
             order[key] = order.get(key, 0) + 1
+            skey = seed_key(b["subject"], b["section"], b.get("title"), order[key])
+            if skey in taken:  # the owner edited or deleted this seeded block: keep their decision
+                continue
             block_id = conn.execute(
                 """insert into content_block (subject_kind, subject_id, section, title, type, by_person, consensus,
-                     body_md, ord) values (%s, %s, %s, %s, %s, %s, %s, %s, %s) returning id""",
+                     body_md, ord, seed_key) values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s) returning id""",
                 (kind, ident, b["section"], b.get("title"), b["type"], b.get("by"), b.get("consensus", "n/a"),
-                 b["body"], order[key]),
+                 b["body"], order[key], skey),
             ).fetchone()[0]
             for c in b.get("citations") or []:
                 conn.execute(

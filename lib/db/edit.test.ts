@@ -19,6 +19,8 @@ describe("validateBlockInput", () => {
     expect(validateBlockInput({ subject: "verse:Jhn.3.16", section: "lens", type: "opinion", body: "x" })).toContain("type");
     expect(validateBlockInput({ subject: "verse:Jhn.3.16", section: "lens", type: "lens_commentary", body: " " })).toContain("Write");
     expect(validateBlockInput({ subject: "nope", section: "lens", type: "lens_commentary", body: "x" })).toContain("subject");
+    expect(validateBlockInput({ subject: "entry:foo", section: "lens", type: "lens_commentary", body: "x" })).toContain("subject");
+    expect(validateBlockInput({ subject: "entry:parable/lost-son", section: "lens", type: "lens_commentary", body: "x" })).toBeNull();
     expect(validateBlockInput({ subject: "verse:Jhn.3.16", section: "lens", type: "lens_commentary", body: "x" })).toBeNull();
   });
 });

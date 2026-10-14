@@ -40,7 +40,12 @@ _WORKS = {
 _CHRYSOSTOM_NPNF = re.compile(
     r"matthew|john|acts|romans|corinthians|galatians|ephesians|philippians|colossians|thessalonians|timothy|"
     r"titus|philemon|hebrews|statues", re.I)
-_DOMAINS = {"www.newadvent.org", "newadvent.org", "www.ccel.org", "ccel.org", "www.tertullian.org", "tertullian.org"}
+# Hosts of the Schaff ANF/NPNF series, by path. Other pages on these sites carry modern translations.
+_PD_PATHS = (
+    ("newadvent.org", "/fathers/"),
+    ("ccel.org", "/ccel/schaff/"),
+    ("tertullian.org", "/fathers2/"),
+)
 
 
 def parse_filename(name: str) -> tuple[str, int, int, int, int] | None:
@@ -60,7 +65,8 @@ def is_public_domain(url: str) -> bool:
     if not url:
         return False
     parsed = urlparse(url)
-    if parsed.netloc in _DOMAINS:
+    host = parsed.netloc.removeprefix("www.")
+    if any(host == h and parsed.path.startswith(p) for h, p in _PD_PATHS):
         return True
     if "historicalchristian.faith" not in parsed.netloc:
         return False

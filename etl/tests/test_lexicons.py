@@ -56,9 +56,12 @@ def test_lexicon_reimport_succeeds_when_lxx_bridge_has_rows(conn):
         pytest.skip("lexicons not imported")
     lexicons.import_lexicons(conn)
     lexicons.import_roots(conn)
+    lexicons.update_occurrences(conn)
     lxx.import_bridge(conn)
     assert conn.execute("select count(*) from lxx_bridge").fetchone()[0] > 0
     lexicons.import_lexicons(conn)  # must not violate lxx_bridge foreign keys
     assert conn.execute("select count(*) from lexicon_entry").fetchone()[0] > 20000
     lexicons.import_roots(conn)
+    lexicons.update_occurrences(conn)
     lxx.import_bridge(conn)
+    assert conn.execute("select occurrences from lemma where id = 'H2617A'").fetchone()[0] == 245

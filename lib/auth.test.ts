@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { authToken, isPublicPath } from "./auth";
+import { authToken, isPublicPath, safeNext } from "./auth";
 
 describe("auth", () => {
   it("derives a stable token that differs per password", async () => {
@@ -12,5 +12,13 @@ describe("auth", () => {
     expect(isPublicPath("/_next/static/x.js")).toBe(true);
     expect(isPublicPath("/manifest.webmanifest")).toBe(true);
     expect(isPublicPath("/word/H2617A")).toBe(false);
+  });
+
+  it("only redirects to same-site paths after login", () => {
+    expect(safeNext("/word/H2617A?x=1")).toBe("/word/H2617A?x=1");
+    expect(safeNext("//evil.example/login")).toBe("/");
+    expect(safeNext("/\\evil.example")).toBe("/");
+    expect(safeNext("https://evil.example")).toBe("/");
+    expect(safeNext("")).toBe("/");
   });
 });

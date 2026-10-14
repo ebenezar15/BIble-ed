@@ -57,6 +57,9 @@ export function AskBox() {
         body: JSON.stringify({ question }),
         signal: ctrl.current.signal,
       });
+      if (res.redirected || !(res.headers.get("content-type") ?? "").includes("json")) {
+        throw new Error("Your sign-in has expired. Reload the page and sign in again.");
+      }
       if (!res.ok || !res.body) {
         const data = await res.json().catch(() => ({}));
         throw new Error(data.error ?? "The question could not be sent.");
@@ -64,6 +67,7 @@ export function AskBox() {
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let buf = "";
+      let finished = false;
       for (;;) {
         const { done, value } = await reader.read();
         if (done) break;
@@ -75,9 +79,11 @@ export function AskBox() {
           const ev = JSON.parse(l);
           if (ev.type === "sources") setSources(ev.sources);
           else if (ev.type === "text") setText((t) => t + ev.text);
-          else if (ev.type === "error") setError(ev.message);
+          else if (ev.type === "error") (setError(ev.message), (finished = true));
+          else if (ev.type === "done") finished = true;
         }
       }
+      if (!finished) setError("The answer stopped before it finished. Try asking again.");
     } catch (e) {
       if ((e as Error).name !== "AbortError") setError((e as Error).message);
     } finally {

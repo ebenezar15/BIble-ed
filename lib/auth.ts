@@ -12,3 +12,14 @@ const PUBLIC = [/^\/login/, /^\/_next\//, /^\/manifest\.webmanifest$/, /^\/sw\.j
 export function isPublicPath(path: string): boolean {
   return PUBLIC.some((p) => p.test(path));
 }
+
+/** Where to go after signing in: only paths on this site (blocks //host and /\host tricks). */
+export function safeNext(next: string): string {
+  if (!next.startsWith("/") || next.startsWith("//") || next.startsWith("/\\")) return "/";
+  try {
+    const u = new URL(next, "http://local.invalid");
+    return u.origin === "http://local.invalid" ? u.pathname + u.search + u.hash : "/";
+  } catch {
+    return "/";
+  }
+}

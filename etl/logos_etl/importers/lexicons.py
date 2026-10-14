@@ -197,3 +197,12 @@ def import_roots(conn) -> dict[str, int]:
                     cur.execute("update lemma set root_id = %s where id = %s and root_id is null", (rid, lid))
                     linked += cur.rowcount
     return {"roots": len(roots), "lemmas_linked": linked}
+
+
+def update_occurrences(conn) -> None:
+    """Store how often each lemma occurs (search ranks by it). Run after tokens or lemmas change."""
+    conn.execute(
+        "update lemma set occurrences = coalesce(c.n, 0) from lemma l2"
+        " left join (select lemma_id, count(*) n from token group by 1) c on c.lemma_id = l2.id"
+        " where lemma.id = l2.id"
+    )

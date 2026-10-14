@@ -8,7 +8,7 @@ export function subjectHref(subject: string): string {
   if (kind === "person") return `/history/people/${id}`;
   if (kind === "entry") {
     const [k, slug] = id.split("/");
-    return entryHref(k, slug);
+    return slug ? entryHref(k, slug) : "/";
   }
   return "/";
 }
@@ -16,6 +16,6 @@ export function subjectHref(subject: string): string {
 export function subjectLabel(subject: string): string {
   const [kind, id] = [subject.slice(0, subject.indexOf(":")), subject.slice(subject.indexOf(":") + 1)];
   if (kind === "verse") return formatRef(id);
-  if (kind === "entry") return id.split("/")[1].replace(/-/g, " ");
+  if (kind === "entry") return (id.split("/")[1] ?? id).replace(/-/g, " ");
   return id;
 }

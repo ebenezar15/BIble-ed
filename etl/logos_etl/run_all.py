@@ -30,11 +30,7 @@ def main() -> int:
         stats[name] = fn(conn)
         print(f"{name}: done in {time.time() - t:.1f}s")
     resolved = validate.resolve_orphans(conn)
-    conn.execute(
-        "update lemma set occurrences = coalesce(c.n, 0) from lemma l2"
-        " left join (select lemma_id, count(*) n from token group by 1) c on c.lemma_id = l2.id"
-        " where lemma.id = l2.id"
-    )
+    lexicons.update_occurrences(conn)
     stats["lxx bridge"] = lxx.import_bridge(conn)
     stats["content"] = content.import_all(conn)
     conn.execute("vacuum (full, analyze)")  # re-imports leave dead rows; compacting halves the size
