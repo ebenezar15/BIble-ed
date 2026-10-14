@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { NotesPanel } from "@/components/edit/NotesPanel";
 import { notFound, redirect } from "next/navigation";
 import { Concordance } from "@/components/word/Concordance";
 import { GlossBars } from "@/components/word/GlossBars";
@@ -203,6 +204,7 @@ export default async function WordPage({ params }: Props) {
           </p>
         </StudyCard>
       ))}
+      <NotesPanel subject={`lemma:${word.id}`} />
     </main>
   );
 }

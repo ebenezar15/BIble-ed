@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NotesPanel } from "@/components/edit/NotesPanel";
 import { notFound } from "next/navigation";
 import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
 import { StudyCard } from "@/components/word/StudyCard";
@@ -65,6 +66,7 @@ export async function EntryPage({
       {!sections.length && (
         <p className="border-t border-border pt-6 text-muted">No commentary has been written for this entry yet.</p>
       )}
+      <NotesPanel subject={`entry:${kind}/${entry.slug}`} />
     </main>
   );
 }

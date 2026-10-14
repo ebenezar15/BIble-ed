@@ -11,6 +11,7 @@ import { getVerse } from "@/lib/db/queries";
 import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
 import { entriesForVerse, getBlocks, getCrossRefs, getFatherComments } from "@/lib/db/content";
 import Link from "next/link";
+import { NotesPanel } from "@/components/edit/NotesPanel";
 
 export const dynamic = "force-dynamic";
 
@@ -177,6 +178,7 @@ export default async function VersePage({ params }: Props) {
           )}
         </StudyCard>
       </div>
+      <NotesPanel subject={`verse:${v.osis}`} />
     </main>
   );
 }

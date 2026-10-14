@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NotesPanel } from "@/components/edit/NotesPanel";
 import { notFound } from "next/navigation";
 import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
 import { StudyCard } from "@/components/word/StudyCard";
@@ -58,6 +59,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           </ul>
         </StudyCard>
       )}
+      <NotesPanel subject={`person:${p.id}`} />
     </main>
   );
 }
