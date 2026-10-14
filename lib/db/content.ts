@@ -42,7 +42,7 @@ export type EntrySummary = {
 
 export type EntryView = EntrySummary & { lemmas: LemmaRef[]; blocks: BlockView[] };
 
-const lemmaCols = sql`l.id, l.lemma, coalesce(l.translit, '') as translit, coalesce(l.gloss, '') as gloss,
+const lemmaCols = () => sql`l.id, l.lemma, coalesce(l.translit, '') as translit, coalesce(l.gloss, '') as gloss,
   l.language, l.occurrences as count`;
 
 export async function getBlocks(kind: string, id: string): Promise<BlockView[]> {
@@ -87,7 +87,7 @@ export async function getEntry(kind: string, slug: string): Promise<EntryView | 
   if (!e) return null;
   const [lemmas, blocks] = await Promise.all([
     e.lemma_ids.length
-      ? sql<LemmaRef[]>`select ${lemmaCols} from lemma l where l.id = any(${e.lemma_ids})`
+      ? sql<LemmaRef[]>`select ${lemmaCols()} from lemma l where l.id = any(${e.lemma_ids})`
       : Promise.resolve([] as LemmaRef[]),
     getBlocks("entry", `${kind}/${slug}`),
   ]);
@@ -175,7 +175,7 @@ export async function getName(id: string) {
   if (!n) return null;
   const lemmas = n.lemmaIds.length
     ? await sql<(LemmaRef & { meaning: string | null })[]>`
-        select ${lemmaCols}, (select e.body_html from lexicon_entry e where e.lemma_id = l.id limit 1) as meaning
+        select ${lemmaCols()}, (select e.body_html from lexicon_entry e where e.lemma_id = l.id limit 1) as meaning
         from lemma l where l.id = any(${n.lemmaIds})`
     : [];
   return { ...n, lemmas: [...lemmas] };
@@ -183,7 +183,7 @@ export async function getName(id: string) {
 
 export async function getLxxBridge(lemmaId: string): Promise<LemmaRef[]> {
   const rows = await sql<LemmaRef[]>`
-    select ${lemmaCols} from lxx_bridge b join lemma l on l.id = case when b.hebrew_lemma = ${lemmaId}
+    select ${lemmaCols()} from lxx_bridge b join lemma l on l.id = case when b.hebrew_lemma = ${lemmaId}
       then b.greek_lemma else b.hebrew_lemma end
     where b.hebrew_lemma = ${lemmaId} or b.greek_lemma = ${lemmaId}
     order by l.occurrences desc limit 16`;

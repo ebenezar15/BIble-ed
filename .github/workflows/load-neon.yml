@@ -1,0 +1,46 @@
+# Builds the whole library (Bible text, lexicons, Fathers, content) straight into your hosted database.
+# Run it from GitHub: Actions → "Load library into Neon" → Run workflow.
+# Needs the repository secret DATABASE_URL (Settings → Secrets and variables → Actions).
+# Safe to re-run: your notes and your own edits in the database are kept.
+name: Load library into Neon
+
+on:
+  workflow_dispatch:
+
+concurrency: load-neon
+
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install importer dependencies
+        run: pip install "psycopg[binary]>=3.2"
+
+      - name: Check the database secret
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "::error::Add the repository secret DATABASE_URL (your Neon connection string) first."
+            exit 1
+          fi
+
+      - name: Import and validate the library
+        working-directory: etl
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python -m logos_etl.run_all
+
+      - name: Keep the validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: import-report
+          path: docs/reports/phase2-import.md

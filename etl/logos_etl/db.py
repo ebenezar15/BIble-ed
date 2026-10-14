@@ -19,4 +19,8 @@ def _load_dotenv() -> None:
 
 def connect(autocommit: bool = True) -> psycopg.Connection:
     _load_dotenv()
-    return psycopg.connect(os.environ["DATABASE_URL"], autocommit=autocommit)
+    url = os.environ["DATABASE_URL"]
+    conn = psycopg.connect(url, autocommit=autocommit)
+    if "-pooler." in url:  # Neon pooled endpoint (PgBouncer, transaction mode): avoid server-side prepares
+        conn.prepare_threshold = None
+    return conn

@@ -55,7 +55,7 @@ export type LemmaView = {
   sourceAttribution: string;
 };
 
-const lemmaRefCols = sql`l.id, l.lemma, coalesce(l.translit, '') as translit, coalesce(l.gloss, '') as gloss,
+const lemmaRefCols = () => sql`l.id, l.lemma, coalesce(l.translit, '') as translit, coalesce(l.gloss, '') as gloss,
   l.language, l.occurrences as count`;
 
 async function morphLabels(codes: string[]): Promise<Map<string, string>> {
@@ -146,10 +146,10 @@ export async function getLemma(id: string): Promise<LemmaView | null> {
       ? sql<{ id: string; letters: string; gloss: string | null }[]>`select id, letters, gloss from root where id = ${l.root_id}`
       : Promise.resolve([]),
     l.root_id
-      ? sql<LemmaRef[]>`select ${lemmaRefCols} from lemma l where l.root_id = ${l.root_id} and l.id <> ${id}
+      ? sql<LemmaRef[]>`select ${lemmaRefCols()} from lemma l where l.root_id = ${l.root_id} and l.id <> ${id}
           order by l.occurrences desc limit 40`
       : Promise.resolve([] as LemmaRef[]),
-    sql<LemmaRef[]>`select ${lemmaRefCols} from lemma l where l.strongs = ${l.strongs} and l.id <> ${id} order by l.id`,
+    sql<LemmaRef[]>`select ${lemmaRefCols()} from lemma l where l.strongs = ${l.strongs} and l.id <> ${id} order by l.id`,
     sql<{ book: string; name: string; count: number }[]>`
       select b.id as book, b.name, count(*)::int as count from token t
       join verse v on v.id = t.verse_id join book b on b.id = v.book_id
@@ -198,7 +198,7 @@ export async function getOccurrences(
 export async function searchLemmas(q: Query, limit = 24): Promise<LemmaRef[]> {
   switch (q.kind) {
     case "strongs": {
-      const rows = await sql<LemmaRef[]>`select ${lemmaRefCols} from lemma l
+      const rows = await sql<LemmaRef[]>`select ${lemmaRefCols()} from lemma l
         where l.id = any(${q.candidates}) or l.strongs = any(${q.candidates})
         order by l.occurrences desc, l.id limit ${limit}`;
       return [...rows];
@@ -206,7 +206,7 @@ export async function searchLemmas(q: Query, limit = 24): Promise<LemmaRef[]> {
     case "hebrew":
     case "greek": {
       const lang = q.kind === "hebrew" ? ["heb", "arc"] : ["grc"];
-      const rows = await sql<LemmaRef[]>`select ${lemmaRefCols} from lemma l
+      const rows = await sql<LemmaRef[]>`select ${lemmaRefCols()} from lemma l
         where l.language = any(${lang}) and (l.lemma_plain = ${q.plain} or l.lemma_plain % ${q.plain})
         order by (l.lemma_plain = ${q.plain}) desc, similarity(l.lemma_plain, ${q.plain}) desc, l.occurrences desc
         limit ${limit}`;
@@ -214,7 +214,7 @@ export async function searchLemmas(q: Query, limit = 24): Promise<LemmaRef[]> {
     }
     case "text": {
       const word = q.raw.toLowerCase();
-      const rows = await sql<LemmaRef[]>`select ${lemmaRefCols} from lemma l
+      const rows = await sql<LemmaRef[]>`select ${lemmaRefCols()} from lemma l
         where l.translit_key = ${q.translitKey}
            or (length(${q.translitKey}) >= 4 and l.translit_key % ${q.translitKey})
            or fold(l.gloss) = fold(${word})
