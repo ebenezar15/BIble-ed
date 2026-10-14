@@ -5,6 +5,8 @@ import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/
 import { StudyCard } from "@/components/word/StudyCard";
 import { getPerson } from "@/lib/db/content";
 import { sql } from "@/lib/db/client";
+import { subjectHref, subjectLabel } from "@/lib/content/subject";
+import { lifeDates } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
@@ -20,7 +22,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       <header className="py-8">
         <p className="text-sm text-muted">{[p.era, p.tradition].filter(Boolean).join(" · ")}</p>
         <h1 className="mt-1 text-4xl font-semibold tracking-tight">{p.name}</h1>
-        <p className="mt-1 text-muted">{[p.born && `born c. ${p.born}`, p.died && `died ${p.died}`].filter(Boolean).join(", ")}</p>
+        <p className="mt-1 text-muted">{lifeDates(p.born, p.died)}</p>
         {p.summary && <p className="mt-4 max-w-prose text-lg">{p.summary}</p>}
       </header>
       {p.works.length > 0 && (
@@ -50,8 +52,8 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           <ul className="space-y-1 text-sm">
             {cited.map((c, i) => (
               <li key={i}>
-                <Link className="underline decoration-dotted" href={c.kind === "lemma" ? `/word/${c.id}` : c.kind === "verse" ? `/verse/${c.id}` : `/search?q=${encodeURIComponent(c.id.split("/").pop() ?? "")}`}>
-                  {c.id}
+                <Link className="underline decoration-dotted" href={subjectHref(`${c.kind}:${c.id}`)}>
+                  {subjectLabel(`${c.kind}:${c.id}`)}
                 </Link>{" "}
                 <span className="text-muted">({SECTION_TITLES[c.section] ?? c.section})</span>
               </li>

@@ -10,6 +10,7 @@ export function SearchBar({ autoFocus = false, large = false }: { autoFocus?: bo
   const router = useRouter();
   const [q, setQ] = useState("");
   const [items, setItems] = useState<SearchItem[]>([]);
+  const [notice, setNotice] = useState<string | null>(null);
   const [active, setActive] = useState(-1);
   const [open, setOpen] = useState(false);
   const input = useRef<HTMLInputElement>(null);
@@ -30,6 +31,7 @@ export function SearchBar({ autoFocus = false, large = false }: { autoFocus?: bo
   useEffect(() => {
     if (q.trim().length < 2) {
       setItems([]);
+      setNotice(null);
       return;
     }
     const ctrl = new AbortController();
@@ -38,6 +40,7 @@ export function SearchBar({ autoFocus = false, large = false }: { autoFocus?: bo
         const res = await fetch(`/api/suggest?q=${encodeURIComponent(q)}`, { signal: ctrl.signal });
         const data = await res.json();
         setItems(data.items ?? []);
+        setNotice(data.notice ?? null);
         setActive(-1);
       } catch {}
     }, 160);
@@ -72,7 +75,7 @@ export function SearchBar({ autoFocus = false, large = false }: { autoFocus?: bo
     }
   }
 
-  const showList = open && items.length > 0;
+  const showList = open && (items.length > 0 || Boolean(notice));
   return (
     <form role="search" onSubmit={submit} className="relative">
       <input
@@ -107,6 +110,7 @@ export function SearchBar({ autoFocus = false, large = false }: { autoFocus?: bo
           role="listbox"
           className="absolute inset-x-0 top-full z-40 mt-2 max-h-[70vh] overflow-y-auto rounded-xl border border-border bg-surface py-1 shadow-lg"
         >
+          {notice && <li className="px-4 py-2 text-sm text-muted">{notice}</li>}
           {items.map((it, i) => (
             <li
               key={it.href + i}

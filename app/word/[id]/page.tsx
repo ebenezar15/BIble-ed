@@ -9,7 +9,8 @@ import { StudyCard } from "@/components/word/StudyCard";
 import { Pronounce } from "@/components/word/Pronounce";
 import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
 import { getBlocks, getLxxBridge } from "@/lib/db/content";
-import { getLemma, type LemmaRef } from "@/lib/db/queries";
+import { getLemma, searchLemmas, type LemmaRef } from "@/lib/db/queries";
+import { safeDecode } from "@/lib/decode";
 
 export const dynamic = "force-dynamic";
 
@@ -44,10 +45,18 @@ const CORE_SECTIONS: [string, string][] = [
 
 export default async function WordPage({ params }: Props) {
   const { id: raw } = await params;
-  const id = decodeURIComponent(raw).toUpperCase();
+  const id = (safeDecode(raw) ?? "").toUpperCase();
+  if (!id) notFound();
   if (id !== raw) redirect(`/word/${id}`);
   const word = await getLemma(id);
-  if (!word) notFound();
+  if (!word) {
+    // A Strong's number without STEP's sense letter (H2617, G26): show the senses to choose from.
+    const m = id.match(/^([HG])0*(\d{1,5})$/);
+    if (m && (await searchLemmas({ kind: "strongs", candidates: [`${m[1]}${m[2].padStart(4, "0")}`] })).length) {
+      redirect(`/search?q=${id}`);
+    }
+    notFound();
+  }
   const [blocks, bridge] = await Promise.all([getBlocks("lemma", word.id), getLxxBridge(word.id)]);
   const sections = groupBySection(blocks);
   const present = new Set(sections.map(([s]) => s));

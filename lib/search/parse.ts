@@ -9,7 +9,7 @@ export type Query =
   | { kind: "text"; raw: string; translitKey: string }
   | { kind: "empty" };
 
-const STRONGS = /^(?:strong'?s?\s*)?([hg])?\s*0*(\d{1,5})([a-z])?$/i;
+const STRONGS = /^(?:strong['’]?s?\s*)?([hg])?\s*0*(\d{1,5})([a-z])?$/i;
 const REFERENCE =
   /^((?:[123]|i{1,3}|first|second|third)?\s*[a-z][a-z\s]*?)[\s.]*(\d+)(?:\s*[:.\s]\s*(\d+))?(?:\s*[-–—]\s*(\d+)(?:\s*[:.]\s*(\d+))?)?$/i;
 

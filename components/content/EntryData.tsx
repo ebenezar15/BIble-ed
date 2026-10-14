@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { formatRef } from "@/lib/books";
+import { festivalDate } from "@/lib/format";
 import { ChiasmLadder } from "./ChiasmLadder";
 
 type D = Record<string, any>; // eslint-disable-line @typescript-eslint/no-explicit-any
 
-const MONTHS = ["Nisan", "Iyyar", "Sivan", "Tammuz", "Av", "Elul", "Tishri", "Cheshvan", "Kislev", "Tevet", "Shevat", "Adar"];
 
 function refLink(ref: string) {
   const [a, b] = ref.split("-");
@@ -110,10 +110,10 @@ export function EntryData({ kind, data }: { kind: string; data: D }) {
           </Fact>
           <Fact label="Transliteration">{data.transliteration}</Fact>
           <Fact label="Date">
-            {data.month ? `${MONTHS[data.month - 1]} ${data.day_start ?? ""}${data.day_end && data.day_end !== data.day_start ? `–${data.day_end}` : ""}` : null}
+            {festivalDate(data) || null}
           </Fact>
           <Fact label="Season">{data.season}</Fact>
-          <Fact label="Pilgrim feast">{data.pilgrim === undefined ? null : data.pilgrim ? "Yes" : "No"}</Fact>
+          <Fact label="Pilgrim feast">{data.pilgrim == null ? null : data.pilgrim ? "Yes" : "No"}</Fact>
         </dl>
       );
     case "sacrifice":

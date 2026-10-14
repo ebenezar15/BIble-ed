@@ -7,6 +7,7 @@ import { ParallelTranslations } from "@/components/verse/ParallelTranslations";
 import { VerseGrid } from "@/components/verse/VerseGrid";
 import { StudyCard } from "@/components/word/StudyCard";
 import { formatRef } from "@/lib/books";
+import { safeDecode } from "@/lib/decode";
 import { getVerse } from "@/lib/db/queries";
 import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
 import { entriesForVerse, getBlocks, getCrossRefs, getFatherComments } from "@/lib/db/content";
@@ -19,12 +20,13 @@ type Props = { params: Promise<{ osis: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { osis } = await params;
-  return { title: formatRef(decodeURIComponent(osis)) };
+  return { title: formatRef(safeDecode(osis) ?? osis) };
 }
 
 export default async function VersePage({ params }: Props) {
   const { osis } = await params;
-  const v = await getVerse(decodeURIComponent(osis));
+  const decoded = safeDecode(osis);
+  const v = decoded ? await getVerse(decoded) : null;
   if (!v) notFound();
   const isHebrew = v.language === "heb";
   const ref = formatRef(v.osis);

@@ -1,6 +1,6 @@
 import "server-only";
 import { BOOK_BY_ID, BOOKS, bookKey, formatRef } from "@/lib/books";
-import { getBookChapters, getChapterVerseCount, searchLemmas, searchText, type LemmaRef } from "@/lib/db/queries";
+import { englishForHebrew, getBookChapters, getChapterVerseCount, searchLemmas, searchText, type LemmaRef } from "@/lib/db/queries";
 import { searchContent, searchNames } from "@/lib/db/content";
 import { parseQuery, type Query } from "./parse";
 
@@ -59,6 +59,12 @@ export function similarBooks(name: string, limit = 3): string[] {
 async function resolveReference(q: Extract<Query, { kind: "reference" }>): Promise<SearchResult> {
   const book = BOOK_BY_ID.get(q.book)!;
   const chapters = await getBookChapters(q.book);
+  const verses0 = q.chapter >= 1 && q.chapter <= chapters ? await getChapterVerseCount(q.book, q.chapter) : 0;
+  if (!verses0 || (q.verse ?? 1) > verses0) {
+    // Perhaps it was written in Hebrew numbering (Mal 3:19, Joel 4:1).
+    const english = await englishForHebrew(`${q.book}.${q.chapter}.${q.verse ?? 1}`);
+    if (english) return { query: q, redirect: `/verse/${english}`, groups: [] };
+  }
   if (q.chapter < 1 || q.chapter > chapters) {
     const last = `${q.book}.${chapters}.1`;
     return {

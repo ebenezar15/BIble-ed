@@ -5,6 +5,7 @@ import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/
 import { StudyCard } from "@/components/word/StudyCard";
 import { KIND_LABEL } from "@/lib/content/routes";
 import { getEntry } from "@/lib/db/content";
+import { safeDecode } from "@/lib/decode";
 import { EntryData, RefList } from "./EntryData";
 
 export async function EntryPage({
@@ -18,7 +19,8 @@ export async function EntryPage({
   back: { href: string; label: string };
   children?: React.ReactNode;
 }) {
-  const entry = await getEntry(kind, decodeURIComponent(slug));
+  const decoded = safeDecode(slug);
+  const entry = decoded ? await getEntry(kind, decoded) : null;
   if (!entry) notFound();
   const sections = groupBySection(entry.blocks);
   return (

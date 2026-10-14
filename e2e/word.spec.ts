@@ -31,3 +31,9 @@ test("unknown word id shows a helpful 404", async ({ page }) => {
   expect(res?.status()).toBe(404);
   await expect(page.getByText(/No word with that number/)).toBeVisible();
 });
+
+test("a Strong's number without a sense letter offers its senses", async ({ page }) => {
+  await page.goto("/word/H2617");
+  await expect(page).toHaveURL(/\/search\?q=H2617/);
+  await expect(page.locator('a[href="/word/H2617A"]').first()).toBeVisible();
+});

@@ -30,18 +30,19 @@ With `SITE_PASSWORD` empty, the local copy is open to whoever uses your computer
 3. **App.** At vercel.com, import this GitHub repository (branch `main`, or this feature branch), then add environment variables:
    - `DATABASE_URL`: the Neon connection string
    - `SITE_PASSWORD`: a long password (every page then asks for it once per device)
+   - `SITE_SECRET`: a long random string (run `openssl rand -hex 32`); it signs the sign-in cookie
    - `ANTHROPIC_API_KEY`: optional, turns on "Ask the library"
 4. **Deploy.** Open the site on your phone, sign in, and use the browser's "Add to Home Screen" to install it as an app.
    Pages you've opened keep working offline.
 
-Notes and edits you make online live in the hosted database. To copy them back, run `pg_dump` against Neon, or
-export your notes from the My notes page (Markdown or JSON).
+Notes and edits you make online live in the hosted database. `push-db.sh` keeps them when it refreshes the library:
+your notes, the blocks you wrote or edited (with their checked citations) and the seeded blocks you deleted are carried
+over. You can also export notes from the My notes page (Markdown or JSON) at any time.
 
 ## 3. Updating the library
 
 When content files in `content/` change, run `npm run etl` locally, then `scripts/push-db.sh` again. Your own edits
-(marked as yours in the editor) and your notes are kept by the importer. Note that `push-db.sh` replaces the hosted
-tables with your local copy, so export notes you made online first.
+(marked as yours in the editor), deletions and notes are kept, both by the importer and by `push-db.sh`.
 
 ## Environment variables
 
@@ -49,4 +50,5 @@ tables with your local copy, so export notes you made online first.
 |---|---|---|
 | `DATABASE_URL` | everything | `postgres://logos:logos@localhost:5432/logos` (see `.env.example`) |
 | `SITE_PASSWORD` | protecting a hosted copy | empty = no login (local use) |
+| `SITE_SECRET` | signing the sign-in cookie (set it whenever `SITE_PASSWORD` is set) | empty |
 | `ANTHROPIC_API_KEY` | Ask the library | empty = Ask shows sources but no answer |

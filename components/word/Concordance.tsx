@@ -31,12 +31,13 @@ export function Concordance({
     const qs = new URLSearchParams({ lemma: lemmaId, page: String(page) });
     if (book) qs.set("book", book);
     fetch(`/api/occurrences?${qs}`)
-      .then((r) => r.json())
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d) => {
-        if (cancelled) return;
+        if (cancelled || !Array.isArray(d.rows)) return;
         setRows((prev) => (page === 0 ? d.rows : [...prev, ...d.rows]));
         setCount(d.total);
       })
+      .catch(() => {})
       .finally(() => !cancelled && setLoading(false));
     return () => {
       cancelled = true;

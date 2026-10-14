@@ -38,6 +38,7 @@ describe("Strong's numbers", () => {
     ["2617", ["H2617", "G2617"]],
     ["Strong's 26", ["H0026", "G0026"]],
     ["strongs G3341", ["G3341"]],
+    ["Strong’s 26", ["H0026", "G0026"]],
   ])("%s", (input, candidates) => {
     expect(parseQuery(input)).toEqual({ kind: "strongs", candidates });
   });

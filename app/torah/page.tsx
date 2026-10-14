@@ -28,8 +28,8 @@ export default async function Page() {
   const points: FestivalPoint[] = festivals
     .filter((f) => (f.data as { month?: number }).month)
     .map((f) => {
-      const d = f.data as { month: number; day_start?: number; day_end?: number };
-      return { slug: f.slug, title: f.title, month: d.month, day: d.day_start ?? 1, dayEnd: d.day_end, summary: f.summary };
+      const d = f.data as { month: number; day_start?: number; day_end?: number; end_month?: number };
+      return { slug: f.slug, title: f.title, month: d.month, day: d.day_start ?? 1, dayEnd: d.day_end, endMonth: d.end_month, summary: f.summary };
     });
   const items: TabernacleItem[] = tabernacle.map((t) => {
     const d = t.data as { zone: string; x: number; y: number };

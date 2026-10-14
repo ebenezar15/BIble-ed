@@ -239,7 +239,9 @@ export async function searchText(
   limit = 20,
 ): Promise<{ osis: string; translation: string; snippet: string }[]> {
   const rows = await sql<{ osis: string; translation: string; snippet: string }[]>`
+    select osis, translation, snippet from (
     select distinct on (v.id) v.osis, t.name as translation,
+      ts_rank(to_tsvector('english', tv.text), websearch_to_tsquery('english', ${raw})) as rank,
       ts_headline('english', tv.text, websearch_to_tsquery('english', ${raw}),
         'StartSel=' || chr(1) || ',StopSel=' || chr(2) || ',MaxWords=30,MinWords=12') as snippet
     from translation_verse tv
@@ -247,7 +249,7 @@ export async function searchText(
     where to_tsvector('english', tv.text) @@ websearch_to_tsquery('english', ${raw})
       and tv.translation_id in ('kjv', 'bsb', 'web')
     order by v.id, t.ord
-    limit ${limit}`;
+    ) hits order by rank desc, osis limit ${limit}`;
   return rows.map((r) => ({ ...r, snippet: highlightSafe(r.snippet) }));
 }
 
@@ -268,4 +270,12 @@ export async function listSources(): Promise<
     { id: string; name: string; license: string; attribution: string; url: string; version: string | null }[]
   >`select id, name, license, attribution, url, version from source order by license, name`;
   return [...rows];
+}
+
+/** English verse for a reference written in Hebrew numbering (e.g. Mal 3:19 → Mal.4.1), if it differs. */
+export async function englishForHebrew(hebRef: string): Promise<string | null> {
+  const [r] = await sql<{ osis: string }[]>`
+    select v.osis from versification_map m join verse v on v.id = m.verse_id
+    where m.scheme = 'heb' and m.source_ref = ${hebRef}`;
+  return r?.osis ?? null;
 }

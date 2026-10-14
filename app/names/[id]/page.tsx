@@ -4,12 +4,14 @@ import { StudyCard } from "@/components/word/StudyCard";
 import { formatRef } from "@/lib/books";
 import { sanitizeLexicon } from "@/lib/db/lexhtml";
 import { getName } from "@/lib/db/content";
+import { safeDecode } from "@/lib/decode";
 
 export const dynamic = "force-dynamic";
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const n = await getName(decodeURIComponent(id));
+  const decoded = safeDecode(id);
+  const n = decoded ? await getName(decoded) : null;
   if (!n) notFound();
   return (
     <main className="mx-auto max-w-5xl px-4 pb-24">

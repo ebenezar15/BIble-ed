@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { AUTH_COOKIE, authToken, safeNext } from "@/lib/auth";
+import { AUTH_COOKIE, authToken, safeEqual, safeNext } from "@/lib/auth";
 import { subjectHref } from "@/lib/content/subject";
 import {
   addCitation, addNote, deleteBlock, deleteCitation, deleteNote, saveBlock, setCitationVerified, updateNote,
@@ -15,8 +15,11 @@ const str = (f: FormData, k: string) => String(f.get(k) ?? "");
 export async function login(form: FormData) {
   const pw = process.env.SITE_PASSWORD;
   const next = safeNext(str(form, "next"));
-  if (!pw || str(form, "password") !== pw) redirect(`/login?error=1&next=${encodeURIComponent(next)}`);
-  (await cookies()).set(AUTH_COOKIE, await authToken(pw), {
+  if (!pw || !safeEqual(str(form, "password"), pw)) {
+    await new Promise((r) => setTimeout(r, 1000)); // slows password guessing
+    redirect(`/login?error=1&next=${encodeURIComponent(next)}`);
+  }
+  (await cookies()).set(AUTH_COOKIE, await authToken(pw, process.env.SITE_SECRET), {
     httpOnly: true, sameSite: "lax", secure: process.env.NODE_ENV === "production", maxAge: 60 * 60 * 24 * 180, path: "/",
   });
   redirect(next);

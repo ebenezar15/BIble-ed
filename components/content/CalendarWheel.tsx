@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { festivalDate } from "@/lib/format";
 
 const MONTHS = ["Nisan", "Iyyar", "Sivan", "Tammuz", "Av", "Elul", "Tishri", "Cheshvan", "Kislev", "Tevet", "Shevat", "Adar"];
 const SEASON = ["Spring", "Spring", "Summer", "Summer", "Summer", "Summer", "Autumn", "Autumn", "Winter", "Winter", "Winter", "Spring"];
 
-export type FestivalPoint = { slug: string; title: string; month: number; day: number; dayEnd?: number; summary?: string | null };
+export type FestivalPoint = { slug: string; title: string; month: number; day: number; dayEnd?: number; endMonth?: number; summary?: string | null };
 
 /** The biblical year as a wheel, Nisan at the top; festivals sit at their date. */
 export function CalendarWheel({ festivals }: { festivals: FestivalPoint[] }) {
@@ -39,7 +40,7 @@ export function CalendarWheel({ festivals }: { festivals: FestivalPoint[] }) {
           {focus ? focus.title : "The feasts of the LORD"}
         </text>
         <text x={C} y={C + 12} textAnchor="middle" fontSize={11} fill="var(--muted)">
-          {focus ? `${MONTHS[focus.month - 1]} ${focus.day}${focus.dayEnd && focus.dayEnd !== focus.day ? `–${focus.dayEnd}` : ""}` : "Leviticus 23"}
+          {focus ? festivalDate({ month: focus.month, day_start: focus.day, day_end: focus.dayEnd, end_month: focus.endMonth }) : "Leviticus 23"}
         </text>
         {festivals.map((f) => {
           const [x, y] = pt(angle(f.month, f.day), R + 12);

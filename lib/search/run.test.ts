@@ -26,6 +26,10 @@ describe.skipIf(!hasDb)("runSearch", () => {
     const r2 = await runSearch("Johnn 3:16");
     expect(r2.notice).toContain("John");
   });
+  it("redirects a Hebrew-numbered reference to the English verse", async () => {
+    const r = await runSearch("Mal 3:19");
+    expect(r.redirect).toBe("/verse/Mal.4.1");
+  });
   it("explains an impossible verse", async () => {
     const r = await runSearch("John 3:99");
     expect(r.notice).toContain("36 verses");

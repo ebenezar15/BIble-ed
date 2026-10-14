@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { EntryGrid, PageIntro } from "@/components/content/EntryGrid";
 import { listEntries, listPeople } from "@/lib/db/content";
+import { lifeDates } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Church history and theology" };
@@ -35,7 +36,7 @@ export default async function Page() {
               <Link href={`/history/people/${p.id}`} className="block rounded-lg border border-border bg-surface p-3 hover:border-accent">
                 <span className="font-semibold">{p.name}</span>
                 <span className="block text-xs text-muted">
-                  {p.born ? `c. ${p.born}` : ""}{p.born || p.died ? "–" : ""}{p.died ?? ""} {p.era && `· ${p.era}`}
+                  {[lifeDates(p.born, p.died), p.era].filter(Boolean).join(", ")}
                 </span>
               </Link>
             </li>
