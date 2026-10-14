@@ -1,1 +1,65 @@
 @import "tailwindcss";
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-border: var(--border);
+  --color-hebrew: var(--hebrew);
+  --color-greek: var(--greek);
+  --font-sans: "Avenir Next", "Avenir", "Nunito Sans", system-ui, sans-serif;
+  --font-hebrew: "Noto Serif Hebrew", "SBL Hebrew", "Ezra SIL", serif;
+  --font-greek: "Gentium Plus", "SBL Greek", "Gentium", serif;
+}
+
+html {
+  font-size: calc(100% * var(--fs-scale, 1));
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.55;
+  font-feature-settings: "kern", "liga";
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+[lang="he"] {
+  font-family: var(--font-hebrew);
+  line-height: 1.9;
+}
+
+[lang="grc"] {
+  font-family: var(--font-greek);
+}
+
+dialog.studio[open] {
+  animation: studio-in 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes studio-in {
+  from { transform: translateX(24px); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -52,10 +52,10 @@ def parse_lexicon_line(line: str, lang: str) -> Lemma | None:
 
 
 def morph_label(detail: str) -> str:
-    """'Function=Verb ; Stem=Qal (hence …); …' -> 'Verb · Qal · …'."""
+    """'Function=Verb ; Stem=Qal (hence …); …' -> 'Verb, Qal, …'."""
     without_notes = re.sub(r"\([^)]*\)", "", detail)
     values = [part.split("=", 1)[1].strip() for part in without_notes.split(";") if "=" in part]
-    return " · ".join(v for v in values if v)
+    return ", ".join(v for v in values if v)
 
 
 def roots_from_index(xml_text: str) -> dict[str, dict]:

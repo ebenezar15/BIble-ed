@@ -32,7 +32,7 @@ def test_parse_lexicon_line_skips_headers():
 
 def test_morph_label_condenses_detail():
     detail = "Function=Verb ; Stem=Qal (hence Action=Simple; Voice=Active); Form=Perfect (hence Tense=Past/present; Mood=Indicative); Person=Third; Gender=Masculine; Number=Singular"
-    assert lexicons.morph_label(detail) == "Verb · Qal · Perfect · Third · Masculine · Singular"
+    assert lexicons.morph_label(detail) == "Verb, Qal, Perfect, Third, Masculine, Singular"
 
 
 def test_roots_from_index_maps_members_to_strongs():
