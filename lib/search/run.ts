@@ -1,5 +1,5 @@
 import "server-only";
-import { BOOK_BY_ID, formatRef } from "@/lib/books";
+import { BOOK_BY_ID, BOOKS, bookKey, formatRef } from "@/lib/books";
 import { getBookChapters, getChapterVerseCount, searchLemmas, searchText, type LemmaRef } from "@/lib/db/queries";
 import { parseQuery, type Query } from "./parse";
 
@@ -25,6 +25,32 @@ export function lemmaItem(l: LemmaRef): SearchItem {
     count: l.count,
     lang: l.language === "grc" ? "grc" : "he",
   };
+}
+
+const REFERENCE_SHAPE = /^((?:[123]\s*)?[a-z][a-z\s]*?)\s*\d+(?:\s*[:.\s]\s*\d+)?(?:\s*[-–—]\s*\d+)?$/i;
+
+function distance(a: string, b: string): number {
+  const d = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    let prev = d[0];
+    d[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      const tmp = d[j];
+      d[j] = Math.min(d[j] + 1, d[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1));
+      prev = tmp;
+    }
+  }
+  return d[b.length];
+}
+
+/** Book names closest to what was typed, for "did you mean". */
+export function similarBooks(name: string, limit = 3): string[] {
+  const key = bookKey(name);
+  return BOOKS.map((b) => ({ b, d: Math.min(...[b.name, ...b.abbrevs].map((a) => distance(key, bookKey(a)))) }))
+    .filter((x) => x.d <= Math.max(2, Math.floor(key.length / 3)))
+    .sort((x, y) => x.d - y.d || x.b.ord - y.b.ord)
+    .slice(0, limit)
+    .map((x) => x.b.name);
 }
 
 async function resolveReference(q: Extract<Query, { kind: "reference" }>): Promise<SearchResult> {
@@ -73,7 +99,19 @@ export async function runSearch(input: string): Promise<SearchResult> {
       return { query, groups: lemmas.length ? [{ module: "Words", items: lemmas.map(lemmaItem) }] : [] };
     }
     case "text": {
-      const [lemmas, verses] = await Promise.all([searchLemmas(query, 12), searchText(query.raw, 20)]);
+      const shape = query.raw.match(REFERENCE_SHAPE);
+      let notice: string | undefined;
+      let textQuery = query.raw;
+      if (shape) {
+        const name = shape[1].trim();
+        const near = similarBooks(name);
+        notice = `No book called “${name}”.` + (near.length ? ` Did you mean ${near.join(", ")}?` : "");
+        textQuery = name;
+      }
+      const [lemmas, verses] = await Promise.all([
+        searchLemmas(shape ? { ...query, raw: textQuery } : query, 12),
+        searchText(textQuery, 20),
+      ]);
       const groups: SearchGroup[] = [];
       if (lemmas.length) groups.push({ module: "Words", items: lemmas.map(lemmaItem) });
       if (verses.length) {
@@ -82,7 +120,7 @@ export async function runSearch(input: string): Promise<SearchResult> {
           items: verses.map((v) => ({ href: `/verse/${v.osis}`, title: formatRef(v.osis), subtitle: v.snippet })),
         });
       }
-      return { query, groups };
+      return { query, groups, notice };
     }
   }
 }

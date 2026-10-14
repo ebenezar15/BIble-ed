@@ -28,7 +28,7 @@ Generated 2026-10-14 by `npm run etl`. Overall: ✅ all hard checks pass
 - **Tokens:** 443,081 (Hebrew 305,492, Greek 137,589)
 - **Lemmas:** 22,717; Hebrew roots 2,028; lemmas linked to a root 6,443
 - **Morphology codes:** 2565
-- **Hebrew/English versification differences:** 1978
+- **Hebrew/English versification differences:** 1974
 - **Tokens re-pointed to a sibling sense (sense code absent from brief lexicon):** 696
 - **Hebrew words skipped by type (X = LXX-only additions, V = duplicate variants):** {'X': 152, 'V': 4}
 - **NT verses without SBLGNT text (later manuscripts)** (15): Mat.17.21, Mat.18.11, Mat.23.14, Mrk.7.16, Mrk.9.44, Mrk.9.46, Mrk.11.26, Mrk.15.28, Luk.17.36, Luk.23.17, Jhn.5.4, Act.8.37, Act.15.34, Act.24.7, Act.28.29

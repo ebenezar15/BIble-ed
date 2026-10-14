@@ -82,7 +82,8 @@ export async function getVerse(osis: string): Promise<VerseView | null> {
              t.src_ref as "srcRef", t.editions
       from token t left join lemma l on l.id = t.lemma_id where t.verse_id = ${v.id} order by t.pos`,
     sql<{ source_ref: string }[]>`
-      select source_ref from versification_map where verse_id = ${v.id} and scheme = 'heb' order by source_ref limit 1`,
+      select source_ref from versification_map where verse_id = ${v.id} and scheme = 'heb'
+      order by split_part(source_ref, '.', 2)::int, split_part(source_ref, '.', 3)::int limit 1`,
     sql<{ id: number; osis: string }[]>`select id, osis from verse where id in (${v.id - 1}, ${v.id + 1})`,
     getChapterVerseCount(v.book, v.chapter),
   ]);

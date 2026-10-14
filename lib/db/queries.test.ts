@@ -17,6 +17,12 @@ describe.skipIf(!hasDb)("query layer (integration)", () => {
     expect(v?.prev).toBe("Mal.3.18");
   });
 
+  it("getVerse gives the Hebrew number of a titled psalm's body, not its title", async () => {
+    expect((await getVerse("Psa.51.1"))?.hebRef).toBe("Psa.51.3");
+    expect((await getVerse("Psa.3.1"))?.hebRef).toBe("Psa.3.2");
+    expect((await getVerse("Psa.119.10"))?.hebRef).toBeUndefined();
+  });
+
   it("getVerse labels Greek morphology and links lemmas", async () => {
     const v = await getVerse("Jhn.3.16");
     const loved = v?.tokens.find((t) => t.surface.startsWith("ἠγάπησεν"));

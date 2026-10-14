@@ -66,6 +66,20 @@ def parse_line(line: str) -> TahotWord | None:
     )
 
 
+def is_title(w: TahotWord) -> bool:
+    return ".0(" in w.src_ref
+
+
+def versification_pairs(words: list[TahotWord]) -> dict[str, str]:
+    """Hebrew ref -> English ref where they differ. Psalm titles are skipped: the notice should
+    name the Hebrew number of the verse body, not of the superscription attached to it."""
+    pairs: dict[str, str] = {}
+    for w in words:
+        if w.heb_ref != w.eng_ref and not is_title(w):
+            pairs.setdefault(w.heb_ref, w.eng_ref)
+    return pairs
+
+
 def import_tahot(conn) -> dict:
     paths, sha = fetch.ensure("step-tahot")
     sources.register(conn, "step-tahot", sha)
@@ -74,7 +88,7 @@ def import_tahot(conn) -> dict:
     conn.execute("delete from versification_map where scheme = 'heb'")
     skipped: dict[str, int] = {}
     unmatched: set[str] = set()
-    vmap: dict[str, int] = {}
+    kept_words: list[TahotWord] = []
     pos_counter: dict[int, int] = {}
     kept = 0
     with conn.cursor() as cur:
@@ -95,13 +109,13 @@ def import_tahot(conn) -> dict:
                         unmatched.add(w.eng_ref)
                         continue
                     pos_counter[vid] = pos_counter.get(vid, 0) + 1
-                    if w.heb_ref != w.eng_ref:
-                        vmap.setdefault(w.heb_ref, vid)
+                    kept_words.append(w)
                     cp.write_row((vid, pos_counter[vid], w.surface, w.surface_plain, w.translit, w.gloss,
                                   w.lemma_id, w.morph, "step-tahot", w.src_ref))
                     kept += 1
+        vmap = versification_pairs(kept_words)
         with cur.copy("copy versification_map (scheme, source_ref, verse_id) from stdin") as cp:
-            for ref, vid in vmap.items():
-                cp.write_row(("heb", ref, vid))
+            for heb, eng in vmap.items():
+                cp.write_row(("heb", heb, verse_ids[eng]))
     return {"tokens": kept, "verses": len(pos_counter), "skipped": skipped,
             "unmatched": sorted(unmatched), "versification_rows": len(vmap)}

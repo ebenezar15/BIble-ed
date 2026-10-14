@@ -20,6 +20,12 @@ describe.skipIf(!hasDb)("runSearch", () => {
     expect(r.notice).toContain("21 chapters");
     expect(r.groups[0].items[0].href).toBe("/verse/Jhn.21.1");
   });
+  it("explains an unknown book and suggests similar names", async () => {
+    const r = await runSearch("Hezekiah 1:1");
+    expect(r.notice).toContain("No book called “Hezekiah”");
+    const r2 = await runSearch("Johnn 3:16");
+    expect(r2.notice).toContain("John");
+  });
   it("explains an impossible verse", async () => {
     const r = await runSearch("John 3:99");
     expect(r.notice).toContain("36 verses");

@@ -54,3 +54,9 @@ def test_imported_hesed_tokens_resolve_to_lemmas(conn):
     counts = {r[0]: r[1] for r in rows}
     assert counts["H2617A"] > 200
     assert all(r[2] for r in rows)
+
+
+def test_versification_pairs_ignore_psalm_titles():
+    words = [tahot.parse_line(TITLE), tahot.parse_line(MAL), tahot.parse_line(GEN)]
+    title2 = tahot.parse_line(TITLE.replace("Psa.3.0(3.1)#01", "Psa.3.0(3.2)#02"))
+    assert tahot.versification_pairs(words + [title2]) == {"Mal.3.19": "Mal.4.1"}
