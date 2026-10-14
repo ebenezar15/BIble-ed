@@ -56,6 +56,17 @@ def import_docs(conn, docs: list[dict], only_prefix: str | None = None) -> dict[
                 (e["kind"], e["slug"], e["title"], e.get("subtitle"), e.get("summary"), e.get("refs") or [],
                  e.get("lemmas") or [], Jsonb(e.get("data") or {}), e.get("order", i)),
             )
+        verse_ids = dict(conn.execute("select osis, id from verse").fetchall())
+        conn.execute("delete from entry_range where slug like %s", (like,))
+        for e in merged["entries"]:
+            for ref in e.get("refs") or []:
+                start, _, end = ref.partition("-")
+                a, b = verse_ids.get(start), verse_ids.get(end or start)
+                if a and b:
+                    conn.execute(
+                        "insert into entry_range (kind, slug, verse_start, verse_end) values (%s, %s, %s, %s)",
+                        (e["kind"], e["slug"], min(a, b), max(a, b)),
+                    )
         for kind, slug in conn.execute(
             "select kind, slug from entry where author = 'claude' and slug like %s", (like,)
         ).fetchall():

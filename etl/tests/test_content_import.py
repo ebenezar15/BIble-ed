@@ -48,3 +48,13 @@ def test_import_is_idempotent_and_keeps_owner_blocks(clean):
     assert cites == [("ch. 2", False)]
     assert conn.execute("select refs, data->'gospels' from entry where slug = 'zz-test'").fetchone() == (
         ["Luk.15.11-Luk.15.32"], ["Luk"])
+
+
+def test_entry_ranges_are_indexed(clean):
+    conn = clean
+    content.import_docs(conn, [DOC], only_prefix="zz-test")
+    row = conn.execute(
+        "select s.osis, e.osis from entry_range r join verse s on s.id = r.verse_start"
+        " join verse e on e.id = r.verse_end where r.slug = 'zz-test'"
+    ).fetchone()
+    assert row == ("Luk.15.11", "Luk.15.32")
