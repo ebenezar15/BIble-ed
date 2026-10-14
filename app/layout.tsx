@@ -7,6 +7,7 @@ import "@fontsource/noto-serif-hebrew/600.css";
 import "@fontsource/gentium-plus/400.css";
 import "@fontsource/gentium-plus/700.css";
 import "./globals.css";
+import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { SearchBar } from "@/components/search/SearchBar";
 import { PresetStyles } from "@/components/theme/PresetStyles";
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider>
           <Header search={<SearchBar />} />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
