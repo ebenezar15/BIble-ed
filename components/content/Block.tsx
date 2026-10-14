@@ -23,8 +23,8 @@ export function Citations({ block }: { block: BlockView }) {
         <li key={c.id} className="flex flex-wrap items-baseline gap-x-2">
           <span>
             {c.workTitle ? <cite className="not-italic font-semibold text-ink">{c.workTitle}</cite> : null}
-            {c.workTitle && c.ref ? ", " : null}
-            {c.url ? (
+            {c.workTitle && c.ref && c.ref !== c.workTitle ? ", " : null}
+            {c.ref === c.workTitle ? null : c.url ? (
               <a href={c.url} className="underline" rel="noreferrer">
                 {c.ref}
               </a>

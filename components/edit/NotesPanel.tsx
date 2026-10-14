@@ -9,7 +9,7 @@ export async function NotesPanel({ subject }: { subject: string }) {
   if (!(await isOwner())) return null;
   const [notes, works] = await Promise.all([listNotes(subject), listWorks()]);
   return (
-    <details className="group border-t border-border py-5" open={notes.length > 0}>
+    <details className="group border-t border-border py-5" open>
       <summary className="flex cursor-pointer list-none items-center gap-3 md:pl-[12rem] [&::-webkit-details-marker]:hidden">
         <span aria-hidden className="inline-block w-4 text-xl leading-none text-accent transition-transform group-open:rotate-90">›</span>
         <h2 className="text-xl font-semibold">My notes ({notes.length})</h2>
