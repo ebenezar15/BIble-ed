@@ -79,6 +79,27 @@ SOURCES: dict[str, SourceDef] = {
     ),
 }
 
+SOURCES["openbible-xref"] = SourceDef(
+    "openbible-xref", "OpenBible.info cross references", "CC BY",
+    "Cross references from OpenBible.info (CC BY), via scrollmapper/bible_databases",
+    "https://www.openbible.info/labs/cross-references/", SCROLL_SHA,
+    (f"https://raw.githubusercontent.com/scrollmapper/bible_databases/{SCROLL_SHA}/sources/extras/cross_references.txt",),
+)
+SOURCES["step-tipnr"] = SourceDef(
+    "step-tipnr", "TIPNR — Translators Individualised Proper Names with all References", "CC BY 4.0",
+    STEP_ATTR + "; name descriptions were generated with AI by STEPBible (per its README)",
+    "https://github.com/STEPBible/STEPBible-Data", STEP_SHA,
+    (_step("Proper Nouns/TIPNR - Translators Individualised Proper Names with all References - STEPBible.org CC BY.txt"),),
+)
+HCF_SHA = "8ca02d784ff976bbee2069d7e435959d4a8195e9"
+SOURCES["hcf-commentaries"] = SourceDef(
+    "hcf-commentaries", "Church Fathers on Scripture (public-domain translations only)", "Public domain",
+    "Excerpts compiled by HistoricalChristianFaith/Commentaries-Database; only public-domain translations"
+    " (ANF/NPNF, Newman's Catena Aurea, Library of the Fathers) are imported",
+    "https://github.com/HistoricalChristianFaith/Commentaries-Database", HCF_SHA, (),
+    notes="git:https://github.com/HistoricalChristianFaith/Commentaries-Database.git",
+)
+
 _ENGLISH = {
     "kjv": ("King James Version (1769)", "KJV", 1769),
     "bsb": ("Berean Standard Bible", "BSB", 2022),

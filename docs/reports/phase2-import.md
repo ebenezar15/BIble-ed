@@ -33,4 +33,9 @@ Generated 2026-10-14 by `npm run etl`. Overall: ✅ all hard checks pass
 - **Hebrew words skipped by type (X = LXX-only additions, V = duplicate variants):** {'X': 152, 'V': 4}
 - **NT verses without SBLGNT text (later manuscripts)** (15): Mat.17.21, Mat.18.11, Mat.23.14, Mrk.7.16, Mrk.9.44, Mrk.9.46, Mrk.11.26, Mrk.15.28, Luk.17.36, Luk.23.17, Jhn.5.4, Act.8.37, Act.15.34, Act.24.7, Act.28.29
 - **NT verses shown from NA28 (STEP data lacks SBL marks)** (27): Mrk.16.9, Mrk.16.10, Mrk.16.11, Mrk.16.12, Mrk.16.13, Mrk.16.14, Mrk.16.15, Mrk.16.16, Mrk.16.17, Mrk.16.18, Mrk.16.19, Mrk.16.20, Jhn.7.53, Jhn.8.1, Jhn.8.2, Jhn.8.3, Jhn.8.4, Jhn.8.5, Jhn.8.6, Jhn.8.7, Jhn.8.8, Jhn.8.9, Jhn.8.10, Jhn.8.11, Rom.16.25, Rom.16.26, Rom.16.27
+- **Cross references:** {'cross_references': 344794, 'skipped': 5}
+- **Proper names:** {'names': 4250}
+- **Church Fathers excerpts (public-domain translations only):** {'kept': 31169, 'excluded_not_public_domain': 59034, 'unmatched_refs': 24}
+- **LXX bridge pairs (Abbott-Smith notes):** {'pairs': 4608}
+- **Editorial content:** {'people': 50, 'works': 52, 'entries': 0, 'blocks': 0}
 - **English source verses outside KJV versification (not imported)** (3): web:Rom.14.24, web:Rom.14.25, web:Rom.14.26

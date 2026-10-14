@@ -34,3 +34,20 @@ def ensure(key: str) -> tuple[list[Path], str]:
         combined.update(path.read_bytes())
         paths.append(path)
     return paths, combined.hexdigest()
+
+
+def ensure_git(key: str) -> tuple[Path, str]:
+    """Shallow-fetch a pinned commit of a git repository into data/raw/<key>/."""
+    import subprocess
+
+    src = SOURCES[key]
+    repo = src.notes.removeprefix("git:")
+    target = RAW / key
+    if not (target / ".git").exists():
+        target.mkdir(parents=True, exist_ok=True)
+        run = lambda *a: subprocess.run(["git", "-C", str(target), *a], check=True, capture_output=True)  # noqa: E731
+        run("init", "-q")
+        run("remote", "add", "origin", repo)
+        run("fetch", "-q", "--depth", "1", "origin", src.version)
+        run("checkout", "-q", "FETCH_HEAD")
+    return target, src.version
