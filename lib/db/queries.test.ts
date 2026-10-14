@@ -1,6 +1,6 @@
 import { afterAll, describe, expect, it } from "vitest";
 import { sql } from "./client";
-import { getChapterVerseCount, getLemma, getOccurrences, getVerse, listSources, searchLemmas, searchText } from "./queries";
+import { getChapterVerseCount, highlightSafe, getLemma, getOccurrences, getVerse, listSources, searchLemmas, searchText } from "./queries";
 
 const hasDb = Boolean(process.env.DATABASE_URL);
 afterAll(async () => {
@@ -67,6 +67,11 @@ describe.skipIf(!hasDb)("query layer (integration)", () => {
   it("searchText finds verses by English words", async () => {
     const hits = await searchText("only begotten son");
     expect(hits.map((h) => h.osis)).toContain("Jhn.3.16");
+    expect(hits.find((h) => h.osis === "Jhn.3.16")?.snippet).toContain("<mark>");
+  });
+
+  it("highlightSafe escapes markup but keeps highlights", () => {
+    expect(highlightSafe("a <b> \u0001love\u0002")).toBe("a &lt;b&gt; <mark>love</mark>");
   });
 
   it("chapter counts and sources", async () => {

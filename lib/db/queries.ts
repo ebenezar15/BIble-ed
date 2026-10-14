@@ -236,14 +236,24 @@ export async function searchText(
   const rows = await sql<{ osis: string; translation: string; snippet: string }[]>`
     select distinct on (v.id) v.osis, t.name as translation,
       ts_headline('english', tv.text, websearch_to_tsquery('english', ${raw}),
-        'StartSel=<mark>,StopSel=</mark>,MaxWords=30,MinWords=12') as snippet
+        'StartSel=' || chr(1) || ',StopSel=' || chr(2) || ',MaxWords=30,MinWords=12') as snippet
     from translation_verse tv
     join verse v on v.id = tv.verse_id join translation t on t.id = tv.translation_id
     where to_tsvector('english', tv.text) @@ websearch_to_tsquery('english', ${raw})
       and tv.translation_id in ('kjv', 'bsb', 'web')
     order by v.id, t.ord
     limit ${limit}`;
-  return [...rows];
+  return rows.map((r) => ({ ...r, snippet: highlightSafe(r.snippet) }));
+}
+
+/** Escape verse text, then turn ts_headline's \u0001/\u0002 sentinels into <mark> tags. */
+export function highlightSafe(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\u0001/g, "<mark>")
+    .replace(/\u0002/g, "</mark>");
 }
 
 export async function listSources(): Promise<

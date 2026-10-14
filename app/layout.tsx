@@ -8,6 +8,7 @@ import "@fontsource/gentium-plus/400.css";
 import "@fontsource/gentium-plus/700.css";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
+import { SearchBar } from "@/components/search/SearchBar";
 import { PresetStyles } from "@/components/theme/PresetStyles";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { ThemeScript } from "@/components/theme/ThemeScript";
@@ -28,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <ThemeProvider>
-          <Header />
+          <Header search={<SearchBar />} />
           {children}
         </ThemeProvider>
       </body>
