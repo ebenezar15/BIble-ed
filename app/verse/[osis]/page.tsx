@@ -8,6 +8,9 @@ import { VerseGrid } from "@/components/verse/VerseGrid";
 import { StudyCard } from "@/components/word/StudyCard";
 import { formatRef } from "@/lib/books";
 import { getVerse } from "@/lib/db/queries";
+import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
+import { entriesForVerse, getBlocks, getCrossRefs, getFatherComments } from "@/lib/db/content";
+import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +27,12 @@ export default async function VersePage({ params }: Props) {
   if (!v) notFound();
   const isHebrew = v.language === "heb";
   const ref = formatRef(v.osis);
+  const [xrefs, fathers, related, blocks] = await Promise.all([
+    getCrossRefs(v.osis),
+    getFatherComments(v.osis),
+    entriesForVerse(v.osis),
+    getBlocks("verse", v.osis),
+  ]);
 
   return (
     <main className="mx-auto max-w-5xl px-4 pb-24">
@@ -88,18 +97,85 @@ export default async function VersePage({ params }: Props) {
       />
 
       <div className="mt-10">
-        {[
-          ["Cross-references", "Related passages"],
-          ["Literary structure", "Chiasms, parallelism and inclusio, drawn as diagrams"],
-          ["Cultural notes", "Background from the Ancient Near East, Second Temple Judaism and the Greco-Roman world"],
-          ["Church Fathers", "What early Christian writers said on this verse"],
-        ].map(([title, note]) => (
-          <StudyCard key={title} title={title} type="awaiting">
-            <p className="max-w-prose text-muted">
-              {note}. Added in a later phase; nothing appears here until it has a source.
-            </p>
+        {related.length > 0 && (
+          <StudyCard title="Where this verse belongs" open>
+            <ul className="space-y-3">
+              {related.map((r) => (
+                <li key={`${r.kind}/${r.slug}`}>
+                  <span className="text-xs text-muted">{r.label}</span>
+                  <Link href={r.href} className="block font-semibold hover:text-accent">
+                    {r.title}
+                  </Link>
+                  {r.summary && <p className="max-w-prose text-sm text-muted">{r.summary}</p>}
+                </li>
+              ))}
+            </ul>
+          </StudyCard>
+        )}
+
+        {groupBySection(blocks).map(([section, items]) => (
+          <StudyCard key={section} title={SECTION_TITLES[section] ?? section} open>
+            <BlockList blocks={items} />
           </StudyCard>
         ))}
+
+        <StudyCard
+          title={`Cross-references (${xrefs.length})`}
+          type="lexical_fact"
+          source="OpenBible.info, CC BY. Ranked by reader votes."
+          open={xrefs.length > 0}
+        >
+          {xrefs.length ? (
+            <ol className="divide-y divide-border">
+              {xrefs.map((x) => (
+                <li key={`${x.start}-${x.end}`} className="py-2">
+                  <Link href={`/verse/${x.start}`} className="font-semibold hover:text-accent">
+                    {formatRef(x.start)}
+                    {x.end !== x.start && `–${x.end.split(".").slice(x.end.split(".")[1] === x.start.split(".")[1] ? 2 : 1).join(":")}`}
+                  </Link>
+                  {x.text && <p className="max-w-prose text-sm text-muted">{x.text}</p>}
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <p className="text-muted">No cross-references recorded for this verse.</p>
+          )}
+        </StudyCard>
+
+        <StudyCard
+          title={`Church Fathers on this verse (${fathers.length})`}
+          type="historical_fact"
+          source="Public-domain translations (ANF/NPNF, Catena Aurea) via HistoricalChristianFaith."
+        >
+          {fathers.length ? (
+            <ul className="space-y-5">
+              {fathers.map((f) => (
+                <li key={f.id}>
+                  <p className="text-sm font-semibold">
+                    {f.father}
+                    {f.year && <span className="font-normal text-muted"> (c. AD {f.year})</span>}
+                  </p>
+                  <blockquote className="mt-1 max-w-prose whitespace-pre-line border-l-2 border-border pl-3 leading-relaxed">
+                    {f.quote.length > 1400 ? `${f.quote.slice(0, 1400)}…` : f.quote}
+                  </blockquote>
+                  {f.sourceTitle && (
+                    <p className="mt-1 text-xs text-muted">
+                      {f.sourceUrl ? (
+                        <a href={f.sourceUrl} className="underline" rel="noreferrer">
+                          {f.sourceTitle}
+                        </a>
+                      ) : (
+                        f.sourceTitle
+                      )}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-muted">No public-domain patristic comment is recorded on this verse.</p>
+          )}
+        </StudyCard>
       </div>
     </main>
   );

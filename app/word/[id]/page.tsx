@@ -5,6 +5,8 @@ import { Concordance } from "@/components/word/Concordance";
 import { GlossBars } from "@/components/word/GlossBars";
 import { RootTree } from "@/components/word/RootTree";
 import { StudyCard } from "@/components/word/StudyCard";
+import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
+import { getBlocks, getLxxBridge } from "@/lib/db/content";
 import { getLemma, type LemmaRef } from "@/lib/db/queries";
 
 export const dynamic = "force-dynamic";
@@ -30,12 +32,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: l ? `${l.lemma} ${l.translit} (${l.gloss})` : "Word not found" };
 }
 
-const PENDING = [
-  { title: "Culture and background", note: "Ancient Near Eastern, Second Temple and Greco-Roman usage" },
-  { title: "Translation history", note: "How the Septuagint, Vulgate, Luther, Tyndale, KJV and modern versions rendered it, and why" },
-  { title: "Relational reading", note: "The app's lens commentary, with the legal reading's history where relevant" },
-  { title: "Voices", note: "Named teachers' interpretations, each with a verified citation" },
-  { title: "Church Fathers", note: "How early Christian writers used the word" },
+const CORE_SECTIONS: [string, string][] = [
+  ["culture", "Ancient Near Eastern, Second Temple and Greco-Roman usage"],
+  ["translation_history", "How the Septuagint, Vulgate, Luther, Tyndale, KJV and modern versions rendered it, and why"],
+  ["lens", "The relational reading, with the legal reading's history where relevant"],
+  ["voices", "Named teachers' interpretations, each with a citation"],
+  ["fathers", "How early Christian writers used the word"],
 ];
 
 export default async function WordPage({ params }: Props) {
@@ -44,6 +46,9 @@ export default async function WordPage({ params }: Props) {
   if (id !== raw) redirect(`/word/${id}`);
   const word = await getLemma(id);
   if (!word) notFound();
+  const [blocks, bridge] = await Promise.all([getBlocks("lemma", word.id), getLxxBridge(word.id)]);
+  const sections = groupBySection(blocks);
+  const present = new Set(sections.map(([s]) => s));
 
   const isHebrew = word.language !== "grc";
   const lang = isHebrew ? "he" : "grc";
@@ -120,6 +125,11 @@ export default async function WordPage({ params }: Props) {
         ) : (
           <p className="text-muted">No lexicon entry for this word yet.</p>
         )}
+        {present.has("meaning") && (
+          <div className="mt-6 border-t border-border pt-4">
+            <BlockList blocks={sections.find(([s]) => s === "meaning")![1]} />
+          </div>
+        )}
       </StudyCard>
 
       {word.root && (
@@ -149,11 +159,47 @@ export default async function WordPage({ params }: Props) {
         <Concordance lemmaId={word.id} language={word.language} distribution={word.distribution} total={word.count} />
       </StudyCard>
 
-      {PENDING.map((p) => (
-        <StudyCard key={p.title} title={p.title} type="awaiting">
+      {bridge.length > 0 && (
+        <StudyCard
+          title={isHebrew ? "Septuagint bridge: Greek words that render it" : "Septuagint bridge: Hebrew words behind it"}
+          type="lexical_fact"
+          source="Abbott-Smith's LXX notes via STEPBible TBESG, CC BY 4.0."
+        >
+          <p className="mb-3 max-w-prose text-sm text-muted">
+            {isHebrew
+              ? "The Septuagint (the Greek Old Testament the apostles quoted) used these Greek words for it. Follow them into the New Testament."
+              : "In the Septuagint this Greek word stands for these Hebrew words, which carry their meaning into the New Testament."}
+          </p>
+          <ul className="flex flex-wrap gap-2">
+            {bridge.map((b) => (
+              <li key={b.id}>
+                <Link
+                  href={`/word/${b.id}`}
+                  className="flex items-baseline gap-2 rounded-full border border-border px-3 py-1 hover:border-accent"
+                >
+                  <span lang={b.language === "grc" ? "grc" : "he"} className={b.language === "grc" ? "text-greek" : "text-hebrew"}>
+                    {b.lemma}
+                  </span>
+                  <span className="text-sm">{b.gloss}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </StudyCard>
+      )}
+
+      {sections
+        .filter(([s]) => s !== "meaning")
+        .map(([section, items]) => (
+          <StudyCard key={section} title={SECTION_TITLES[section] ?? section} open={section === "lens"}>
+            <BlockList blocks={items} />
+          </StudyCard>
+        ))}
+
+      {CORE_SECTIONS.filter(([s]) => !present.has(s)).map(([section, note]) => (
+        <StudyCard key={section} title={SECTION_TITLES[section]} type="awaiting">
           <p className="max-w-prose text-muted">
-            {p.note}. This section is part of the content framework in the next phase. Nothing will appear here until it
-            has a source.
+            {note}. Not written for this word yet. You can add it in the editor; nothing appears here without a source.
           </p>
         </StudyCard>
       ))}

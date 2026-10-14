@@ -72,3 +72,16 @@ dialog.studio[open] {
   from { transform: translate(var(--dx), var(--dy)) scale(0.3); opacity: 0; }
 }
 .root-node:hover circle, .root-node:focus circle { stroke-width: 3; }
+
+/* Prose inside content blocks */
+.prose-block p { margin: 0 0 0.75em; }
+.prose-block p:last-child { margin-bottom: 0; }
+.prose-block a { color: var(--accent); text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+.prose-block ul, .prose-block ol { margin: 0 0 0.75em 1.25em; }
+.prose-block ul { list-style: disc; }
+.prose-block ol { list-style: decimal; }
+.prose-block blockquote { border-left: 3px solid var(--border); padding-left: 1em; color: var(--muted); }
+.prose-block h1, .prose-block h2, .prose-block h3, .prose-block h4 { font-weight: 600; margin: 1em 0 0.4em; }
+
+.ladder-rung { animation: rung-in 380ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@keyframes rung-in { from { opacity: 0; transform: translateX(-12px); } }

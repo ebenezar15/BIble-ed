@@ -14,7 +14,7 @@ export function StudyCard({
   id,
 }: {
   title: string;
-  type: ContentType;
+  type?: ContentType;
   source?: React.ReactNode;
   open?: boolean;
   children: React.ReactNode;
@@ -33,7 +33,7 @@ export function StudyCard({
       </summary>
       <div className="md:grid md:grid-cols-[10rem_1fr] md:gap-x-8">
         <aside className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 md:mt-1 md:block md:space-y-2">
-          <TypeChip type={type} />
+          {type && <TypeChip type={type} />}
           {source && <SourceLine>{source}</SourceLine>}
         </aside>
         <div className="mt-4 min-w-0 md:mt-0 md:pl-7">{children}</div>

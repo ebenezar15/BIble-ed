@@ -1,0 +1,4099 @@
+{
+ "people": [
+  {
+   "id": "josephus",
+   "name": "Flavius Josephus",
+   "born": 37,
+   "died": null,
+   "era": "First century",
+   "tradition": "Second Temple Judaism",
+   "roles": [
+    "historian"
+   ],
+   "summary": "Jewish priest and general who went over to Rome in the war of 66–70 and wrote its history; our main narrative source for first-century Judea."
+  },
+  {
+   "id": "philo",
+   "name": "Philo of Alexandria",
+   "born": null,
+   "died": null,
+   "era": "First century",
+   "tradition": "Second Temple Judaism (Alexandria)",
+   "roles": [
+    "author"
+   ],
+   "summary": "Jewish philosopher of Alexandria, contemporary of Jesus, who read the Torah through Greek philosophy and led an embassy to the emperor Gaius."
+  },
+  {
+   "id": "tacitus",
+   "name": "Cornelius Tacitus",
+   "born": null,
+   "died": null,
+   "era": "Early Empire",
+   "tradition": "Roman",
+   "roles": [
+    "historian"
+   ],
+   "summary": "Roman senator and historian of the early emperors; his Annals record Nero's punishment of Christians after the fire of Rome."
+  },
+  {
+   "id": "suetonius",
+   "name": "Suetonius",
+   "born": null,
+   "died": null,
+   "era": "Early Empire",
+   "tradition": "Roman",
+   "roles": [
+    "historian"
+   ],
+   "summary": "Roman biographer and imperial secretary who wrote lives of the first twelve Caesars."
+  },
+  {
+   "id": "pliny-the-younger",
+   "name": "Pliny the Younger",
+   "born": null,
+   "died": null,
+   "era": "Early Empire",
+   "tradition": "Roman",
+   "roles": [
+    "author"
+   ],
+   "summary": "Roman senator and governor of Bithynia-Pontus whose letter to Trajan (Letters 10.96) is the earliest pagan description of Christian worship."
+  },
+  {
+   "id": "pliny-the-elder",
+   "name": "Pliny the Elder",
+   "born": null,
+   "died": 79,
+   "era": "Early Empire",
+   "tradition": "Roman",
+   "roles": [
+    "author"
+   ],
+   "summary": "Roman officer and encyclopedist who died in the eruption of Vesuvius; his Natural History mentions the Essenes by the Dead Sea."
+  },
+  {
+   "id": "cicero",
+   "name": "Marcus Tullius Cicero",
+   "born": -106,
+   "died": -43,
+   "era": "Late Republic",
+   "tradition": "Roman",
+   "roles": [
+    "author"
+   ],
+   "summary": "Roman orator, lawyer and philosopher whose speeches and treatises show Roman ideas of citizenship, duty, fides and patronage."
+  },
+  {
+   "id": "augustus",
+   "name": "Augustus",
+   "born": -63,
+   "died": 14,
+   "era": "Augustan",
+   "tradition": "Roman",
+   "roles": [
+    "author"
+   ],
+   "summary": "First Roman emperor, adopted son of Julius Caesar; emperor when Jesus was born (Luke 2:1). His own account of his deeds survives in inscriptions."
+  },
+  {
+   "id": "seneca",
+   "name": "Lucius Annaeus Seneca",
+   "born": null,
+   "died": 65,
+   "era": "Early Empire",
+   "tradition": "Roman (Stoic)",
+   "roles": [
+    "author"
+   ],
+   "summary": "Stoic philosopher, tutor and adviser to Nero, brother of the proconsul Gallio (Acts 18:12); wrote on benefits, slavery and suffering."
+  },
+  {
+   "id": "gaius-jurist",
+   "name": "Gaius (jurist)",
+   "born": null,
+   "died": null,
+   "era": "Early Empire",
+   "tradition": "Roman law",
+   "roles": [
+    "teacher"
+   ],
+   "summary": "Second-century Roman jurist whose Institutes, a teaching manual, are the fullest surviving account of classical Roman private law."
+  },
+  {
+   "id": "polybius",
+   "name": "Polybius",
+   "born": null,
+   "died": null,
+   "era": "Hellenistic",
+   "tradition": "Greek",
+   "roles": [
+    "historian"
+   ],
+   "summary": "Greek historian of Rome's rise to power, who described the Roman army and constitution from close observation."
+  },
+  {
+   "id": "aristotle",
+   "name": "Aristotle",
+   "born": -384,
+   "died": -322,
+   "era": "Classical Greece",
+   "tradition": "Greek",
+   "roles": [
+    "author"
+   ],
+   "summary": "Greek philosopher whose Politics set out the household as master and slave, husband and wife, father and children."
+  },
+  {
+   "id": "adolf-deissmann",
+   "name": "Adolf Deissmann",
+   "born": 1866,
+   "died": 1937,
+   "era": "Modern",
+   "tradition": "Protestant (German)",
+   "roles": [
+    "scholar"
+   ],
+   "summary": "German New Testament scholar who used papyri and inscriptions to show that NT Greek was the everyday language of the Roman East."
+  }
+ ],
+ "works": [
+  {
+   "id": "josephus-antiquities",
+   "person": "josephus",
+   "title": "Jewish Antiquities",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "trans. William Whiston (1737)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "josephus-war",
+   "person": "josephus",
+   "title": "The Jewish War",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "trans. William Whiston (1737)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "josephus-against-apion",
+   "person": "josephus",
+   "title": "Against Apion",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "trans. William Whiston (1737)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "philo-embassy",
+   "person": "philo",
+   "title": "On the Embassy to Gaius (Legatio ad Gaium)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "trans. C. D. Yonge (1854–1855)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "philo-flaccus",
+   "person": "philo",
+   "title": "Against Flaccus (In Flaccum)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "trans. C. D. Yonge (1854–1855)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "philo-special-laws",
+   "person": "philo",
+   "title": "On the Special Laws (De Specialibus Legibus)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "trans. C. D. Yonge (1854–1855)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "philo-good-man-free",
+   "person": "philo",
+   "title": "Every Good Man Is Free (Quod Omnis Probus Liber Sit)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "trans. C. D. Yonge (1854–1855)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "tacitus-annals",
+   "person": "tacitus",
+   "title": "Annals",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "tacitus-histories",
+   "person": "tacitus",
+   "title": "Histories",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "tacitus-agricola",
+   "person": "tacitus",
+   "title": "Agricola",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "suetonius-lives",
+   "person": "suetonius",
+   "title": "Lives of the Caesars (De Vita Caesarum)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "pliny-letters",
+   "person": "pliny-the-younger",
+   "title": "Letters (Epistulae), with Book 10: correspondence with Trajan",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "pliny-elder-natural-history",
+   "person": "pliny-the-elder",
+   "title": "Natural History",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "cicero-verrines",
+   "person": "cicero",
+   "title": "Against Verres (In Verrem)",
+   "year": -70,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "cicero-pro-rabirio",
+   "person": "cicero",
+   "title": "For Gaius Rabirius (Pro Rabirio Perduellionis Reo)",
+   "year": -63,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "cicero-de-officiis",
+   "person": "cicero",
+   "title": "On Duties (De Officiis)",
+   "year": -44,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "augustus-res-gestae",
+   "person": "augustus",
+   "title": "Res Gestae Divi Augusti (The Deeds of the Divine Augustus)",
+   "year": 14,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "seneca-de-beneficiis",
+   "person": "seneca",
+   "title": "On Benefits (De Beneficiis)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "seneca-moral-letters",
+   "person": "seneca",
+   "title": "Moral Letters to Lucilius (Epistulae Morales)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "gaius-institutes",
+   "person": "gaius-jurist",
+   "title": "Institutes (Institutiones)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "polybius-histories",
+   "person": "polybius",
+   "title": "Histories",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "aristotle-politics",
+   "person": "aristotle",
+   "title": "Politics",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "priene-calendar-inscription",
+   "person": null,
+   "title": "Priene Calendar Inscription",
+   "year": -9,
+   "copyright": "public_domain",
+   "edition": "OGIS 458",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "theodotos-inscription",
+   "person": null,
+   "title": "Theodotos Synagogue Inscription (Jerusalem)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "pilate-inscription",
+   "person": null,
+   "title": "Pilate Inscription (Caesarea Maritima)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "gallio-inscription",
+   "person": null,
+   "title": "Gallio Inscription (Delphi)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "deissmann-light-ancient-east",
+   "person": "adolf-deissmann",
+   "title": "Light from the Ancient East",
+   "year": 1908,
+   "copyright": "public_domain",
+   "edition": "German original Licht vom Osten (1908); English trans. L. R. M. Strachan",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  }
+ ],
+ "entries": [
+  {
+   "kind": "roman_term",
+   "slug": "euangelion",
+   "title": "Good news (euangelion)",
+   "subtitle": "Imperial announcements and the gospel of the Son",
+   "summary": "In the Roman East *euangelion* was the word for public good news: a victory, an emperor's birth or accession. The NT uses it for the announcement that Jesus is the Son and Lord.",
+   "refs": [
+    "Mrk.1.1",
+    "Mrk.1.14-Mrk.1.15",
+    "Rom.1.1-Rom.1.4",
+    "Rom.1.16",
+    "1Co.15.1-1Co.15.4",
+    "Isa.52.7"
+   ],
+   "lemmas": [
+    "G2098"
+   ],
+   "order": 10,
+   "data": {
+    "greek": "εὐαγγέλιον",
+    "latin": "evangelium",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "kyrios",
+   "title": "Lord (kyrios)",
+   "subtitle": "Caesar's title and the confession 'Jesus is Lord'",
+   "summary": "*Kyrios* meant master, owner or ruler, and it was used of emperors in the East. In the LXX it stands for the divine name. Calling Jesus *kyrios* drew on both.",
+   "refs": [
+    "Act.25.26",
+    "Rom.10.9",
+    "1Co.8.5-1Co.8.6",
+    "1Co.12.3",
+    "Php.2.9-Php.2.11"
+   ],
+   "lemmas": [
+    "G2962G",
+    "G2962H"
+   ],
+   "order": 20,
+   "data": {
+    "greek": "κύριος",
+    "latin": "dominus",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "soter",
+   "title": "Saviour (sōtēr)",
+   "subtitle": "Benefactor-kings, emperors and the Saviour from heaven",
+   "summary": "Hellenistic kings and Roman emperors were hailed as *sōtēr*, saviour and preserver of cities. The NT gives the title to God and to Jesus.",
+   "refs": [
+    "Luk.2.11",
+    "Jhn.4.42",
+    "Act.5.31",
+    "Php.3.20",
+    "Tit.2.13",
+    "1Jn.4.14"
+   ],
+   "lemmas": [
+    "G4990"
+   ],
+   "order": 30,
+   "data": {
+    "greek": "σωτήρ",
+    "latin": "servator / conservator",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "ekklesia",
+   "title": "Assembly (ekklēsia)",
+   "subtitle": "The citizens' assembly and the gathering of God's people",
+   "summary": "In a Greek city the *ekklēsia* was the assembly of citizens called together to decide public business. The LXX used it for Israel gathered before God. The church took the name.",
+   "refs": [
+    "Act.19.32",
+    "Act.19.39",
+    "Act.19.41",
+    "Mat.16.18",
+    "1Th.1.1",
+    "1Co.1.2"
+   ],
+   "lemmas": [
+    "G1577"
+   ],
+   "order": 40,
+   "data": {
+    "greek": "ἐκκλησία",
+    "latin": "contio / comitia",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "parousia",
+   "title": "Coming (parousia)",
+   "subtitle": "The royal visit and the coming of the Son",
+   "summary": "*Parousia* means 'presence' or 'arrival'. In Hellenistic usage it was a technical term for the official visit of a king or high official to a city, marked by crowns, speeches and celebrations.",
+   "refs": [
+    "Mat.24.3",
+    "Mat.24.27",
+    "1Co.15.23",
+    "1Th.2.19",
+    "1Th.4.15",
+    "2Th.2.1",
+    "Jas.5.8",
+    "2Pe.3.4",
+    "2Co.7.6"
+   ],
+   "lemmas": [
+    "G3952"
+   ],
+   "order": 50,
+   "data": {
+    "greek": "παρουσία",
+    "latin": "adventus",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "apantesis",
+   "title": "Meeting (apantēsis)",
+   "subtitle": "Going out to meet a dignitary and escorting him in",
+   "summary": "*Apantēsis* describes going out from a city to meet an arriving dignitary and escorting him back in. The NT uses it for meeting the Lord in 1 Thess 4:17.",
+   "refs": [
+    "1Th.4.17",
+    "Act.28.15",
+    "Mat.25.6"
+   ],
+   "lemmas": [
+    "G0529"
+   ],
+   "order": 60,
+   "data": {
+    "greek": "ἀπάντησις",
+    "latin": "occursus",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "basileia",
+   "title": "Kingdom (basileia)",
+   "subtitle": "Caesar's empire and the reign of God",
+   "summary": "*Basileia* is kingship or reign more than territory. In the Greek East the emperor was often called *basileus*, king. Jesus announced the reign of God as arriving in himself.",
+   "refs": [
+    "Mrk.1.15",
+    "Mat.6.10",
+    "Mat.13.31-Mat.13.33",
+    "Luk.17.20-Luk.17.21",
+    "Jhn.18.36",
+    "Jhn.19.15",
+    "Act.17.7",
+    "Rev.11.15"
+   ],
+   "lemmas": [
+    "G0932"
+   ],
+   "order": 70,
+   "data": {
+    "greek": "βασιλεία",
+    "latin": "regnum / imperium",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "huiothesia",
+   "title": "Adoption (huiothesia / adoptio)",
+   "subtitle": "Placed as a son with full rights",
+   "summary": "Roman adoption moved a person fully into a new family: new father, new name, new heir, old debts cancelled. Paul uses *huiothesia* for what the Father does in the Son by the Spirit.",
+   "refs": [
+    "Rom.8.15",
+    "Rom.8.23",
+    "Rom.9.4",
+    "Gal.4.4-Gal.4.7",
+    "Eph.1.5"
+   ],
+   "lemmas": [
+    "G5206",
+    "G0005"
+   ],
+   "order": 80,
+   "data": {
+    "greek": "υἱοθεσία",
+    "latin": "adoptio / adrogatio",
+    "category": "legal"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "patria-potestas",
+   "title": "Father's power (patria potestas)",
+   "subtitle": "The Roman father's legal authority over his children",
+   "summary": "In Roman law a father held *potestas* over his children, and over their children, for as long as he lived: their property, marriages and in theory their lives were under his authority.",
+   "refs": [
+    "Gal.4.1-Gal.4.7",
+    "Eph.3.14-Eph.3.15",
+    "Heb.12.5-Heb.12.11",
+    "Luk.15.11-Luk.15.32"
+   ],
+   "lemmas": [
+    "G3962"
+   ],
+   "order": 90,
+   "data": {
+    "greek": null,
+    "latin": "patria potestas",
+    "category": "legal"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "paterfamilias",
+   "title": "Head of household (paterfamilias)",
+   "subtitle": "The householder in the parables and the Roman home",
+   "summary": "The *paterfamilias* was the head of a Roman household (*familia*), which included wife, children, slaves, freedmen and property. Greek *oikodespotēs*, 'master of the house', is the parables' householder.",
+   "refs": [
+    "Mat.13.27",
+    "Mat.20.1",
+    "Luk.14.21",
+    "Luk.12.39",
+    "Eph.3.14-Eph.3.15"
+   ],
+   "lemmas": [
+    "G3617",
+    "G3624H"
+   ],
+   "order": 100,
+   "data": {
+    "greek": "οἰκοδεσπότης",
+    "latin": "paterfamilias",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "patronage",
+   "title": "Patronage (patronus and cliens)",
+   "subtitle": "Benefactors, clients and the economy of favour",
+   "summary": "Roman society ran on patronage: patrons gave protection, money and access; clients gave loyalty, public support and honour. Gifts created bonds and obligations.",
+   "refs": [
+    "Luk.7.2-Luk.7.5",
+    "Luk.22.25-Luk.22.26",
+    "Rom.16.1-Rom.16.2",
+    "Rom.16.23"
+   ],
+   "lemmas": [
+    "G4368",
+    "G2110"
+   ],
+   "order": 110,
+   "data": {
+    "greek": "προστάτις / εὐεργέτης",
+    "latin": "patronus / cliens",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "pistis-fides",
+   "title": "Faith and faithfulness (pistis / fides)",
+   "subtitle": "Trust, loyalty and keeping faith",
+   "summary": "*Pistis* and Latin *fides* covered trust, trustworthiness and loyalty: the faith a client kept with a patron, the good faith of a treaty, the reliability of one's word.",
+   "refs": [
+    "Rom.1.5",
+    "Rom.1.17",
+    "Rom.3.22",
+    "Gal.2.16",
+    "Gal.2.20",
+    "Gal.5.22",
+    "Rom.16.26"
+   ],
+   "lemmas": [
+    "G4102G",
+    "G4102H"
+   ],
+   "order": 120,
+   "data": {
+    "greek": "πίστις",
+    "latin": "fides",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "charis",
+   "title": "Grace as benefaction (charis)",
+   "subtitle": "Gift, favour and gratitude",
+   "summary": "In Greco-Roman culture *charis* was the whole circle of a gift: the favour of the giver, the gift itself and the gratitude of the receiver.",
+   "refs": [
+    "Rom.5.15-Rom.5.17",
+    "2Co.8.9",
+    "2Co.9.15",
+    "Eph.2.8-Eph.2.10",
+    "Luk.22.25"
+   ],
+   "lemmas": [
+    "G5485"
+   ],
+   "order": 130,
+   "data": {
+    "greek": "χάρις",
+    "latin": "gratia / beneficium",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "honour-shame",
+   "title": "Honour and shame",
+   "subtitle": "Public worth, reputation and the shame of the cross",
+   "summary": "Mediterranean societies measured worth by public honour: reputation granted by family, city and peers. Shame was public loss of standing.",
+   "refs": [
+    "Heb.12.2",
+    "Php.2.5-Php.2.11",
+    "Luk.14.7-Luk.14.11",
+    "Rom.1.16",
+    "Rom.10.11",
+    "1Pe.2.6-1Pe.2.7"
+   ],
+   "lemmas": [
+    "G5092",
+    "G0152",
+    "G0819"
+   ],
+   "order": 140,
+   "data": {
+    "greek": "τιμή / αἰσχύνη",
+    "latin": "honor / dignitas / ignominia",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "citizenship",
+   "title": "Citizenship (politeuma, civis Romanus)",
+   "subtitle": "Roman citizens, colonies and the heavenly commonwealth",
+   "summary": "Roman citizenship was a privileged legal status that protected its holder from flogging and summary execution. A *politeuma* was a commonwealth or citizen body, including communities living abroad.",
+   "refs": [
+    "Act.16.12",
+    "Act.16.37-Act.16.38",
+    "Act.22.25-Act.22.29",
+    "Php.1.27",
+    "Php.3.20",
+    "Eph.2.12",
+    "Eph.2.19"
+   ],
+   "lemmas": [
+    "G4175",
+    "G4174",
+    "G4847",
+    "G4176",
+    "G4514"
+   ],
+   "order": 150,
+   "data": {
+    "greek": "πολίτευμα / πολιτεία",
+    "latin": "civitas / civis Romanus",
+    "category": "legal"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "provocatio",
+   "title": "Appeal to Caesar (provocatio)",
+   "subtitle": "A citizen's right to be heard by the emperor",
+   "summary": "A Roman citizen facing a capital charge in the provinces could appeal to the emperor's court. Paul did so before Festus, which is how he came to Rome.",
+   "refs": [
+    "Act.25.10-Act.25.12",
+    "Act.25.21",
+    "Act.26.32",
+    "Act.28.19"
+   ],
+   "lemmas": [
+    "G2541H"
+   ],
+   "order": 160,
+   "data": {
+    "greek": null,
+    "latin": "provocatio / appellatio",
+    "category": "legal"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "proconsul",
+   "title": "Proconsul (anthypatos)",
+   "subtitle": "Governors of the senatorial provinces",
+   "summary": "A proconsul governed a province assigned to the senate. Acts names two: Sergius Paulus in Cyprus and Gallio in Achaia.",
+   "refs": [
+    "Act.13.7-Act.13.12",
+    "Act.18.12-Act.18.17",
+    "Act.19.38"
+   ],
+   "lemmas": [
+    "G0446"
+   ],
+   "order": 170,
+   "data": {
+    "greek": "ἀνθύπατος",
+    "latin": "proconsul",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "prefect-procurator",
+   "title": "Prefect and procurator (hēgemōn)",
+   "subtitle": "Pilate, Felix, Festus and the governors of Judea",
+   "summary": "After AD 6 Judea was governed by Roman equestrian officials. Pilate's title was prefect; later governors were called procurators. The NT uses the general word *hēgemōn*, governor.",
+   "refs": [
+    "Mat.27.2",
+    "Mat.27.11",
+    "Luk.3.1",
+    "Act.23.24",
+    "Act.24.27",
+    "Act.26.30"
+   ],
+   "lemmas": [
+    "G2232",
+    "G2012"
+   ],
+   "order": 180,
+   "data": {
+    "greek": "ἡγεμών / ἐπίτροπος",
+    "latin": "praefectus / procurator",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "tetrarch",
+   "title": "Tetrarch (tetraarchēs)",
+   "subtitle": "Herod Antipas, Philip and the division of Herod's kingdom",
+   "summary": "A tetrarch ('ruler of a quarter') was a minor dependent ruler. After Herod the Great died, Augustus divided his kingdom: Archelaus received Judea, Antipas Galilee and Perea, Philip the north-east.",
+   "refs": [
+    "Mat.14.1-Mat.14.12",
+    "Luk.3.1",
+    "Luk.3.19-Luk.3.20",
+    "Luk.9.7-Luk.9.9",
+    "Luk.13.31-Luk.13.32",
+    "Luk.23.7-Luk.23.12",
+    "Act.13.1"
+   ],
+   "lemmas": [
+    "G5076",
+    "G2264H"
+   ],
+   "order": 190,
+   "data": {
+    "greek": "τετραάρχης",
+    "latin": "tetrarcha",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "centurion",
+   "title": "Centurion (hekatontarchēs)",
+   "subtitle": "Roman officers who meet Jesus and the apostles",
+   "summary": "A centurion commanded a century, nominally a hundred men, and was the backbone of the Roman army. Centurions appear in the NT more favourably than almost any other group.",
+   "refs": [
+    "Mat.8.5-Mat.8.13",
+    "Luk.7.2-Luk.7.10",
+    "Mrk.15.39",
+    "Act.10.1-Act.10.2",
+    "Act.22.25-Act.22.26",
+    "Act.27.1",
+    "Act.27.43"
+   ],
+   "lemmas": [
+    "G1543",
+    "G2760"
+   ],
+   "order": 200,
+   "data": {
+    "greek": "ἑκατοντάρχης / κεντυρίων",
+    "latin": "centurio",
+    "category": "military"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "legion",
+   "title": "Legion (legiōn)",
+   "subtitle": "Rome's army units and a demon's name",
+   "summary": "A legion was the main heavy-infantry unit of the Roman army, around five thousand citizen soldiers with supporting troops. The word became a byword for overwhelming force.",
+   "refs": [
+    "Mrk.5.9",
+    "Mrk.5.15",
+    "Luk.8.30",
+    "Mat.26.53"
+   ],
+   "lemmas": [
+    "G3003"
+   ],
+   "order": 210,
+   "data": {
+    "greek": "λεγιών",
+    "latin": "legio",
+    "category": "military"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "praetorian-guard",
+   "title": "Praetorian guard and praetorium",
+   "subtitle": "The emperor's guard and the governor's headquarters",
+   "summary": "The *praetorium* was first a general's tent, then a governor's residence. The praetorian cohorts were the emperor's guard in Rome.",
+   "refs": [
+    "Php.1.13",
+    "Php.4.22",
+    "Mat.27.27",
+    "Mrk.15.16",
+    "Jhn.18.28",
+    "Act.23.35"
+   ],
+   "lemmas": [
+    "G4232",
+    "G2541I"
+   ],
+   "order": 220,
+   "data": {
+    "greek": "πραιτώριον",
+    "latin": "praetorium / cohortes praetoriae",
+    "category": "military"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "crucifixion",
+   "title": "Crucifixion (stauros)",
+   "subtitle": "Rome's most shameful punishment",
+   "summary": "Crucifixion was a slow, public, humiliating execution reserved mainly for slaves, rebels and the lowest classes. Roman citizens were normally exempt.",
+   "refs": [
+    "Mrk.15.24-Mrk.15.27",
+    "1Co.1.23",
+    "Gal.3.13",
+    "Php.2.8",
+    "Col.2.14-Col.2.15",
+    "Heb.12.2"
+   ],
+   "lemmas": [
+    "G4717"
+   ],
+   "order": 230,
+   "data": {
+    "greek": "σταυρός / σταυρόω",
+    "latin": "crux / crucifixio",
+    "category": "legal"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "titulus",
+   "title": "Charge placard (titulus)",
+   "subtitle": "The inscription on the cross",
+   "summary": "A *titulus* was a placard stating the condemned person's crime, carried before him or fixed to the cross to warn onlookers.",
+   "refs": [
+    "Jhn.19.19-Jhn.19.22",
+    "Mat.27.37",
+    "Mrk.15.26",
+    "Luk.23.38"
+   ],
+   "lemmas": [
+    "G5102",
+    "G0156"
+   ],
+   "order": 240,
+   "data": {
+    "greek": "τίτλος / αἰτία",
+    "latin": "titulus",
+    "category": "legal"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "tribute-census",
+   "title": "Tribute and census (kēnsos, phoros)",
+   "subtitle": "Taxes to Caesar and the census of Quirinius",
+   "summary": "Provinces paid direct tribute to Rome, assessed by census. The census of Judea in AD 6 provoked the revolt of Judas the Galilean; the tribute question became a test of loyalty.",
+   "refs": [
+    "Luk.2.1-Luk.2.3",
+    "Act.5.37",
+    "Mrk.12.13-Mrk.12.17",
+    "Mat.17.24-Mat.17.27",
+    "Luk.23.2",
+    "Rom.13.6-Rom.13.7"
+   ],
+   "lemmas": [
+    "G2778",
+    "G5411",
+    "G1378"
+   ],
+   "order": 250,
+   "data": {
+    "greek": "κῆνσος / φόρος",
+    "latin": "census / tributum",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "publicani",
+   "title": "Tax collectors (telōnai, publicani)",
+   "subtitle": "Toll collectors and their reputation",
+   "summary": "Rome sold the right to collect certain taxes and tolls to contractors (*publicani*), who used local collectors. The Gospels' *telōnai* were local toll collectors, despised as collaborators and extortioners.",
+   "refs": [
+    "Mat.9.9-Mat.9.11",
+    "Mat.11.19",
+    "Luk.3.12-Luk.3.13",
+    "Luk.18.10-Luk.18.14",
+    "Luk.19.1-Luk.19.10"
+   ],
+   "lemmas": [
+    "G5057"
+   ],
+   "order": 260,
+   "data": {
+    "greek": "τελώνης",
+    "latin": "publicanus / portitor",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "denarius",
+   "title": "Denarius (dēnarion)",
+   "subtitle": "The silver coin of wages and tribute",
+   "summary": "The denarius was the standard Roman silver coin. In the Gospels it is a day's wage for a labourer, and the coin of the tribute.",
+   "refs": [
+    "Mat.20.2",
+    "Mat.22.19-Mat.22.21",
+    "Mrk.12.15",
+    "Luk.10.35",
+    "Jhn.12.5",
+    "Rev.6.6"
+   ],
+   "lemmas": [
+    "G1220",
+    "G2541J"
+   ],
+   "order": 270,
+   "data": {
+    "greek": "δηνάριον",
+    "latin": "denarius",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "freedman",
+   "title": "Freedman (apeleutheros, libertus)",
+   "subtitle": "Former slaves and their ties to their patrons",
+   "summary": "A freed slave (*libertus*) became free, often a Roman citizen, but remained bound to his former master, now his patron, by duties of respect and service.",
+   "refs": [
+    "1Co.7.21-1Co.7.23",
+    "Act.6.9",
+    "Act.23.24",
+    "Gal.5.1"
+   ],
+   "lemmas": [
+    "G0558",
+    "G3032"
+   ],
+   "order": 280,
+   "data": {
+    "greek": "ἀπελεύθερος",
+    "latin": "libertus",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "doulos",
+   "title": "Slavery (doulos)",
+   "subtitle": "Slaves, masters and the Lord who became a slave",
+   "summary": "Slavery was everywhere in the Roman world. Slaves were legally property, though their conditions ranged from mines to managing estates. Many early believers were slaves.",
+   "refs": [
+    "Php.2.7",
+    "Rom.1.1",
+    "1Co.7.21-1Co.7.23",
+    "Gal.3.28",
+    "Gal.4.7",
+    "Phm.1.15-Phm.1.16",
+    "Eph.6.5-Eph.6.9"
+   ],
+   "lemmas": [
+    "G1401",
+    "G1203"
+   ],
+   "order": 290,
+   "data": {
+    "greek": "δοῦλος",
+    "latin": "servus",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "lytron",
+   "title": "Ransom price (lytron)",
+   "subtitle": "Release of captives and slaves",
+   "summary": "A *lytron* was the price paid to release a prisoner of war, a slave or a pledged life. In the LXX it is used for redeeming the firstborn, land and kin.",
+   "refs": [
+    "Mrk.10.45",
+    "Mat.20.28",
+    "1Ti.2.6",
+    "Rom.3.24",
+    "Eph.1.7",
+    "Col.1.13-Col.1.14",
+    "1Pe.1.18-1Pe.1.19",
+    "Lev.25.47-Lev.25.49"
+   ],
+   "lemmas": [
+    "G3083",
+    "G0629"
+   ],
+   "order": 300,
+   "data": {
+    "greek": "λύτρον / ἀπολύτρωσις",
+    "latin": "redemptio / pretium",
+    "category": "legal"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "manumission",
+   "title": "Manumission",
+   "subtitle": "Freeing slaves, and 'bought with a price'",
+   "summary": "Manumission was the legal freeing of a slave, by formal act, census or will. It was common in Roman society and often expected after years of service.",
+   "refs": [
+    "1Co.6.19-1Co.6.20",
+    "1Co.7.21-1Co.7.23",
+    "Gal.5.1",
+    "Gal.4.4-Gal.4.5",
+    "Rev.5.9"
+   ],
+   "lemmas": [
+    "G1658",
+    "G0059"
+   ],
+   "order": 310,
+   "data": {
+    "greek": "ἐλευθερόω / ἀγοράζω",
+    "latin": "manumissio",
+    "category": "legal"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "triumph",
+   "title": "Triumph (thriambeuō)",
+   "subtitle": "The victory procession of a Roman general",
+   "summary": "A Roman triumph was a sacred procession in which a victorious general rode through Rome with his army, spoils and captive enemy leaders, who were often executed at the end.",
+   "refs": [
+    "2Co.2.14",
+    "Col.2.15"
+   ],
+   "lemmas": [
+    "G2358"
+   ],
+   "order": 320,
+   "data": {
+    "greek": "θριαμβεύω",
+    "latin": "triumphus",
+    "category": "military"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "libation",
+   "title": "Libation (spendō)",
+   "subtitle": "A poured-out drink offering",
+   "summary": "A libation was wine (or other liquid) poured out to a deity, both in Israel's sacrifices and in Greco-Roman household rites, banquets and public sacrifices.",
+   "refs": [
+    "Php.2.17",
+    "2Ti.4.6",
+    "Num.28.7",
+    "Exo.29.40"
+   ],
+   "lemmas": [
+    "G4689"
+   ],
+   "order": 330,
+   "data": {
+    "greek": "σπένδω",
+    "latin": "libatio",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "imperial-cult",
+   "title": "Imperial cult",
+   "subtitle": "Temples, priests and sacrifices for the emperor",
+   "summary": "In the eastern provinces cities competed to build temples to the emperor and Rome, held festivals and offered sacrifices. Emperors who died could be declared divine (*divus*) by the senate.",
+   "refs": [
+    "Rev.2.13",
+    "Rev.13.4",
+    "Rev.13.14-Rev.13.15",
+    "Act.19.31",
+    "Act.17.7",
+    "1Co.8.5-1Co.8.6"
+   ],
+   "lemmas": [],
+   "order": 340,
+   "data": {
+    "greek": "Σεβαστός / θεὸς ἐκ θεοῦ",
+    "latin": "cultus imperatorius / divus",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "pax-romana",
+   "title": "Peace of Rome (pax Romana)",
+   "subtitle": "Augustan peace and the peace of Christ",
+   "summary": "Augustus' propaganda celebrated peace won by victory: the temple of Janus closed, the Altar of Augustan Peace dedicated. Peace was the fruit of Roman conquest.",
+   "refs": [
+    "Luk.2.14",
+    "1Th.5.3",
+    "Eph.2.14-Eph.2.17",
+    "Col.1.20",
+    "Jhn.14.27",
+    "Rom.5.1"
+   ],
+   "lemmas": [
+    "G1515"
+   ],
+   "order": 350,
+   "data": {
+    "greek": "εἰρήνη",
+    "latin": "pax",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "caesar",
+   "title": "Caesar (Kaisar)",
+   "subtitle": "The family name that became an imperial title",
+   "summary": "Caesar was Julius Caesar's family name, taken by his adopted son Augustus and then used as a title by the emperors. The NT names Augustus (Luke 2:1), Tiberius (Luke 3:1) and Claudius (Acts 11:28; 18:2), and Nero is 'Caesar' in Acts 25.",
+   "refs": [
+    "Luk.2.1",
+    "Luk.3.1",
+    "Mrk.12.17",
+    "Jhn.19.12",
+    "Jhn.19.15",
+    "Act.17.7",
+    "Act.25.11",
+    "Php.4.22"
+   ],
+   "lemmas": [
+    "G2541J",
+    "G2541H",
+    "G2541G",
+    "G2541I"
+   ],
+   "order": 360,
+   "data": {
+    "greek": "Καῖσαρ",
+    "latin": "Caesar",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "herodians",
+   "title": "Herodians (Hērōdianoi)",
+   "subtitle": "Supporters of the Herodian house",
+   "summary": "The Herodians appear only in Mark and Matthew, plotting with Pharisees against Jesus and asking the tribute question. They were probably supporters of Herod Antipas and the Herodian family's rule under Rome.",
+   "refs": [
+    "Mrk.3.6",
+    "Mrk.12.13",
+    "Mat.22.16"
+   ],
+   "lemmas": [
+    "G2265"
+   ],
+   "order": 370,
+   "data": {
+    "greek": "Ἡρῳδιανοί",
+    "latin": "Herodiani",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "sanhedrin",
+   "title": "Sanhedrin (synedrion)",
+   "subtitle": "The Jerusalem council",
+   "summary": "*Synedrion* means council. In Jerusalem the high priest presided over a council of chief priests, elders and scribes, which handled religious and civic matters under Roman oversight.",
+   "refs": [
+    "Mrk.14.55-Mrk.14.64",
+    "Jhn.11.47-Jhn.11.53",
+    "Act.4.5-Act.4.21",
+    "Act.5.27-Act.5.40",
+    "Act.23.1-Act.23.10"
+   ],
+   "lemmas": [
+    "G4892"
+   ],
+   "order": 380,
+   "data": {
+    "greek": "συνέδριον",
+    "latin": "concilium",
+    "category": "legal"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "synagogue",
+   "title": "Synagogue (synagōgē)",
+   "subtitle": "The Jewish assembly for reading and prayer",
+   "summary": "*Synagōgē* means gathering. By the first century Jews gathered every sabbath in Judea and throughout the diaspora to read and explain the Law and Prophets, in buildings also called *proseuchē*, 'place of prayer'.",
+   "refs": [
+    "Luk.4.16-Luk.4.21",
+    "Mrk.1.21",
+    "Act.13.14-Act.13.15",
+    "Act.15.21",
+    "Act.16.13",
+    "Jas.2.2"
+   ],
+   "lemmas": [
+    "G4864"
+   ],
+   "order": 390,
+   "data": {
+    "greek": "συναγωγή / προσευχή",
+    "latin": "synagoga / proseucha",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "pharisees",
+   "title": "Pharisees (Pharisaioi)",
+   "subtitle": "Lay experts in the Law and its traditions",
+   "summary": "The Pharisees were a popular movement devoted to precise observance of the Law and the 'traditions of the fathers'. They believed in resurrection and in angels and spirits, and they had wide influence among ordinary people.",
+   "refs": [
+    "Mrk.2.16",
+    "Mrk.7.1-Mrk.7.13",
+    "Mat.23.1-Mat.23.36",
+    "Luk.7.36",
+    "Jhn.3.1",
+    "Act.5.34",
+    "Act.23.6-Act.23.8",
+    "Php.3.5"
+   ],
+   "lemmas": [
+    "G5330"
+   ],
+   "order": 400,
+   "data": {
+    "greek": "Φαρισαῖος",
+    "latin": "Pharisaei",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "sadducees",
+   "title": "Sadducees (Saddoukaioi)",
+   "subtitle": "The priestly aristocracy",
+   "summary": "The Sadducees were a party of the priestly and wealthy elite, closely tied to the temple and to cooperation with Rome. They rejected the Pharisees' oral traditions and denied resurrection.",
+   "refs": [
+    "Mrk.12.18-Mrk.12.27",
+    "Mat.3.7",
+    "Mat.16.1",
+    "Act.4.1-Act.4.2",
+    "Act.5.17",
+    "Act.23.6-Act.23.8"
+   ],
+   "lemmas": [
+    "G4523"
+   ],
+   "order": 410,
+   "data": {
+    "greek": "Σαδδουκαῖος",
+    "latin": "Sadducaei",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "essenes",
+   "title": "Essenes",
+   "subtitle": "A disciplined Jewish community not named in the NT",
+   "summary": "The Essenes were a strict Jewish movement described by Josephus, Philo and Pliny the Elder, living in communities with shared property, ritual washings, communal meals and rigorous discipline. They are not mentioned in the NT.",
+   "refs": [
+    "Mat.3.1-Mat.3.3",
+    "Luk.1.80",
+    "Act.2.44-Act.2.45",
+    "Act.4.32"
+   ],
+   "lemmas": [],
+   "order": 420,
+   "data": {
+    "greek": "Ἐσσηνοί / Ἐσσαῖοι",
+    "latin": "Esseni",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "zealots",
+   "title": "Zealots (zēlōtai)",
+   "subtitle": "Zeal for the Law and armed resistance",
+   "summary": "'Zealot' could describe anyone zealous for God and the Law (Acts 21:20; Gal 1:14). Josephus uses it as the name of a revolutionary faction during the war of 66–70. One of the Twelve was 'Simon the Zealot'.",
+   "refs": [
+    "Luk.6.15",
+    "Act.1.13",
+    "Act.5.37",
+    "Act.21.20",
+    "Gal.1.14"
+   ],
+   "lemmas": [
+    "G2208"
+   ],
+   "order": 430,
+   "data": {
+    "greek": "ζηλωτής",
+    "latin": "zelotae",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "samaritans",
+   "title": "Samaritans (Samaritai)",
+   "subtitle": "Israel's estranged cousins",
+   "summary": "The Samaritans lived between Judea and Galilee, worshipped the God of Israel, accepted the five books of Moses and worshipped on Mount Gerizim rather than in Jerusalem. Relations with Jews were hostile.",
+   "refs": [
+    "Jhn.4.9",
+    "Jhn.4.20-Jhn.4.24",
+    "Jhn.4.39-Jhn.4.42",
+    "Luk.10.30-Luk.10.37",
+    "Luk.17.11-Luk.17.19",
+    "Act.8.5-Act.8.25",
+    "Mat.10.5"
+   ],
+   "lemmas": [
+    "G4541"
+   ],
+   "order": 440,
+   "data": {
+    "greek": "Σαμαρίτης",
+    "latin": "Samaritani",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "diaspora",
+   "title": "Diaspora (diaspora)",
+   "subtitle": "Jews scattered among the nations",
+   "summary": "By the first century most Jews lived outside the land of Israel, in large communities in Alexandria, Antioch, Rome, Asia Minor, Babylonia and elsewhere.",
+   "refs": [
+    "Jhn.7.35",
+    "Jas.1.1",
+    "1Pe.1.1",
+    "Act.2.5-Act.2.11",
+    "Act.15.21"
+   ],
+   "lemmas": [
+    "G1290"
+   ],
+   "order": 450,
+   "data": {
+    "greek": "διασπορά",
+    "latin": "dispersio",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "god-fearers",
+   "title": "God-fearers (phoboumenoi / sebomenoi ton theon)",
+   "subtitle": "Gentiles attached to the synagogue",
+   "summary": "Acts describes Gentiles who worshipped Israel's God and attended synagogue without becoming full converts: 'those who fear God' and 'devout' or 'worshipping' Greeks.",
+   "refs": [
+    "Act.10.2",
+    "Act.10.22",
+    "Act.13.16",
+    "Act.13.26",
+    "Act.13.43",
+    "Act.16.14",
+    "Act.17.4",
+    "Act.17.17",
+    "Act.18.7"
+   ],
+   "lemmas": [
+    "G4576",
+    "G5399"
+   ],
+   "order": 460,
+   "data": {
+    "greek": "φοβούμενοι / σεβόμενοι τὸν θεόν",
+    "latin": "metuentes",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "proselyte",
+   "title": "Proselyte (prosēlytos)",
+   "subtitle": "A Gentile convert to Judaism",
+   "summary": "A proselyte was a Gentile who fully converted to Judaism, for men including circumcision, and took on the Law. In the LXX *prosēlytos* translates *ger*, the resident foreigner.",
+   "refs": [
+    "Mat.23.15",
+    "Act.2.10",
+    "Act.6.5",
+    "Act.13.43",
+    "Gal.5.2-Gal.5.6"
+   ],
+   "lemmas": [
+    "G4339"
+   ],
+   "order": 470,
+   "data": {
+    "greek": "προσήλυτος",
+    "latin": "proselytus",
+    "category": "religious"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "jubilee-debt",
+   "title": "Jubilee and release of debts (aphesis)",
+   "subtitle": "Sabbath years, debt and the year of the Lord's favour",
+   "summary": "The Torah commanded release of debts every seventh year and, every fiftieth, a Jubilee in which land returned to its families and slaves went free. The LXX calls it *aphesis*, release, the word later used for forgiveness.",
+   "refs": [
+    "Luk.4.18-Luk.4.19",
+    "Lev.25.8-Lev.25.13",
+    "Deu.15.1-Deu.15.2",
+    "Mat.6.12",
+    "Mat.18.23-Mat.18.35",
+    "Isa.61.1-Isa.61.2"
+   ],
+   "lemmas": [
+    "G0859"
+   ],
+   "order": 480,
+   "data": {
+    "greek": "ἄφεσις",
+    "latin": "remissio / iubilaeus",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "gymnasium",
+   "title": "Gymnasium and ephebeia",
+   "subtitle": "Greek education, athletic training and identity",
+   "summary": "The gymnasium was the centre of Greek civic education, where young citizens (*ephebes*) trained in athletics and learning. Membership marked one as Greek.",
+   "refs": [
+    "1Ti.4.7-1Ti.4.8",
+    "1Co.9.24-1Co.9.27",
+    "Heb.5.14",
+    "Heb.12.1-Heb.12.2",
+    "Heb.12.11",
+    "Php.3.12-Php.3.14"
+   ],
+   "lemmas": [
+    "G1128"
+   ],
+   "order": 490,
+   "data": {
+    "greek": "γυμνάσιον / ἐφηβεία",
+    "latin": "gymnasium",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "symposium",
+   "title": "Banquet and symposium",
+   "subtitle": "Reclining at table, rank and the Lord's supper",
+   "summary": "Greco-Roman meals for guests followed set customs: guests reclined on couches by rank, the meal (*deipnon*) was followed by drinking and conversation (*symposion*), and the seating displayed honour.",
+   "refs": [
+    "Mrk.6.39",
+    "Luk.7.36-Luk.7.50",
+    "Luk.14.7-Luk.14.24",
+    "1Co.11.17-1Co.11.34",
+    "Jhn.13.23"
+   ],
+   "lemmas": [
+    "G4849"
+   ],
+   "order": 500,
+   "data": {
+    "greek": "συμπόσιον / δεῖπνον",
+    "latin": "convivium / cena",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "hospitality",
+   "title": "Hospitality (philoxenia)",
+   "subtitle": "Welcoming strangers",
+   "summary": "Hospitality to strangers was a sacred duty across the ancient Mediterranean. Travelling believers depended on it, and the early church made it a mark of leaders and members alike.",
+   "refs": [
+    "Rom.12.13",
+    "Heb.13.2",
+    "1Pe.4.9",
+    "3Jn.1.5-3Jn.1.8",
+    "Luk.10.5-Luk.10.9",
+    "Mat.25.35",
+    "Gen.18.1-Gen.18.8"
+   ],
+   "lemmas": [
+    "G5381",
+    "G3581"
+   ],
+   "order": 510,
+   "data": {
+    "greek": "φιλοξενία",
+    "latin": "hospitium",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "household-codes",
+   "title": "Household codes",
+   "subtitle": "Instructions for husbands, wives, parents, children, masters and slaves",
+   "summary": "Several NT letters contain 'household codes', paired instructions for the members of a household. The form follows a long Greek tradition of discussing household management.",
+   "refs": [
+    "Eph.5.21-Eph.5.33",
+    "Eph.6.1-Eph.6.9",
+    "Col.3.18-Col.3.25",
+    "Col.4.1",
+    "1Pe.2.13-1Pe.2.25",
+    "1Pe.3.1-1Pe.3.7",
+    "Tit.2.1-Tit.2.10"
+   ],
+   "lemmas": [
+    "G5293"
+   ],
+   "order": 520,
+   "data": {
+    "greek": "ὑποτάσσω",
+    "latin": "domus",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "letters",
+   "title": "Letters (epistolē)",
+   "subtitle": "Ancient epistolary conventions",
+   "summary": "Greek letters followed a fixed form: sender to recipient, greeting (*chairein*), thanksgiving or health wish, body, closing greetings and farewell. Letters were carried by trusted messengers who often read and explained them.",
+   "refs": [
+    "Act.15.23",
+    "Act.23.26",
+    "Rom.1.7",
+    "Rom.16.1-Rom.16.2",
+    "2Co.3.1-2Co.3.3",
+    "Jas.1.1",
+    "Phm.1.1-Phm.1.3"
+   ],
+   "lemmas": [
+    "G1992",
+    "G5463"
+   ],
+   "order": 530,
+   "data": {
+    "greek": "ἐπιστολή",
+    "latin": "epistula / litterae",
+    "category": "social"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "katallage",
+   "title": "Reconciliation (katallagē)",
+   "subtitle": "Diplomacy, ambassadors and the end of hostility",
+   "summary": "*Katallassō* meant to change enmity into friendship: between warring states, estranged spouses or quarrelling parties. Ambassadors (*presbeis*) negotiated such reconciliations.",
+   "refs": [
+    "2Co.5.17-2Co.5.21",
+    "Rom.5.10-Rom.5.11",
+    "Eph.2.14-Eph.2.16",
+    "Col.1.20-Col.1.22",
+    "1Co.7.11",
+    "Eph.6.20"
+   ],
+   "lemmas": [
+    "G2643",
+    "G2644",
+    "G4243",
+    "G3316"
+   ],
+   "order": 540,
+   "data": {
+    "greek": "καταλλαγή / καταλλάσσω",
+    "latin": "reconciliatio",
+    "category": "political"
+   }
+  },
+  {
+   "kind": "roman_term",
+   "slug": "christianoi",
+   "title": "Christians (Christianoi)",
+   "subtitle": "A Latin-style name and Roman suspicion",
+   "summary": "The name 'Christians' is formed like Latin party names (*Caesariani*, *Pompeiani*): partisans of Christus. It first appears at Antioch (Acts 11:26).",
+   "refs": [
+    "Act.11.26",
+    "Act.26.28",
+    "1Pe.4.16"
+   ],
+   "lemmas": [
+    "G5546"
+   ],
+   "order": 550,
+   "data": {
+    "greek": "Χριστιανός",
+    "latin": "Christiani",
+    "category": "religious"
+   }
+  }
+ ],
+ "blocks": [
+  {
+   "subject": "entry:roman_term/euangelion",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In 9 BC the province of Asia adopted a new calendar starting the year on Augustus' birthday. The decree, found at Priene, says that the birthday of 'the god' was for the world the beginning of the good news (*euangelia*) that came through him, and calls him a saviour who ended war.\n\nJosephus uses the same language for Vespasian's accession in AD 69: cities celebrated the good news (*euangelia*) with sacrifices (Jewish War 4.618, 4.656).\n\nThe word also had a Jewish background: Isa 52:7 and 61:1 (LXX) use the verb *euangelizō* for the herald who announces that 'your God reigns'.",
+   "citations": [
+    {
+     "work": "priene-calendar-inscription",
+     "ref": "Priene Calendar Inscription (OGIS 458), lines on Augustus' birthday",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 4.618",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 4.656",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/euangelion",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Mark opens with 'the beginning of the good news of Jesus Christ, the Son of God' (Mark 1:1), the kind of line a city would carve for an emperor. But this herald announces a different kind of reign: a Son who reveals the Father by healing, eating with outsiders and giving his life away.\n\nThe gospel is first news about a person and a relationship, not a set of terms. Paul's summary in Rom 1:3–4 is about who Jesus is: David's son, declared Son of God in power by the resurrection. The good news is that the Father's kingdom has arrived in his Son and that all are invited home.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/euangelion",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "**How anti-imperial is Paul's gospel?** Many scholars hold that Paul's use of *euangelion*, *kyrios*, *sōtēr* and *parousia* deliberately echoes and challenges imperial propaganda, so that 'Jesus is Lord' implies 'Caesar is not'.\n\nOthers reply that these words were ordinary Greek, that Paul's main background is Isaiah and the Psalms, and that he rarely mentions Rome directly (and in Rom 13:1–7 counsels respect for authorities). They warn against reading coded resistance into every term.\n\nA middle view: Paul's primary source is Israel's Scriptures, but his hearers in Roman cities could not miss the overlap, and the gospel relativised every rival claim to lordship without being a political programme.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/kyrios",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "*Kyrios* was the ordinary word for a slave's master or a property owner. In the Greek East it was also used of rulers: Festus calls Nero 'my lord' (*tō kyriō*) in Acts 25:26.\n\nRoman emperors handled the title differently. Suetonius says Augustus recoiled from being called *dominus* as an insult (Augustus 53), while Domitian liked to be styled 'our lord and god' (Domitian 13). Pliny addresses Trajan as *domine* throughout Book 10 of his letters.\n\nA generation later the police captain urged the aged Polycarp: 'What harm is there in saying Lord Caesar and offering incense?' (Martyrdom of Polycarp 8.2).",
+   "citations": [
+    {
+     "work": "suetonius-lives",
+     "ref": "Augustus 53",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "suetonius-lives",
+     "ref": "Domitian 13",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "pliny-letters",
+     "ref": "Letters 10.96",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Martyrdom of Polycarp 8.2",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/kyrios",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "'Jesus is Lord' (Rom 10:9) is a confession of trust and belonging, not only of rank. In the LXX *kyrios* renders the name of Israel's God, so Paul can place Jesus inside the Shema: 'one God, the Father ... and one Lord, Jesus Christ' (1 Cor 8:6).\n\nThis Lord does not rule by domination. Phil 2:6–11 says he received the name above every name because he emptied himself and took the form of a slave. The world's lords 'lord it over' others (Mark 10:42); the true Lord kneels to wash feet. Lordship, seen in Jesus, is the Father's self-giving love on the throne.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/soter",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Greek cities honoured kings and generals who rescued or endowed them as *sōtēr*, often alongside *euergetēs* (benefactor). The Priene decree for Augustus (9 BC) praises providence for sending a saviour who put an end to war and set all things in order.\n\nThe Samaritans' confession that Jesus is 'the Saviour of the world' (John 4:42) and the angel's 'a Saviour, who is Christ the Lord' (Luke 2:11), announced in the reign of Augustus, use the same register.",
+   "citations": [
+    {
+     "work": "priene-calendar-inscription",
+     "ref": "Priene Calendar Inscription (OGIS 458)",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/soter",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In the NT salvation is rescue into life with God: healing, deliverance from the powers, return from exile, adoption. The Saviour is the one who comes to where we are and brings us home (Luke 19:10).\n\nPhil 3:20 is pointed for a Roman colony: 'our citizenship is in heaven, from where we await a Saviour'. The Saviour the Philippians wait for does not arrive with legions but with the power to transform 'our lowly body' into the likeness of his own. The emperor saved cities by force; Jesus saves by union with his own risen life.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/ekklesia",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In Greek cities the *ekklēsia* was the formal meeting of the citizen body. Acts 19 shows the word in this civic sense: the Ephesian riot is a disorderly *ekklēsia* (Acts 19:32), and the town clerk tells the crowd to bring complaints to 'the lawful assembly' (*ennomos ekklēsia*, 19:39), then dismisses it (19:41).\n\nIn the LXX *ekklēsia* often translates Hebrew *qahal*, the assembly of Israel (for example Deut 9:10, 'the day of the assembly' at Sinai).",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Acts 19:32, 39, 41",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Deut 9:10 LXX",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/ekklesia",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "When Paul writes 'to the *ekklēsia* of the Thessalonians in God the Father' (1 Thess 1:1), he names a gathering whose life is located in a Father and a Son. Slaves, women and foreigners, who had no vote in the city assembly, belong fully in this one.\n\nThe church is not a club or a department of religion. It is a new public: a family-assembly gathered by the Father, where the Son's way of life is practised in the open as a sign of the kingdom to the city.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/parousia",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "*Parousia* can be ordinary: Paul is cheered by 'the coming of Titus' (2 Cor 7:6), and his opponents say his bodily presence is weak (2 Cor 10:10).\n\nIn papyri and inscriptions it also names the formal visit of a ruler. Cities prepared roads and gifts, struck coins and sometimes counted a new era from the visit. The Latin equivalent was *adventus*.",
+   "citations": [
+    {
+     "work": "deissmann-light-ancient-east",
+     "ref": "Light from the Ancient East (on parousia and adventus)",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/parousia",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The NT uses the language of a royal visit for the coming of Jesus, but the King who comes is the one who already came in humility and lives among his people by the Spirit. His 'presence' is the goal of history: God's family gathered and transformed (1 Cor 15:23).\n\nOn a postmillennial reading the kingdom grows now, like yeast through dough, and the final *parousia* crowns a world already being filled with the knowledge of the Lord. It is not an escape from a failed earth but the King's arrival to complete what he began.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/parousia",
+   "section": "voices",
+   "title": null,
+   "type": "scholarly_interpretation",
+   "by": "adolf-deissmann",
+   "consensus": "majority",
+   "body": "Deissmann argued from papyri and inscriptions that *parousia* was a technical term for the visit of a king or emperor, with its own ceremonies, coinage and sometimes a new era-reckoning, and that early Christians heard Christ's coming against this background.",
+   "citations": [
+    {
+     "work": "deissmann-light-ancient-east",
+     "ref": "Light from the Ancient East (on parousia)",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/parousia",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "**Which coming?** In Matt 24:3 the disciples ask about the temple's destruction and 'your coming'. Partial-preterist readers hold that much of Matt 24:4–34 was fulfilled in the judgment on Jerusalem in AD 70 ('this generation', 24:34), while 1 Cor 15:23 and 1 Thess 4:15 look to a final bodily return. Futurist readers apply most of Matt 24 to the end of history. Others see the two horizons deliberately overlapping.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/apantesis",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "When an important visitor approached, leading citizens went out along the road to meet him and accompany him into the city. Acts 28:15 shows believers doing exactly this for Paul: they came from Rome as far as the Forum of Appius and Three Taverns 'to meet us' (*eis apantēsin*).\n\nIn the parable of the bridesmaids the cry is 'Go out to meet him' (Matt 25:6), and the bridesmaids then go in with the bridegroom.",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Acts 28:15",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Matt 25:6",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/apantesis",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In 1 Thess 4:17 believers are 'caught up ... to meet (*eis apantēsin*) the Lord in the air'. If Paul uses the word in its customary sense, the picture is not of the church leaving the earth but of the welcoming party going out to greet the coming King and escorting him back to the world he is renewing.\n\nThe hope is reunion and welcome: 'so we will always be with the Lord'. Paul gives it as comfort for grieving families (4:18), not as a timetable.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/apantesis",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Whether *apantēsis* carries its technical civic sense in 1 Thess 4:17 is debated. Many commentators accept the escort reading and conclude that believers return with the Lord to earth. Others note that the word can simply mean 'meeting' and that Paul does not say what happens next. Pre-tribulation rapture readings, in which the church is taken away to heaven before a later return, are a nineteenth-century development and a minority among NT scholars.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/basileia",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Augustus presented his rule as the restoration of the republic: in Res Gestae 34 he says he transferred the state to the senate and people and was given the name Augustus. In practice he held supreme power, and Greek-speaking subjects called the emperor *basileus* (compare 1 Pet 2:13, 17).\n\nThe accusation in Thessalonica was that Christians acted 'against the decrees of Caesar, saying there is another king, Jesus' (Acts 17:7). At Jesus' trial the chief priests say, 'We have no king but Caesar' (John 19:15).",
+   "citations": [
+    {
+     "work": "augustus-res-gestae",
+     "ref": "Res Gestae 34",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Acts 17:7; John 19:15",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/basileia",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The kingdom of God is the Father's reign of love made present in the Son. It comes not by legions but like a mustard seed and like yeast (Matt 13:31–33): small, hidden, unstoppable.\n\n'My kingdom is not of (*ek*) this world' (John 18:36) speaks of its source, not its location. It does not draw its power from the sword, yet it is for this world: 'your will be done on earth as in heaven'. On a postmillennial reading the stone of Dan 2:35 grows to fill the earth as the gospel spreads, and Rev 11:15 is the destiny of history: the kingdoms of the world become the kingdom of our Lord and of his Christ.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/huiothesia",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Roman law distinguished *adoptio* (taking a person who was under another father's power) from *adrogatio* (taking a person who was legally independent, together with his household and property). Gaius sets out both and explains that the adopted person passes into the power (*potestas*) of the adoptive father (Gaius, Institutes 1.97–107).\n\nAdoption was common among the elite and was central to imperial succession. Julius Caesar adopted his great-nephew Octavius in his will (Suetonius, Julius 83), and Augustus later adopted Tiberius (Suetonius, Tiberius 21). The adopted son took the father's name and inheritance.\n\nThe Torah has no formal adoption law, and the word *huiothesia* does not occur in the LXX.",
+   "citations": [
+    {
+     "work": "gaius-institutes",
+     "ref": "Institutes 1.97–107",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "suetonius-lives",
+     "ref": "Julius 83",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "suetonius-lives",
+     "ref": "Tiberius 21",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/huiothesia",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Adoption is the heart of the relational gospel. The eternal Son shares his sonship: 'God sent his Son ... so that we might receive adoption as sons. And because you are sons, God has sent the Spirit of his Son into our hearts, crying Abba, Father!' (Gal 4:4–6).\n\nThis is not a legal fiction filed in heaven. The Spirit makes it real inside us; we call God what Jesus calls him. Eph 1:5 says the Father planned it 'before the foundation of the world', so adoption is not a rescue plan after the fall but the purpose of creation. And Rom 8:23 says it will be complete when our bodies are raised: the whole person brought into the Father's house.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/huiothesia",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "**Roman or Jewish background?** Many read *huiothesia* against Roman adoption, since Paul wrote to Romans, Galatians and Ephesians in Roman cities and the word is a legal term. Others stress the Jewish story: Israel as God's son (Exod 4:22; Rom 9:4), the Davidic promise 'I will be his father' (2 Sam 7:14), and the exodus from slavery that frames Gal 4 and Rom 8. Both are likely in view: the Roman term names the Jewish hope.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/huiothesia",
+   "section": "legal_history",
+   "title": "How the legal reading arose",
+   "type": "legal_reading_history",
+   "by": null,
+   "consensus": "n/a",
+   "body": "**How the legal reading arose.** In Reformed theology adoption became a step in the order of salvation following justification, defined as a judicial act (Westminster Confession of Faith, chapter 12, 'Of Adoption'). The emphasis fell on change of status before a judge.\n\nRelational authors do not deny the change of status but put it inside the Father's love and the Son's own sonship: we are adopted 'in him' (Eph 1:5), and the Spirit of the Son is given so that the relationship is lived, not only declared.",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Westminster Confession of Faith 12",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/patria-potestas",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Gaius calls the power of fathers over their children a right peculiar to Roman citizens, adding that hardly any other people held such power over their sons (Institutes 1.55). A son, however old, owned nothing in his own right while his father lived, unless he was emancipated.\n\nGal 4:1–2 assumes a related arrangement: the heir, while a minor, is no different from a slave and is under guardians (*epitropoi*) and managers until the date set by the father.",
+   "citations": [
+    {
+     "work": "gaius-institutes",
+     "ref": "Institutes 1.55",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "gaius-institutes",
+     "ref": "Institutes 1.48–55",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/patria-potestas",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Jesus' picture of the Father cuts across the Roman model. In the parable of the lost son (Luke 15) the father lets the son go, runs to meet him, and restores him before any terms are set. Power is used to give and to restore, not to control.\n\nPaul writes 'the Father, from whom every family (*patria*) in heaven and on earth is named' (Eph 3:14–15). Human fatherhood is measured by God's, not the other way round. When we read 'father' in the NT we should hear Jesus' Abba, not Roman *potestas*.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/paterfamilias",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Roman law divided persons into those 'in their own power' (*sui iuris*) and those 'in the power of another' (*alieni iuris*); the *paterfamilias* was the one in his own power, and the rest of the household was under him (Gaius, Institutes 1.48–55).\n\nThe household was also the basic unit of economy and religion: the head led household worship and was responsible for its members. When a householder was baptized, his household often followed (Acts 16:15, 31–34; 1 Cor 1:16).",
+   "citations": [
+    {
+     "work": "gaius-institutes",
+     "ref": "Institutes 1.48–55",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Acts 16:15, 31–34",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/paterfamilias",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Jesus often casts God as a householder, but a surprising one: he pays the last hired the same as the first (Matt 20:1–16) and fills his banquet with the poor and disabled from the streets (Luke 14:21). The household of God is defined by the Father's generosity.\n\nThe early churches met in households, and the household became the place where a new family was formed across lines of rank. 'You are no longer strangers ... but members of the household of God' (Eph 2:19).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/patronage",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Seneca's treatise On Benefits is a long reflection on giving and receiving favour. He explains the three Graces dancing hand in hand as the circle of a benefit passing from giver to receiver and back again (On Benefits 1.3).\n\nCicero observes that proud men think it like death to have accepted a patron's protection or to be called clients (On Duties 2.69), which shows how status-laden the relationship was.\n\nIn the NT the centurion at Capernaum is a patron of the local Jews: 'he loves our nation and built us our synagogue' (Luke 7:5). Phoebe is called a *prostatis*, patroness, of many including Paul (Rom 16:2).",
+   "citations": [
+    {
+     "work": "seneca-de-beneficiis",
+     "ref": "On Benefits 1.3",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "cicero-de-officiis",
+     "ref": "On Duties 2.69",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Luke 7:5; Rom 16:2",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/patronage",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Patronage gives the NT its grammar of grace. God is the great Benefactor whose gifts come first, without regard to worth, and who creates a relationship of gratitude and faithfulness.\n\nBut Jesus turns the system inside out: 'The kings of the Gentiles lord it over them, and those in authority are called benefactors. Not so with you' (Luke 22:25–26). The greatest becomes the servant. The Father does not give to secure clients; he gives to make children. Gratitude in the NT is the response of sons and daughters, not the repayment of a debt.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/pistis-fides",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Cicero calls good faith (*fides*) the foundation of justice: constancy and truthfulness in what is said and agreed (On Duties 1.23). Fides was even honoured as a goddess with a temple on the Capitol.\n\nIn patronage and diplomacy, *fides* named the reliability that bound the two parties: a people that surrendered into Rome's *fides* placed itself under Rome's protection. In Greek, *pistis* similarly covered both the trust given and the faithfulness shown.",
+   "citations": [
+    {
+     "work": "cicero-de-officiis",
+     "ref": "On Duties 1.23",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/pistis-fides",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "NT faith is relational: trust in a person who has proved faithful, and loyalty in return. Paul's 'obedience of faith' (Rom 1:5) is allegiance that comes from trust, not a separate work.\n\nThe Father's faithfulness comes first and is seen in the faithfulness of Jesus, who trusted the Father all the way to the cross. We are drawn into that trust: 'I live by the faith of the Son of God, who loved me and gave himself for me' (Gal 2:20, KJV). Faith is sharing in the Son's own life of trust toward the Father.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/pistis-fides",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "**'Faith in Christ' or 'faithfulness of Christ'?** The Greek phrase *pistis Christou* (Rom 3:22; Gal 2:16, 20; Phil 3:9) can be read as an objective genitive, 'faith in Christ', or a subjective genitive, 'the faith(fulness) of Christ'. The KJV often has 'faith of Christ'; most modern versions have 'faith in Christ'. Scholars remain divided, and the choice shapes whether the stress falls on our believing or on Christ's own faithfulness in which we share.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/charis",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Benefactors (*euergetai*) endowed buildings, games and grain for cities and were honoured with inscriptions and statues; the giver's *charis* called for the receiver's *charis* in return. Seneca's picture of the three Graces with linked hands describes this circle of giving, receiving and returning (On Benefits 1.3).\n\nGifts were usually given to worthy recipients who could return honour. Seneca discusses at length whom one should benefit (On Benefits, book 1 and following).",
+   "citations": [
+    {
+     "work": "seneca-de-beneficiis",
+     "ref": "On Benefits 1.3",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/charis",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "God's *charis* breaks the rule that gifts go to the worthy: 'while we were still sinners, Christ died for us' (Rom 5:8). Yet grace still makes a circle. It creates a relationship in which the receiver responds with love, trust and generosity to others (2 Cor 8–9).\n\nGrace is not a substance or a ledger credit but the Father's self-giving in the Son. 'You know the grace of our Lord Jesus Christ, that though he was rich, yet for your sakes he became poor' (2 Cor 8:9). We are saved by grace for the good works he prepared (Eph 2:8–10): the circle of the Graces, centred on God.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/honour-shame",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Seating at banquets, places in procession, titles in inscriptions and the regard of one's peers all marked honour. Jesus' advice not to take the place of honour at a wedding feast (Luke 14:8–10) assumes everyone watched where guests reclined.\n\nCrucifixion was designed to strip a person of every honour. Hebrews says Jesus endured the cross 'despising the shame' (Heb 12:2).",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Luke 14:8–10; Heb 12:2",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/honour-shame",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The gospel reorders honour. The Son, who shared the Father's glory, took the most shameful place there was (Phil 2:5–11), and the Father honoured him with the name above every name. In him the shamed are given a seat at the table.\n\nThis helps read sin and salvation relationally: sin dishonours the Father and shames us; salvation is the Father covering our shame, as the father in Luke 15 covers his son with the best robe before the village can mock him. 'Whoever believes in him will not be put to shame' (Rom 10:11).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/citizenship",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Being a Roman citizen exempted a person from degrading punishments. Cicero's prosecution of Verres turns on the scandal that a man crying 'I am a Roman citizen' (*civis Romanus sum*) was flogged and crucified in Sicily (Against Verres 2.5.162–170).\n\nActs reflects the same protections. At Philippi, a Roman colony (Acts 16:12), the magistrates are alarmed to learn they have beaten Roman citizens uncondemned (16:37–38). In Jerusalem the tribune halts a flogging when Paul asks whether it is lawful to scourge a Roman uncondemned; the tribune bought his citizenship, but Paul was born a citizen (22:25–29).",
+   "citations": [
+    {
+     "work": "cicero-verrines",
+     "ref": "Against Verres 2.5.162–170",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Acts 16:37–38; 22:25–29",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/citizenship",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Paul tells the Philippians, proud citizens of a Roman colony, 'our citizenship (*politeuma*) is in heaven' (Phil 3:20) and 'live as citizens (*politeuesthe*) worthy of the gospel' (1:27). The church is a colony of heaven: an outpost of the Father's commonwealth living its customs in the middle of the empire.\n\nGentiles once 'alienated from the commonwealth of Israel' are now 'fellow citizens with the saints and members of the household of God' (Eph 2:12, 19). Citizenship and family belong together: we belong to a city because we have been made children of its Father.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/provocatio",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Paul's words before Festus, 'I appeal to Caesar' (Acts 25:11), use a citizen's right; Festus confers with his council and replies, 'To Caesar you shall go' (25:12). Agrippa later says Paul could have been released if he had not appealed (26:32).\n\nPliny, as governor of Bithynia about AD 112, says he sent accused Christians who were Roman citizens to Rome for trial, while executing non-citizens who persisted (Letters 10.96).",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Acts 25:10–12; 26:32",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "pliny-letters",
+     "ref": "Letters 10.96",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/provocatio",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Paul uses Roman law without trusting in it. His appeal serves the mission the risen Lord had promised: 'you must testify also in Rome' (Acts 23:11). The empire's legal machinery becomes the road by which the gospel reaches its capital.\n\nThe story invites a relational reading of authority: the believer can honour legitimate structures and use them for the good of others, while knowing that his life is held by a different King.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/proconsul",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Augustus kept the militarily important provinces for himself and let the senate assign the others to proconsuls chosen by lot (Suetonius, Augustus 47). Cyprus, Achaia and Asia were senatorial provinces, and Acts correctly calls their governors proconsuls (Acts 13:7; 18:12; 19:38).\n\nAn inscription found at Delphi preserves a letter of the emperor Claudius that names Gallio as proconsul of Achaia. It is one of the main anchors for dating Paul's stay in Corinth to about AD 50–52. Gallio was the brother of the philosopher Seneca.",
+   "citations": [
+    {
+     "work": "suetonius-lives",
+     "ref": "Augustus 47",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "gallio-inscription",
+     "ref": "Gallio Inscription (Delphi), letter of Claudius",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/proconsul",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Sergius Paulus is called 'an intelligent man' who 'believed, being astonished at the teaching of the Lord' (Acts 13:7, 12). Gallio refuses to judge a Jewish dispute about words and names (18:14–15). Luke shows the gospel meeting Roman power both as a summons to faith and as a matter the state is not competent to judge.\n\nThe Father's message is for governors as well as slaves; neither rank brings someone nearer to him or puts him out of reach.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/prefect-procurator",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "A stone found in the theatre at Caesarea Maritima in 1961 names Pontius Pilate as *praefectus Iudaeae*, prefect of Judea. Tacitus, writing later, calls him procurator (Annals 15.44), the title used for governors after Claudius.\n\nJosephus describes clashes under Pilate: the night-time bringing of the standards with Caesar's images into Jerusalem, and the use of temple money for an aqueduct (Antiquities 18.55–62; Jewish War 2.169–177). Tacitus says of Felix (Acts 23–24) that he exercised royal power with the mind of a slave (Histories 5.9).",
+   "citations": [
+    {
+     "work": "pilate-inscription",
+     "ref": "Pilate Inscription (Caesarea)",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 15.44",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 18.55–62",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 2.169–177",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-histories",
+     "ref": "Histories 5.9",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/prefect-procurator",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The Gospels place the Son of God before a Roman governor, and the creed remembers it: 'suffered under Pontius Pilate'. The reference anchors salvation in real history.\n\nJohn's trial scene turns the tables: Pilate asks 'Are you a king?' and 'What is truth?', while Truth stands in front of him (John 18:33–38). 'You would have no authority over me unless it had been given you from above' (19:11). Jesus is not a victim of Rome's power but the Lord who freely gives himself, exposing that power as it condemns the innocent.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/tetrarch",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus reports Augustus' settlement of Herod's will: Archelaus became ethnarch of Judea, Samaria and Idumea; Herod Antipas tetrarch of Galilee and Perea; Philip tetrarch of the territories north-east of the Sea of Galilee (Antiquities book 17, on the division of Herod's kingdom). Luke 3:1 lists Herod and Philip as tetrarchs, along with Lysanias of Abilene.\n\nJosephus independently records that Antipas imprisoned and executed John the Baptist at the fortress of Machaerus, fearing his influence on the people (Antiquities 18.116–119).",
+   "citations": [
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities book 17 (division of Herod's kingdom)",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 18.116–119",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/tetrarch",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Antipas is the ruler of Jesus' home region. Jesus calls him 'that fox' (Luke 13:32) and refuses to perform for him when he is sent to him during the trial (23:8–9). Luke notes that Herod and Pilate became friends that day (23:12): rival powers united against the Son.\n\nYet among the leaders of the church at Antioch is Manaen, 'brought up with Herod the tetrarch' (Acts 13:1). Grace reaches into the court of the man who killed John the Baptist.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/centurion",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Polybius describes the selection of centurions for steadiness and reliability rather than daring, and their place in the legion's organisation (Histories 6.24). Auxiliary units, which garrisoned Judea and Caesarea, also had centurions.\n\nMark uses the Latin loan-word *kentyriōn* (Mark 15:39, 44–45); Matthew, Luke and Acts use *hekatontarchēs*.",
+   "citations": [
+    {
+     "work": "polybius-histories",
+     "ref": "Histories 6.24",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/centurion",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "A centurion understands authority and believes Jesus can heal with a word (Matt 8:8–10); a centurion at the cross is the first human in Mark to confess 'Truly this man was the Son of God' (Mark 15:39); the centurion Cornelius is the first Gentile household to receive the Spirit (Acts 10).\n\nThe soldiers of the occupying power are not enemies to be destroyed but people the Father is seeking. At the cross the executioner's officer sees the Father's heart in the way the Son dies.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/legion",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Polybius describes the organisation of the legion in detail (Histories 6.19–42). Tacitus lists where the legions were stationed under Tiberius, with four in Syria (Annals 4.5), and records soldiers' complaints that their pay was ten asses a day (Annals 1.17).\n\nAfter AD 70 the Tenth Legion was left to garrison the ruins of Jerusalem (Josephus, Jewish War 7.1–5).",
+   "citations": [
+    {
+     "work": "polybius-histories",
+     "ref": "Histories 6.19–42",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 4.5",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 1.17",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 7.1–5",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/legion",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The demon that names itself 'Legion, for we are many' (Mark 5:9) is driven into pigs and into the sea. Many readers hear an echo of the occupying army, though Mark does not spell it out. Either way, Jesus breaks a power that had chained a man among the tombs and returns him 'clothed and in his right mind' to his family (5:15, 19).\n\nIn Gethsemane Jesus says he could ask his Father for more than twelve legions of angels (Matt 26:53). He refuses. The kingdom comes by the Son's trust in the Father, not by greater force.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/praetorian-guard",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In the Gospels the *praitōrion* is the governor's headquarters in Jerusalem where Jesus was tried and mocked (Mark 15:16; John 18:28). In Acts 23:35 Paul is held in 'Herod's praetorium' at Caesarea.\n\nIn Rome the praetorian cohorts guarded the emperor. Tacitus records that Sejanus concentrated them in a single camp by the city (Annals 4.2).",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Mark 15:16; John 18:28; Acts 23:35",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 4.2",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/praetorian-guard",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Paul writes from chains that the gospel has become known 'throughout the whole praetorium' (Phil 1:13), and sends greetings from 'those of Caesar's household' (4:22). The soldiers guarding him and the slaves and freedmen of the imperial service hear about another Lord.\n\nThe chain becomes a channel. Love that does not retaliate makes its way into the very structures that imprison it.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/praetorian-guard",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Where was Paul when he wrote Philippians? The traditional answer is Rome (Acts 28), which fits 'praetorium' and 'Caesar's household'. Others propose Ephesus or Caesarea, where there were also governors' praetoria and members of the imperial household (slaves and freedmen in the provinces). The choice affects the letter's date.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/crucifixion",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Cicero calls it 'the most cruel and disgusting penalty' (Against Verres 2.5.165) and says the very word 'cross' should be kept far from a Roman citizen's body, thoughts, eyes and ears (For Rabirius 16).\n\nRome used it to terrorise: after Herod's death the governor Varus crucified two thousand rebels (Josephus, Antiquities 17.295); during the siege of Jerusalem Titus crucified so many that there was no room for the crosses (Jewish War 5.446–451). Tacitus says Nero had Christians crucified or burned after the fire of Rome (Annals 15.44).\n\nIn Jewish tradition Deut 21:23 declared anyone hanged on a tree cursed, which Paul cites in Gal 3:13.",
+   "citations": [
+    {
+     "work": "cicero-verrines",
+     "ref": "Against Verres 2.5.165",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "cicero-pro-rabirio",
+     "ref": "For Rabirius 16",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 17.295",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 5.446–451",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 15.44",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/crucifixion",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The cross was the empire's tool for saying who did not count. God took that tool and made it the place where his love is most fully shown. Jesus is perfect theology even here: the Father is not punishing the Son but is 'in Christ reconciling the world to himself' (2 Cor 5:19), bearing our violence rather than returning it.\n\nIn Christus Victor terms the cross is a triumph: 'he disarmed the rulers and authorities and put them to open shame, triumphing over them in it' (Col 2:15). The powers that crucified him are exposed as unjust, sin and death are undone from inside, and the shamed are given the Son's place.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/titulus",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Suetonius describes Caligula having a slave paraded among guests with a placard declaring the reason for his punishment (Caligula 32). Displaying the charge was part of making an example.\n\nAll four Gospels report Jesus' charge: 'the King of the Jews'. John adds that it was written in Hebrew, Latin and Greek, and that Pilate refused to change it (John 19:19–22).",
+   "citations": [
+    {
+     "work": "suetonius-lives",
+     "ref": "Caligula 32",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "John 19:19–22",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/titulus",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The placard meant to mock tells the truth. The charge sheet becomes a proclamation in the three languages of the world: here is the King.\n\nThe kingship it names is the one Jesus has defined all along: he reigns by giving himself. The cross is his throne, and the first subject he welcomes is a crucified criminal (Luke 23:42–43).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/tribute-census",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Augustus records his censuses of Roman citizens (Res Gestae 8). When Judea came under direct Roman rule in AD 6, Quirinius, governor of Syria, conducted a census of property there. Judas the Galilean urged resistance, calling payment of tribute slavery (Josephus, Antiquities 18.1–10; Jewish War 2.117–118; compare Acts 5:37).\n\nTacitus notes that in AD 17 Syria and Judea, exhausted by their burdens, petitioned for a reduction of tribute (Annals 2.42).",
+   "citations": [
+    {
+     "work": "augustus-res-gestae",
+     "ref": "Res Gestae 8",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 18.1–10",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 2.117–118",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 2.42",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/tribute-census",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Asked whether to pay the tribute, Jesus asks for a coin and whose image is on it. 'Render to Caesar the things that are Caesar's, and to God the things that are God's' (Mark 12:17). The coin bears Caesar's image; human beings bear God's (Gen 1:27). Caesar may have the coin; the Father claims the person.\n\nJesus neither joins the revolt of Judas nor blesses the empire. He points beyond both to the relationship of image and Father that no tax can touch.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/tribute-census",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "**The census of Luke 2:2.** Luke dates Jesus' birth under Herod the Great (Luke 1:5) and to a census 'when Quirinius was governor of Syria'. Josephus places Quirinius' census in AD 6, about ten years after Herod's death. Proposals include: Luke has confused the two; *prōtē* means 'before' Quirinius was governor; Quirinius held an earlier command in the region; or an earlier empire-wide registration is in view. No solution commands general agreement.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/publicani",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Cicero lists the trades of tax collectors and moneylenders among those that are disliked and unworthy of a gentleman (On Duties 1.150). Tacitus reports that so many complaints were made about the greed of the *publicani* that Nero considered abolishing indirect taxes altogether (Annals 13.50–51).\n\nIn Galilee and Judea, tolls on goods were farmed out by Herodian or Roman authorities; men like Levi at his toll booth (Mark 2:14) and Zacchaeus, a chief toll collector at Jericho (Luke 19:2), worked within this system.",
+   "citations": [
+    {
+     "work": "cicero-de-officiis",
+     "ref": "On Duties 1.150",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 13.50–51",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/publicani",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Jesus was known as 'a friend of tax collectors and sinners' (Matt 11:19). He calls Levi, eats in his house and invites himself to Zacchaeus' home before Zacchaeus has changed anything (Luke 19:5). The welcome comes first; the change follows.\n\nZacchaeus' restitution (19:8) shows restorative justice in action: the Father's welcome turns an extortioner into a restorer. 'The Son of Man came to seek and to save the lost' (19:10).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/denarius",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In Matt 20:2 the landowner agrees to pay vineyard workers a denarius for the day. Tacitus records mutinous legionaries in AD 14 complaining that their pay was ten asses a day and demanding a denarius (Annals 1.17); a denarius was worth sixteen asses.\n\nThe coin Jesus asks for in the tribute question carried Caesar's portrait and inscription (Mark 12:16). Coins of Tiberius bore a title naming him son of the divine Augustus.",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Matt 20:2; Mark 12:16",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 1.17",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/denarius",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The denarius helps us feel the weight of the stories: the Samaritan leaves two days' wages for a stranger's care (Luke 10:35); the ointment poured on Jesus was worth three hundred denarii, about a year's wages (John 12:5).\n\nIn the parable of the vineyard (Matt 20:1–16) everyone receives a full day's wage. The Father's generosity is not measured by hours worked, and grumbling at it is the elder brother's mistake.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/freedman",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Gaius distinguishes the freeborn from freedmen and explains the conditions under which a freed slave became a full Roman citizen (Institutes 1.10–17).\n\nFreedmen could become rich and powerful, especially in the emperor's household. Suetonius says Claudius gave great power to freedmen and made Felix governor of Judea (Claudius 28); Tacitus remarks that Felix used royal power with a slave's mind (Histories 5.9). Acts 6:9 mentions a 'synagogue of the Freedmen' in Jerusalem, probably descendants of Jews once enslaved and freed in Rome.",
+   "citations": [
+    {
+     "work": "gaius-institutes",
+     "ref": "Institutes 1.10–17",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "suetonius-lives",
+     "ref": "Claudius 28",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-histories",
+     "ref": "Histories 5.9",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Acts 6:9",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/freedman",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Paul plays on the freedman's double status: 'he who was called in the Lord as a slave is the Lord's freedman; likewise he who was free when called is Christ's slave' (1 Cor 7:22). In Christ everyone is both: set free and bound in love to the one who freed them.\n\nUnlike the Roman freedman, the believer is not left a client with obligations but brought into the family: 'you are no longer a slave, but a son, and if a son, then an heir' (Gal 4:7).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/doulos",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Gaius begins the law of persons with its 'principal division': all people are either free or slaves (Institutes 1.9). Slaves had no legal family and could be sold, beaten and separated from their children.\n\nSeneca urged masters to treat slaves as fellow human beings, to eat with them and to remember that fortune could reverse their places (Moral Letters 47); his advice shows both the harshness of the system and the beginnings of criticism within it. Pliny's letter on Christians says he tortured two slave women 'who were called deaconesses' (*ministrae*) (Letters 10.96).",
+   "citations": [
+    {
+     "work": "gaius-institutes",
+     "ref": "Institutes 1.9",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "seneca-moral-letters",
+     "ref": "Moral Letters 47",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "pliny-letters",
+     "ref": "Letters 10.96",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/doulos",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The Son 'took the form of a slave' (Phil 2:7). God comes to us at the bottom of the social order, so no one is beneath his love. In the church 'there is neither slave nor free' (Gal 3:28), and Paul asks Philemon to receive Onesimus 'no longer as a slave but more than a slave, as a beloved brother' (Phlm 16).\n\nThe NT writers did not abolish slavery in law, but they planted a family logic that would undo it: a master and slave who share one Father and one table cannot remain owner and property for long. The gospel moves us from slaves to sons (Gal 4:7; John 15:15).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/lytron",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Captives taken in war could be ransomed by relatives or their city; slaves could buy or be bought into freedom. In the Torah a kinsman-redeemer could buy back a relative who had sold himself into slavery (Lev 25:47–49), and the firstborn were redeemed by a price (Num 18:15–16).\n\nThe exodus is the great redemption: 'I will redeem you with an outstretched arm' (Exod 6:6). There God pays no one; redemption means rescue by a powerful kinsman.",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Lev 25:47–49; Num 18:15–16; Exod 6:6",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/lytron",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "'The Son of Man came not to be served but to serve, and to give his life as a ransom for many' (Mark 10:45). In context the ransom is the opposite of lording it over others: the King spends his own life to free the captives.\n\nRead with Exodus, the ransom is about liberation from bondage to sin, death and the powers (Col 1:13–14), not a payment that changes the Father's mind. The Father is the redeemer, not the one who must be paid. This is the ransom and Christus Victor stream of the early church: the Son enters the house of the strong man and sets the prisoners free.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/lytron",
+   "section": "fathers",
+   "title": null,
+   "type": "scholarly_interpretation",
+   "by": "irenaeus",
+   "consensus": "n/a",
+   "body": "Irenaeus describes the Word redeeming us by his own blood from the apostasy that held us captive, not by violence but by persuasion, as befits God, so that justice would not be infringed and God's ancient creation would not perish.",
+   "citations": [
+    {
+     "work": "irenaeus-against-heresies",
+     "ref": "Against Heresies 5.1.1",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/lytron",
+   "section": "fathers",
+   "title": null,
+   "type": "scholarly_interpretation",
+   "by": "gregory-of-nyssa",
+   "consensus": "minority",
+   "body": "Gregory of Nyssa explains the ransom with the image of a bait: the deity was hidden under the flesh like a hook under food, so that death, grasping at the humanity, was caught by the divinity and destroyed. He applies the ransom language to the release of humanity held captive.",
+   "citations": [
+    {
+     "work": "gregory-nyssa-catechism",
+     "ref": "Great Catechism 22–24",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/lytron",
+   "section": "legal_history",
+   "title": "How the legal reading arose",
+   "type": "legal_reading_history",
+   "by": null,
+   "consensus": "n/a",
+   "body": "**How the legal reading arose.** Anselm rejected the idea that the devil had rights that God must pay off (Cur Deus Homo 1.7) and recast the problem as honour owed to God: sin is failing to render God his due, so satisfaction must be made (Cur Deus Homo 1.11–1.13). The Reformers sharpened this into penal substitution, where Christ bears the punishment justice requires.\n\nRelational readers point out that the NT never says to whom the ransom is paid, that the background is the exodus, where God is the liberator, and that Mark 10:45 sets the ransom in the context of service, not appeasement.",
+   "citations": [
+    {
+     "work": "anselm-cur-deus-homo",
+     "ref": "Cur Deus Homo 1.7",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "anselm-cur-deus-homo",
+     "ref": "Cur Deus Homo 1.11–1.13",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/manumission",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Gaius describes the forms of manumission and the conditions, set by the laws of Augustus, under which a freed slave received full citizenship (Institutes 1.13–47).\n\nAt Delphi hundreds of inscriptions record a form in which a slave was 'sold' to the god Apollo for a price (often the slave's own savings) 'for freedom', so that the god guaranteed his liberty.",
+   "citations": [
+    {
+     "work": "gaius-institutes",
+     "ref": "Institutes 1.13–47",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/manumission",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "'You were bought with a price' (1 Cor 6:20). The point is belonging: we are not our own, because we have been freed to belong to God. 'For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery' (Gal 5:1).\n\nThe freedom is not autonomy but family: redeemed 'so that we might receive adoption as sons' (Gal 4:5). Release leads home.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/manumission",
+   "section": "voices",
+   "title": null,
+   "type": "scholarly_interpretation",
+   "by": "adolf-deissmann",
+   "consensus": "minority",
+   "body": "Deissmann argued that the Delphic sacral manumissions, in which a slave was bought by a god 'for freedom', supplied the background for Paul's language of being bought with a price and called to freedom.",
+   "citations": [
+    {
+     "work": "deissmann-light-ancient-east",
+     "ref": "Light from the Ancient East (on sacral manumission at Delphi)",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/manumission",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Deissmann's sacral-manumission background is now widely questioned. In the Delphic texts the slave paid for himself and the god was a legal fiction, whereas in Paul someone else pays and the freed person belongs to the new owner. Many prefer the exodus and the ordinary slave market as background for 1 Cor 6:20 and 7:23.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/triumph",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Suetonius describes Julius Caesar's triumphs, including a placard reading 'I came, I saw, I conquered' (Julius 37). Josephus gives an eyewitness account of the triumph of Vespasian and Titus over Judea in AD 71: the temple's treasures carried through the streets and the rebel leader Simon bar Giora led along and then executed (Jewish War 7.123–157).",
+   "citations": [
+    {
+     "work": "suetonius-lives",
+     "ref": "Julius 37",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 7.123–157",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/triumph",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Col 2:15 turns the image on its head. On the cross Christ 'disarmed the rulers and authorities and made a public spectacle of them, triumphing over them in him'. The apparent victim is the victor; the powers that paraded him are the captives. This is Christus Victor in a single verse.\n\nIn 2 Cor 2:14 God 'always leads us in triumph in Christ'. Paul pictures himself in the procession, spreading the fragrance of Christ. The victory of God looks like the Son's self-giving, and those who share it are carried along in his train.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/triumph",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In 2 Cor 2:14 is Paul one of the victorious soldiers, sharing Christ's victory, or one of the captives being led in the procession, a former enemy now displayed as God's prisoner? The Greek verb normally means to lead captives in triumph, which suggests the second; many versions translate it as 'leads us in triumph' or 'leads us as captives'. The point may be deliberately paradoxical: God's victory is shown through the weakness of his apostle.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/libation",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In the Torah a drink offering of wine accompanied the daily burnt offerings (Exod 29:40; Num 28:7). In the Greco-Roman world libations opened banquets and accompanied prayers and sacrifices; at a symposium wine was poured for the gods before drinking began.\n\nPliny's test for accused Christians included offering incense and wine before the emperor's image and the statues of the gods (Letters 10.96).",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Exod 29:40; Num 28:7",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "pliny-letters",
+     "ref": "Letters 10.96",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/libation",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Paul uses the image for his own life: 'even if I am being poured out as a drink offering upon the sacrificial offering of your faith, I rejoice' (Phil 2:17); 'I am already being poured out' (2 Tim 4:6).\n\nThis is sacrifice as self-giving love, the pattern of the Son who 'poured himself out' (Phil 2:7, *ekenōsen*). Offering is not paying God off but joining the Son's gift of himself to the Father for others.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/imperial-cult",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Suetonius says Augustus allowed temples in the provinces only if they were dedicated jointly to himself and Rome (Augustus 52). Tacitus reports that the cities of Asia voted a temple to Tiberius, Livia and the senate, and that eleven cities competed for the honour, Smyrna winning (Annals 4.15, 4.55–56); Tiberius declined a similar request from Spain (Annals 4.37–38).\n\nPergamum had a temple to Augustus and Rome from 29 BC. Pliny required accused Christians to invoke the gods, offer incense and wine to the emperor's image and curse Christ (Letters 10.96). The Asiarchs of Acts 19:31 were leading provincial figures associated with the provincial assembly and, many think, the imperial cult.",
+   "citations": [
+    {
+     "work": "suetonius-lives",
+     "ref": "Augustus 52",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 4.15",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 4.37–38",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 4.55–56",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "pliny-letters",
+     "ref": "Letters 10.96",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/imperial-cult",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The NT confession that there is 'one Lord, Jesus Christ' (1 Cor 8:6) is first a declaration of love and belonging, but it could not avoid colliding with a world that asked for incense to Caesar. Revelation pictures the beast demanding worship (Rev 13) and the Lamb who was slain receiving it (Rev 5).\n\nThe contrast is not two powers of the same kind. The Lamb conquers by his blood and the faithful witness of his people (Rev 12:11), not by coercion. Worship of the Father through the Son frees people from serving any power that demands sacrifice.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/imperial-cult",
+   "section": "dating",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "**When was Revelation written, and which emperor is in view?** The majority view dates Revelation to the reign of Domitian (about AD 95), following Irenaeus, and reads its beast against Domitian's demand for honours. Some recent scholars doubt there was a systematic Domitianic persecution. A minority dates Revelation before AD 70, under or just after Nero, and reads much of it as fulfilled in the Jewish War and the fall of Jerusalem (a partial-preterist reading).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/imperial-cult",
+   "section": "dating",
+   "title": null,
+   "type": "scholarly_interpretation",
+   "by": "jat-robinson",
+   "consensus": "minority",
+   "body": "John A. T. Robinson argued that every NT book, Revelation included, was written before the fall of Jerusalem in AD 70, placing Revelation in the late 60s after Nero's persecution.",
+   "citations": [
+    {
+     "work": "robinson-redating",
+     "ref": "Redating the New Testament (chapter on Revelation)",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/pax-romana",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Augustus records that the doors of the temple of Janus, closed only when there was peace throughout Roman land and sea, were closed three times under his leadership (Res Gestae 13). The Priene decree praises him for ending war.\n\nTacitus gives a Caledonian chieftain the famous counter-verdict: 'they make a desert and call it peace' (Agricola 30).",
+   "citations": [
+    {
+     "work": "augustus-res-gestae",
+     "ref": "Res Gestae 13",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "priene-calendar-inscription",
+     "ref": "Priene Calendar Inscription (OGIS 458)",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-agricola",
+     "ref": "Agricola 30",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/pax-romana",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The angels announce 'peace on earth' at a birth in the reign of Augustus (Luke 2:14). It is a different peace: not imposed by the sword but made by the Son's self-giving, 'making peace by the blood of his cross' (Col 1:20).\n\nChrist 'is our peace' who 'has broken down the dividing wall of hostility' (Eph 2:14). The Father's peace restores relationship: with God, with one another, across the deepest divisions. 'Not as the world gives do I give to you' (John 14:27).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/pax-romana",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "When Paul writes 'while people are saying, \"Peace and security\" (*eirēnē kai asphaleia*), then sudden destruction will come' (1 Thess 5:3), some scholars hear an allusion to Roman slogans of *pax et securitas*. Others think the phrase comes from the prophets' warnings against false peace (Jer 6:14; Ezek 13:10) and need not be political.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/caesar",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Suetonius wrote biographies of the first twelve Caesars, from Julius to Domitian. He reports that Claudius expelled from Rome the Jews who were constantly making disturbances 'at the instigation of Chrestus' (Claudius 25.4), which many link to Acts 18:2, where Aquila and Priscilla have left Rome because Claudius ordered all Jews to leave.\n\nTacitus records that the founder of the Christians, Christus, was executed in the reign of Tiberius by the procurator Pontius Pilate (Annals 15.44).",
+   "citations": [
+    {
+     "work": "suetonius-lives",
+     "ref": "Claudius 25.4",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 15.44",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Acts 18:2",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/caesar",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "'Render to Caesar what is Caesar's, and to God what is God's' (Mark 12:17) is not a division of life into two equal kingdoms. Everything belongs to the Father; Caesar's claim is limited and temporary.\n\nThe Gospels set the story of the Son inside the reigns of Caesars on purpose (Luke 2:1; 3:1). History's real centre is not Rome but a child in Bethlehem and a man on a cross. The Caesars are named; the kingdom outlasts them.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/caesar",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Does Suetonius' 'Chrestus' mean Christ? Many think so: disputes in Rome's synagogues over Jesus as Messiah led to the expulsion. Others note that Chrestus was a common slave name and that Suetonius may refer to an otherwise unknown agitator. The date of the expulsion (often put at AD 49) is also debated.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/herodians",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "No ancient source outside the Gospels describes a party called 'Herodians'. The name follows a common pattern for partisans of a leader (as 'Caesarians' or 'Pompeians'). Josephus describes the Herodian dynasty in detail and the influence of its supporters, but not a group by this name.",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Mark 3:6; 12:13; Matt 22:16",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/herodians",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "That Pharisees and Herodians, who had little in common, joined forces against Jesus (Mark 3:6) shows how his kingdom unsettled every faction. He healed a man on the sabbath, and the result was a plot.\n\nJesus does not belong to any party's agenda. He exposes the self-interest of each and calls all of them, collaborators and purists alike, to the Father's table.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/herodians",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Who were the Herodians? Suggestions include officials of Antipas' court, supporters of a restored Herodian kingship over Judea, or a loose description of anyone favouring Herodian (and so pro-Roman) rule. Some early Christian writers even described them as people who took Herod for the Messiah, but this is generally regarded as a later guess.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/sanhedrin",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus tells how the young Herod was summoned before the *synedrion* in Jerusalem for executing bandits without trial (Antiquities 14.168–176), and how the high priest Ananus convened a *synedrion* in AD 62 to condemn James, 'the brother of Jesus who was called Christ', in the interval between governors (Antiquities 20.200).\n\nThe NT shows the council examining Jesus (Mark 14:55), Peter and John (Acts 4), and Paul (Acts 23), with Pharisees and Sadducees both represented (Acts 23:6).",
+   "citations": [
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 14.168–176",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 20.200",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/sanhedrin",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The council that condemns Jesus is not a picture of 'the Jews' as a whole. Joseph of Arimathea and Nicodemus are members (Mark 15:43; John 7:50), and Gamaliel counsels caution (Acts 5:34–39). The Gospels show leaders protecting their place: 'it is better that one man should die for the people' (John 11:50).\n\nGod turns that logic around. Caiaphas' scapegoating words become, in John's telling, a prophecy that Jesus would gather into one the scattered children of God (11:51–52). The Father brings reconciliation out of the very act meant to exclude.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/sanhedrin",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "How reliable is the Mishnah's later description of a formal Sanhedrin of seventy-one with strict trial rules? Some scholars use it to argue that Jesus' trial broke many rules (night session, festival eve, quick verdict). Others think the Mishnah describes an idealised rabbinic court from after AD 70 and that the first-century council was a looser body called by the high priest, as Josephus' accounts suggest.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/synagogue",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus says Moses ordered the people to leave their other work every week and assemble to hear the Law and learn it thoroughly (Against Apion 2.175). Philo describes sabbath meeting places as schools of virtue where the Law is explained (On the Special Laws 2.62), and says Augustus allowed the Jews of Rome to gather in their *proseuchai* (Embassy to Gaius 156).\n\nA Greek inscription from Jerusalem records that Theodotos, priest and synagogue leader, built the synagogue 'for the reading of the Law and teaching of the commandments' and a guest house for visitors from abroad; it is usually dated before AD 70.",
+   "citations": [
+    {
+     "work": "josephus-against-apion",
+     "ref": "Against Apion 2.175",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "philo-special-laws",
+     "ref": "On the Special Laws 2.62",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "philo-embassy",
+     "ref": "Embassy to Gaius 156",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "theodotos-inscription",
+     "ref": "Theodotos Inscription",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/synagogue",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Jesus opens his public ministry in a synagogue, reading Isa 61 and announcing 'Today this Scripture has been fulfilled in your hearing' (Luke 4:21). He is not founding a rival religion but bringing Israel's own hope to its fulfilment.\n\nThe synagogue gave the early church its pattern: gathering, reading Scripture, explaining it, praying. Paul went 'to the Jew first' in synagogue after synagogue (Acts 13–18). The Father's family grew out of Israel's household, not against it.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/pharisees",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus says the Pharisees handed down to the people regulations from the tradition of the fathers that are not written in the Law of Moses, which the Sadducees rejected (Antiquities 13.297–298). He describes them as considered the most accurate interpreters of the Law, believing in fate and free will together and in the survival of the soul with reward and punishment (Jewish War 2.162–163; Antiquities 18.12–15), and as having great influence with the townspeople.",
+   "citations": [
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 13.297–298",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 18.12–15",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 2.162–163",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/pharisees",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Jesus' arguments with Pharisees are family arguments: they share Scripture, sabbath, resurrection hope and zeal for holiness. The disagreement is about what holiness looks like. Jesus touches lepers and eats with sinners, showing that the Father's holiness spreads outward to heal rather than withdrawing to stay pure (Mark 2:16–17).\n\nNot all Pharisees opposed him. Nicodemus came to him (John 3), Gamaliel defended the apostles (Acts 5:34), and Paul remained, in his words, 'a Pharisee, a son of Pharisees' (Acts 23:6). The woes of Matt 23 are a prophet's lament over leaders, not a verdict on a people.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/pharisees",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "How influential were the Pharisees before AD 70? Josephus calls them very influential, but he also wrote after the war when their successors, the rabbis, were rising. Some scholars think the Gospels' picture of Pharisees in every Galilean village reflects later conflicts between church and synagogue; others think it fits a movement that taught the people and was active in towns.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/sadducees",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus says the Sadducees accept only the written regulations and reject traditions of the fathers (Antiquities 13.297–298), deny the survival of the soul and rewards after death (Antiquities 18.16–17; Jewish War 2.164–166), and are harsh in judgment (Antiquities 20.199). Acts agrees that they say there is no resurrection, nor angel, nor spirit (Acts 23:8).",
+   "citations": [
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 13.297–298",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 18.16–17",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 2.164–166",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 20.199",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/sadducees",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Jesus answers the Sadducees' trick question about resurrection by pointing to God's relationship with the patriarchs: 'I am the God of Abraham ... He is not God of the dead, but of the living' (Mark 12:26–27). A God who binds himself to people does not let death have the last word.\n\nIn Acts it is the Sadducean leadership that arrests the apostles for 'proclaiming in Jesus the resurrection from the dead' (Acts 4:2). Resurrection threatened a settlement built on present power; it announced the Father's new creation already begun.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/essenes",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus gives the longest description: entry after a period of probation, shared property, white garments, daily immersions, communal meals, oaths of secrecy, strict sabbath observance (Jewish War 2.119–161; Antiquities 18.18–22). Philo says they lived in villages, numbered over four thousand, avoided animal sacrifice, held all things in common and owned no slaves (Every Good Man Is Free 75–91). Pliny the Elder places a community of Essenes on the west side of the Dead Sea, living without women or money (Natural History 5.73).",
+   "citations": [
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 2.119–161",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 18.18–22",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "philo-good-man-free",
+     "ref": "Every Good Man Is Free 75–91",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "pliny-elder-natural-history",
+     "ref": "Natural History 5.73",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/essenes",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The Essenes withdrew into the wilderness to prepare the way of the Lord in purity. John the Baptist was also in the wilderness (Luke 1:80), but he came out to call everyone, soldiers and tax collectors included, to return to God.\n\nJesus went further: instead of a community separated by purity, he formed a family gathered by grace, sharing goods freely (Acts 2:44–45; 4:32) not as a rule of withdrawal but as the overflow of the Spirit's love.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/essenes",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "**Were the Dead Sea Scrolls community Essenes?** The majority view identifies the settlement at Qumran and the sectarian scrolls with the Essenes, given Pliny's location and many parallels with Josephus. Others think the scrolls come from a related but distinct group, or were brought from Jerusalem libraries. Claims that John the Baptist or Jesus were Essenes go beyond the evidence.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/zealots",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus traces a 'fourth philosophy' to Judas the Galilean, who in AD 6 taught that God alone is ruler and that paying tribute was slavery (Antiquities 18.4–10, 18.23; Jewish War 2.118). During the revolt a faction in Jerusalem called themselves Zealots, claiming zeal for good causes (Jewish War 4.160–161).\n\nThe model of zeal was Phinehas, whose violent zeal for God was remembered (Num 25:11–13).",
+   "citations": [
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 18.4–10",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 18.23",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 2.118",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 4.160–161",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/zealots",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Jesus chose Simon the Zealot and Matthew the tax collector for the same band (Matt 10:3–4; Luke 6:15). The kingdom gathers people from opposite sides of the occupation into one family.\n\nPaul was 'extremely zealous' and persecuted the church (Gal 1:13–14; Phil 3:6). Meeting the risen Jesus redirected his zeal from violence to love. The Father's zeal is shown in the Son who weeps over Jerusalem and refuses the sword (Luke 19:41–44; Matt 26:52).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/zealots",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Was there an organised Zealot party in Jesus' day? Many scholars think Josephus' 'Zealots' as a named faction belong to the war years (from about AD 66), so 'Simon the Zealot' may mean simply 'Simon the zealous one'. Others see continuity from Judas the Galilean through the first century.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/samaritans",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus tells of a temple built on Mount Gerizim in the Persian or early Hellenistic period (Antiquities 11.302–347) and its destruction by the Judean ruler John Hyrcanus (Antiquities 13.254–256). He also records that under the governor Coponius some Samaritans defiled the Jerusalem temple by scattering human bones in it at Passover (Antiquities 18.29–30).\n\nJohn's note that 'Jews have no dealings with Samaritans' (John 4:9) and the woman's question about the right mountain (4:20) reflect this history.",
+   "citations": [
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 11.302–347",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 13.254–256",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 18.29–30",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/samaritans",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Jesus crosses the boundary on purpose. He asks a Samaritan woman for water, reveals himself to her as Messiah and says the Father is seeking worshippers 'in spirit and truth', not on this mountain or that (John 4:21–24). Her town confesses him 'Saviour of the world' (4:42).\n\nThe hero of his most famous parable is a Samaritan (Luke 10:33), and the only healed leper who returns to give thanks is a Samaritan (17:16). The Father's family is bigger than our hostilities.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/diaspora",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus quotes the geographer Strabo: it is hard to find a place in the inhabited world that has not received this nation (Antiquities 14.115). Philo says no fewer than a million Jews lived in Egypt (Against Flaccus 43) and describes Jerusalem as the mother city of colonies sent out across many lands (Embassy to Gaius 281–282).\n\nActs 2:9–11 lists pilgrims at Pentecost from Parthia to Rome.",
+   "citations": [
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 14.115",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "philo-flaccus",
+     "ref": "Against Flaccus 43",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "philo-embassy",
+     "ref": "Embassy to Gaius 281–282",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/diaspora",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The diaspora synagogues were the network along which the gospel first travelled (Acts 13–18). God used Israel's scattering to prepare a road for the good news to reach the nations.\n\nJames and Peter address the church as a diaspora (Jas 1:1; 1 Pet 1:1): God's family living as resident aliens in many cities, held together not by a land but by a Father and a shared hope.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/god-fearers",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus says the temple's wealth had been increased by Jews throughout the world and by 'those who worshipped God' (*sebomenōn ton theon*) from Asia and Europe (Antiquities 14.110). He says the Jews of Antioch constantly attracted many Greeks to their worship and made them in some way part of themselves (Jewish War 7.45), and that many Greeks observe the sabbath and Jewish customs (Against Apion 2.282).",
+   "citations": [
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 14.110",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-war",
+     "ref": "Jewish War 7.45",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-against-apion",
+     "ref": "Against Apion 2.282",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/god-fearers",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Cornelius is 'a devout man who feared God with all his household' (Acts 10:2), and Lydia is 'a worshipper of God' whose heart the Lord opened (16:14). These people stood on the threshold of Israel's house.\n\nThe gospel told them the door was open: 'God shows no partiality, but in every nation anyone who fears him and does what is right is acceptable to him' (Acts 10:34–35). Through the Son they were brought fully into the family, without first becoming Jews.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/god-fearers",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Were the God-fearers a recognised category or Luke's literary device? Some scholars argued that the term never had a technical sense and that Luke created the group to bridge Jews and Gentiles. Josephus' remarks and later inscriptions listing *theosebeis* alongside Jews and proselytes have persuaded most that such sympathisers did exist, though the terms were not fixed.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/proselyte",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Josephus tells of the royal house of Adiabene: Queen Helena and King Izates embraced Jewish customs, and Izates debated with Jewish teachers whether he needed to be circumcised, one saying he could worship God without it, another insisting the Law required it (Antiquities 20.34–48).\n\nTacitus complains that those who convert to Jewish ways learn to despise the gods, renounce their country and disregard parents, children and brothers (Histories 5.5).",
+   "citations": [
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 20.34–48",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "tacitus-histories",
+     "ref": "Histories 5.5",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/proselyte",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Nicolaus, 'a proselyte of Antioch', is among the seven chosen to serve the church (Acts 6:5). Converts to Israel's God were welcomed into leadership.\n\nThe Galatian controversy asked whether Gentile believers had to become proselytes to belong. Paul's answer: in Christ circumcision and uncircumcision count for nothing, 'but faith working through love' (Gal 5:6). The Spirit of the Son, crying Abba, is the mark of the family.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/jubilee-debt",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Lev 25 sets out the Jubilee: 'proclaim liberty throughout the land' (25:10), each family returning to its land. Deut 15:1–2 commands a release of debts every seven years. The LXX renders these releases with *aphesis*.\n\nJosephus summarises the Jubilee laws, including the return of land (Antiquities 3.280–286). The Mishnah attributes to Hillel the *prosbul*, a legal device allowing loans to be collected despite the seventh-year release, because people had stopped lending as the year approached (Mishnah Shebiit 10:3–4).",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Lev 25:8–13; Deut 15:1–2",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 3.280–286",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Mishnah Shebiit 10:3–4",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/jubilee-debt",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Jesus' first sermon in Luke reads Isa 61: 'to proclaim release (*aphesis*) to the captives ... to proclaim the year of the Lord's favour' (Luke 4:18–19). Forgiveness in the NT carries this Jubilee freight: not only a cancelled record but restored relationships, returned inheritances, freed people.\n\n'Forgive us our debts, as we also have forgiven our debtors' (Matt 6:12) makes the Father's release a pattern for community life. The kingdom is restorative justice: the Father sets things right by setting people free.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/jubilee-debt",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Was the Jubilee ever practised? There is little evidence that land was regularly returned every fifty years, and many scholars think it remained an ideal. The sabbath-year release was observed in some form (hence Hillel's *prosbul*). Whether Jesus announced an actual Jubilee year in Luke 4, or used Jubilee as an image for the messianic age, is debated.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/gymnasium",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In 175 BC the high priest Jason obtained permission to build a gymnasium in Jerusalem and enrol its people as citizens of Antioch; the priests neglected the altar to take part in the games (2 Macc 4:9–15). 1 Macc 1:14–15 adds that some removed the marks of circumcision. Josephus records the same Hellenizing move (Antiquities 12.241).\n\nAthletes trained naked (*gymnos*), and the gymnasium was associated with the gods Hermes and Heracles.",
+   "citations": [
+    {
+     "work": null,
+     "ref": "2 Macc 4:9–15; 1 Macc 1:14–15",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "josephus-antiquities",
+     "ref": "Antiquities 12.241",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/gymnasium",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The NT borrows athletic images freely: 'train (*gymnaze*) yourself for godliness' (1 Tim 4:7); 'run so as to win' (1 Cor 9:24); 'let us run with endurance ... looking to Jesus' (Heb 12:1–2). But it changes the goal: not civic glory but likeness to Christ.\n\nThe Father's 'discipline' (Heb 12:5–11) is the training of sons, not punishment from an enemy. 'He disciplines us for our good, that we may share his holiness.' Training is relational: a Father forming his children.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/symposium",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Pliny describes a dinner where the host served fine food and wine to himself and a few, cheaper fare to lesser friends, and the cheapest to freedmen; Pliny says he serves everyone the same, because he invites them to dine, not to be graded (Letters 2.6).\n\nJesus' guests reclined: a woman can stand behind him at his feet (Luke 7:38), and the beloved disciple reclines next to him (John 13:23). Mark 6:39 says the five thousand sat down 'in groups' (*symposia symposia*), literally like dinner parties.",
+   "citations": [
+    {
+     "work": "pliny-letters",
+     "ref": "Letters 2.6",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Luke 7:38; John 13:23; Mark 6:39",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/symposium",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Meals were where the ancient world displayed who counted. Jesus used them to show the Father's welcome: he ate with tax collectors and sinners (Mark 2:15–17), told guests to take the lowest place (Luke 14:10), and told hosts to invite the poor, the crippled, the lame and the blind (14:13).\n\nThe Lord's Supper in Corinth was failing exactly where Pliny's host failed: some ate well while others went hungry (1 Cor 11:21). Paul says this is not the Lord's supper at all. The table of the Son is a family table where all share one loaf (10:17).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/hospitality",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Abraham's welcome of three strangers at Mamre, who turn out to be the Lord's messengers, became the model of hospitality (Gen 18:1–8; compare Heb 13:2). The Didache tells churches to welcome travelling apostles and prophets as the Lord, but warns that a prophet who stays more than two days or asks for money is false, and that a traveller who settles should work (Didache 11–12).\n\nThe Theodotos inscription from Jerusalem mentions a guest house for those coming from abroad.",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Gen 18:1–8",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "Didache 11–12",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "theodotos-inscription",
+     "ref": "Theodotos Inscription",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/hospitality",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Hospitality is the gospel enacted. The Father welcomes us as strangers and makes us family (Eph 2:19); we welcome others as he welcomed us (Rom 15:7). Jesus says that whoever welcomes the least welcomes him (Matt 25:35, 40).\n\nThe word itself, *philoxenia*, means love of the stranger. In a world where outsiders were suspect, the churches became households with open doors, and that open table did much to spread the faith.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/household-codes",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Aristotle begins his Politics by dividing the household into three relationships: master and slave, husband and wife, father and children, with the free male head ruling each (Politics 1.3, 1253b). Later moralists, Jewish writers and Roman authors discussed the same pairs.\n\nThe NT codes follow the same three pairs, which made the churches look orderly to outsiders (1 Pet 2:12).",
+   "citations": [
+    {
+     "work": "aristotle-politics",
+     "ref": "Politics 1.3 (1253b)",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/household-codes",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The NT codes take the familiar form and fill it with Christ. They address wives, children and slaves directly as moral persons, which Aristotle did not. They begin with mutual submission 'out of reverence for Christ' (Eph 5:21). They define the husband's headship as Christ's self-giving: 'love your wives, as Christ loved the church and gave himself up for her' (5:25). Fathers are told not to provoke their children (6:4), and masters that they and their slaves have the same Master in heaven, who shows no partiality (6:9).\n\nThe household is reshaped around the Son's way of using power: to serve and to give.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/household-codes",
+   "section": "notes",
+   "title": "Scholarly debate",
+   "type": "contested",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Do the household codes accommodate Roman social order or subvert it? Some read them as a defensive move to show that Christians were not a threat, with the cost falling on women and slaves. Others stress how much they change the Aristotelian pattern by addressing subordinates as equals before God and redefining the head's role as sacrificial love. Interpreters differ on how far these instructions are culturally specific.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/letters",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "The letter of the Jerusalem council begins 'The apostles and the elders, brothers, to the brothers who are of the Gentiles ... greetings (*chairein*)' (Acts 15:23), and the tribune Claudius Lysias writes 'to his Excellency the governor Felix, greetings' (23:26). James opens the same way (Jas 1:1).\n\nPliny's letters to Trajan show the official letter in action: he begins his query about the Christians by saying it is his custom to refer to the emperor everything he is in doubt about (Letters 10.96), and Trajan's short reply follows (10.97). Letters of recommendation were common (compare Rom 16:1–2; 2 Cor 3:1).",
+   "citations": [
+    {
+     "work": null,
+     "ref": "Acts 15:23; 23:26",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "pliny-letters",
+     "ref": "Letters 10.96–97",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/letters",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Paul changes the standard greeting from *chairein* to *charis*, 'grace to you and peace from God our Father and the Lord Jesus Christ' (Rom 1:7). Even his letterhead announces the gospel: every relationship he writes into begins with the Father's grace.\n\nLetters are relational documents, written to people Paul loved and longed to see. Reading them as personal communication within a family, not as abstract treatises, keeps their doctrine warm and their warnings pastoral.",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/katallage",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "In Greek diplomacy and private life *katallagē* was the restoration of peace between enemies. Paul uses it of a wife reconciled to her husband (1 Cor 7:11).\n\nIn Jewish texts of the period it is usually the offended party, God, who is asked to be reconciled to his people: 'may he hear your prayers and be reconciled to you' (2 Macc 1:5; compare 2 Macc 7:33; 8:29).",
+   "citations": [
+    {
+     "work": null,
+     "ref": "1 Cor 7:11",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": null,
+     "ref": "2 Macc 1:5; 7:33; 8:29",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/katallage",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Paul reverses the expected direction. God is never the object of reconciliation in his letters; he is always the subject. 'All this is from God, who through Christ reconciled us to himself ... in Christ God was reconciling the world to himself, not counting their trespasses against them' (2 Cor 5:18–19). The Father does not need to be won over; he comes to win us back.\n\nSo the apostles are ambassadors (*presbeuomen*, 5:20) sent not to negotiate terms but to plead: 'be reconciled to God'. The enmity was always on our side. Jesus, perfect theology, shows a Father running toward estranged children, and the cross is where he absorbs the hostility and makes peace (Eph 2:16).",
+   "citations": []
+  },
+  {
+   "subject": "entry:roman_term/christianoi",
+   "section": "background",
+   "title": "Historical background",
+   "type": "historical_fact",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Tacitus says that after the fire of Rome in AD 64 Nero blamed a group hated for their vices, 'whom the crowd called Christians', named after Christus, who had been executed under Tiberius by Pontius Pilate; they were torn by dogs, crucified or burned (Annals 15.44). Suetonius lists among Nero's measures punishments inflicted on the Christians, 'a class of people given to a new and harmful superstition' (Nero 16).\n\nAbout AD 112 Pliny asked Trajan whether the name itself was punishable. He reported that Christians met before dawn on a fixed day, sang a hymn to Christ 'as to a god', bound themselves by oath not to steal or commit adultery, and later shared an ordinary meal (Letters 10.96). Trajan replied that they were not to be sought out, but punished if accused and they refused to recant (10.97).",
+   "citations": [
+    {
+     "work": "tacitus-annals",
+     "ref": "Annals 15.44",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "suetonius-lives",
+     "ref": "Nero 16",
+     "verified": false,
+     "url": null
+    },
+    {
+     "work": "pliny-letters",
+     "ref": "Letters 10.96–97",
+     "verified": false,
+     "url": null
+    }
+   ]
+  },
+  {
+   "subject": "entry:roman_term/christianoi",
+   "section": "lens",
+   "title": "Reading it relationally",
+   "type": "lens_commentary",
+   "by": null,
+   "consensus": "n/a",
+   "body": "Outsiders named the believers after the one they loved and followed. 'If anyone suffers as a Christian, let him not be ashamed, but let him glorify God in that name' (1 Pet 4:16).\n\nPliny's report, written by an opponent, shows what Christians looked like from outside: they sang to Christ as to God, pledged themselves to honest lives, and ate together. The family of the Father was recognisable by its worship of the Son and its shared life, and that is still the best apologetic.",
+   "citations": []
+  }
+ ]
+}

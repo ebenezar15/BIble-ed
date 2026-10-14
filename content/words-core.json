@@ -1,0 +1,1920 @@
+{
+  "people": [
+    {
+      "id": "clement-of-rome",
+      "name": "Clement of Rome",
+      "born": null,
+      "died": null,
+      "era": "Apostolic Fathers",
+      "tradition": "Early Church",
+      "roles": [
+        "father",
+        "pastor"
+      ],
+      "summary": "Leader in the Roman church to whom tradition assigns the letter known as 1 Clement, written to Corinth near the end of the first century."
+    },
+    {
+      "id": "hermas",
+      "name": "Hermas",
+      "born": null,
+      "died": null,
+      "era": "Apostolic Fathers",
+      "tradition": "Early Church",
+      "roles": [
+        "author"
+      ],
+      "summary": "Roman Christian named as the visionary of The Shepherd, an early text centred on repentance."
+    },
+    {
+      "id": "author-of-diognetus",
+      "name": "Author of the Epistle to Diognetus",
+      "born": null,
+      "died": null,
+      "era": "Apostolic Fathers",
+      "tradition": "Early Church",
+      "roles": [
+        "author"
+      ],
+      "summary": "Anonymous early Christian apologist whose letter to Diognetus explains the Christian faith to an enquiring pagan."
+    },
+    {
+      "id": "author-of-barnabas",
+      "name": "Author of the Epistle of Barnabas",
+      "born": null,
+      "died": null,
+      "era": "Apostolic Fathers",
+      "tradition": "Early Church",
+      "roles": [
+        "author"
+      ],
+      "summary": "Anonymous early Christian writer (traditionally linked to Barnabas) who read the Law's rituals as pointers to Christ."
+    },
+    {
+      "id": "erasmus",
+      "name": "Desiderius Erasmus",
+      "born": 1466,
+      "died": 1536,
+      "era": "Renaissance",
+      "tradition": "Catholic humanist",
+      "roles": [
+        "scholar"
+      ],
+      "summary": "Humanist scholar who published the first printed Greek New Testament (1516) with a new Latin translation and notes."
+    },
+    {
+      "id": "cl-dodd",
+      "name": "C. H. Dodd",
+      "born": 1884,
+      "died": 1973,
+      "era": "Modern",
+      "tradition": "Congregationalist",
+      "roles": [
+        "scholar"
+      ],
+      "summary": "Welsh New Testament scholar known for realised eschatology and for arguing that the hilaskesthai word group means expiation rather than propitiation."
+    },
+    {
+      "id": "leon-morris",
+      "name": "Leon Morris",
+      "born": 1914,
+      "died": 2006,
+      "era": "Modern",
+      "tradition": "Anglican (evangelical)",
+      "roles": [
+        "scholar"
+      ],
+      "summary": "Australian New Testament scholar who defended the translation 'propitiation' and a penal reading of the cross."
+    },
+    {
+      "id": "jacob-milgrom",
+      "name": "Jacob Milgrom",
+      "born": 1923,
+      "died": 2010,
+      "era": "Modern",
+      "tradition": "Jewish",
+      "roles": [
+        "scholar"
+      ],
+      "summary": "Jewish scholar of Leviticus who argued that the 'sin offering' is better called a purification offering that purges the sanctuary."
+    },
+    {
+      "id": "nelson-glueck",
+      "name": "Nelson Glueck",
+      "born": 1900,
+      "died": 1971,
+      "era": "Modern",
+      "tradition": "Jewish",
+      "roles": [
+        "scholar"
+      ],
+      "summary": "Jewish archaeologist and biblical scholar whose early study of hesed tied the word to the mutual obligations of a relationship."
+    },
+    {
+      "id": "katharine-sakenfeld",
+      "name": "Katharine Doob Sakenfeld",
+      "born": null,
+      "died": null,
+      "era": "Modern",
+      "tradition": "Presbyterian",
+      "roles": [
+        "scholar"
+      ],
+      "summary": "Old Testament scholar whose study of hesed stressed freely given, needed help within an existing relationship."
+    },
+    {
+      "id": "anders-nygren",
+      "name": "Anders Nygren",
+      "born": 1890,
+      "died": 1978,
+      "era": "Modern",
+      "tradition": "Lutheran",
+      "roles": [
+        "theologian"
+      ],
+      "summary": "Swedish Lutheran bishop and theologian whose Agape and Eros set self-giving divine love against acquisitive desire."
+    },
+    {
+      "id": "james-m-scott",
+      "name": "James M. Scott",
+      "born": null,
+      "died": null,
+      "era": "Modern",
+      "tradition": "Protestant",
+      "roles": [
+        "scholar"
+      ],
+      "summary": "New Testament scholar who argued that Paul's adoption language grows from Jewish tradition about the Davidic son (2 Sam 7:14)."
+    },
+    {
+      "id": "ep-sanders",
+      "name": "E. P. Sanders",
+      "born": 1937,
+      "died": 2022,
+      "era": "Modern",
+      "tradition": "Protestant",
+      "roles": [
+        "scholar"
+      ],
+      "summary": "New Testament scholar whose Paul and Palestinian Judaism reshaped the study of Paul and of Second Temple Judaism."
+    }
+  ],
+  "works": [
+    {
+      "id": "clement-1-clement",
+      "person": "clement-of-rome",
+      "title": "1 Clement (Letter to the Corinthians)",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "hermas-shepherd",
+      "person": "hermas",
+      "title": "The Shepherd",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "diognetus-epistle",
+      "person": "author-of-diognetus",
+      "title": "Epistle to Diognetus",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "barnabas-epistle",
+      "person": "author-of-barnabas",
+      "title": "Epistle of Barnabas",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "tertullian-on-repentance",
+      "person": "tertullian",
+      "title": "On Repentance",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": "ANF vol. 3",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "tertullian-apology",
+      "person": "tertullian",
+      "title": "Apology",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": "ANF vol. 3",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "origen-commentary-romans",
+      "person": "origen",
+      "title": "Commentary on the Epistle to the Romans",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": "Latin translation of Rufinus",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "origen-homilies-leviticus",
+      "person": "origen",
+      "title": "Homilies on Leviticus",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": "Latin translation of Rufinus",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "athanasius-against-arians",
+      "person": "athanasius",
+      "title": "Orations against the Arians",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": "NPNF2 vol. 4",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "gregory-nazianzus-oration-45",
+      "person": "gregory-of-nazianzus",
+      "title": "Oration 45 (Second Oration on Easter)",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": "NPNF2 vol. 7",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "chrysostom-homilies-2cor",
+      "person": "john-chrysostom",
+      "title": "Homilies on Second Corinthians",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": "NPNF1 vol. 12",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "augustine-spirit-letter",
+      "person": "augustine",
+      "title": "On the Spirit and the Letter",
+      "year": 412,
+      "copyright": "public_domain",
+      "edition": "NPNF1 vol. 5",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "augustine-trinity",
+      "person": "augustine",
+      "title": "On the Trinity",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": "NPNF1 vol. 3",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "augustine-homilies-1john",
+      "person": "augustine",
+      "title": "Homilies on the First Epistle of John",
+      "year": null,
+      "copyright": "public_domain",
+      "edition": "NPNF1 vol. 7",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "luther-95-theses",
+      "person": "martin-luther",
+      "title": "Ninety-Five Theses",
+      "year": 1517,
+      "copyright": "public_domain",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "luther-freedom-christian",
+      "person": "martin-luther",
+      "title": "The Freedom of a Christian",
+      "year": 1520,
+      "copyright": "public_domain",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "luther-preface-latin-writings",
+      "person": "martin-luther",
+      "title": "Preface to the Complete Edition of Luther's Latin Writings",
+      "year": 1545,
+      "copyright": "public_domain",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "erasmus-novum-instrumentum",
+      "person": "erasmus",
+      "title": "Novum Instrumentum (Greek New Testament with Latin translation and annotations)",
+      "year": 1516,
+      "copyright": "public_domain",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "dodd-bible-greeks",
+      "person": "cl-dodd",
+      "title": "The Bible and the Greeks",
+      "year": 1935,
+      "copyright": "copyrighted",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "morris-apostolic-preaching",
+      "person": "leon-morris",
+      "title": "The Apostolic Preaching of the Cross",
+      "year": 1955,
+      "copyright": "copyrighted",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "milgrom-leviticus",
+      "person": "jacob-milgrom",
+      "title": "Leviticus 1-16 (Anchor Bible)",
+      "year": 1991,
+      "copyright": "copyrighted",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "glueck-hesed",
+      "person": "nelson-glueck",
+      "title": "Hesed in the Bible",
+      "year": 1967,
+      "copyright": "copyrighted",
+      "edition": "English translation of the 1927 German study",
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "sakenfeld-hesed",
+      "person": "katharine-sakenfeld",
+      "title": "The Meaning of Hesed in the Hebrew Bible: A New Inquiry",
+      "year": 1978,
+      "copyright": "copyrighted",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "nygren-agape-eros",
+      "person": "anders-nygren",
+      "title": "Agape and Eros",
+      "year": null,
+      "copyright": "copyrighted",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "scott-adoption",
+      "person": "james-m-scott",
+      "title": "Adoption as Sons of God",
+      "year": 1992,
+      "copyright": "copyrighted",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    },
+    {
+      "id": "sanders-paul-palestinian",
+      "person": "ep-sanders",
+      "title": "Paul and Palestinian Judaism",
+      "year": 1977,
+      "copyright": "copyrighted",
+      "edition": null,
+      "publisher": null,
+      "isbn": null,
+      "url": null
+    }
+  ],
+  "blocks": [
+    {
+      "subject": "lemma:H2617A",
+      "section": "meaning",
+      "title": "Covenant loyalty in action",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Hesed* (about 245 times, roughly half of them in the Psalms) is loyal, committed love shown within a relationship. English has no single equivalent, which is why versions scatter it across \"mercy\", \"kindness\", \"lovingkindness\", \"steadfast love\" and \"faithful love\".\n\nThree threads run through its uses:\n\n- **Loyalty that acts.** Hesed is something you *do* or *keep*: Abraham's servant asks God to \"show kindness\" (Gen 24:12); Jonathan asks David to keep hesed with his house (1Sa 20:14), and David later seeks out Mephibosheth \"for Jonathan's sake\" (2Sa 9:1, 2Sa 9:7).\n- **Help beyond what is owed.** Ruth's loyalty to Naomi and Boaz is praised as hesed (Rut 1:8, Rut 2:20, Rut 3:10); it goes further than duty strictly requires.\n- **God's covenant character.** God names himself \"abundant in hesed and truth\" (Exo 34:6); his hesed \"endures for ever\" (Psa 136:1) and is \"new every morning\" (Lam 3:22).\n\nIt is often paired with *emet* (faithfulness, truth) and *rachamim* (compassion). In Hos 6:6 God prefers hesed to sacrifice, and in Mic 6:8 people are told to \"love hesed\".",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H2617A",
+      "section": "culture",
+      "title": "Loyalty between bound parties",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "In the Ancient Near East, relationships between kings, clans and households were held together by sworn agreements. Treaties from the Hittite and Neo-Assyrian worlds used words for \"goodness\", \"friendship\" and \"love\" for the loyalty that each party owed the other. Hesed lives in the same world: it is the reliable goodness expected of someone already bound to you.\n\nThe narratives show this social setting clearly. Rahab asks the spies to swear by the LORD that, because she has shown them hesed, they will show hesed to her father's house (Jos 2:12). Jacob asks Joseph to \"deal kindly and truly\" with him by burying him in Canaan (Gen 47:29), a request between family members with obligations to each other. David's care for Mephibosheth (2Sa 9:1–7) honours a covenant oath made years earlier with Jonathan.\n\nWhat makes Israel's use striking is that the God of Israel binds himself in this way to a people, and then keeps faith even when they break it (Isa 54:10; Hos 2:19). The covenant partner who has every right to walk away does not.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H2617A",
+      "section": "translation_history",
+      "title": "From hesed to eleos to misericordia",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**The Hebrew–Greek bridge.** The Septuagint rendered hesed overwhelmingly with *eleos* (\"mercy\"). That choice shaped the New Testament: when Jesus quotes Hos 6:6, \"I desire mercy, and not sacrifice\" (Matt 9:13; 12:7), the Greek *eleos* stands for Hebrew hesed. Occasionally the translators chose other words, such as *dikaiosynē* in Exod 15:13, a reminder that hesed and righteousness overlap in Hebrew thought.\n\n**Latin.** Following the Greek, the Vulgate usually has *misericordia* (\"mercy, a heart for the wretched\"). This tilted the word towards pity for the needy and away from loyalty within a bond.\n\n**English.** Coverdale (1535) introduced \"lovingkindness\", which the KJV kept about thirty times while using \"mercy\" for most others and \"kindness\" for many more. Modern versions try to recover the covenant sense: \"steadfast love\" (RSV, ESV, NRSV), \"unfailing love\" or \"love\" (NIV), \"faithful love\" (CSB), \"loyal love\" (NET).\n\nEach choice captures one side. \"Mercy\" catches the undeserved element; \"steadfast love\" catches the faithfulness. The Hebrew holds both together.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H2617A",
+      "section": "lens",
+      "title": "Jesus, the Father's hesed with a face",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Hesed shows that the God of the Old Testament is not a reluctant judge who must be talked into kindness. His self-description at Sinai, right after the golden calf, leads with compassion, grace and \"abundant hesed\" (Exo 34:6). Jonah complains about exactly this: he knew God would be too kind (Jon 4:2).\n\nJohn seems to echo Exo 34:6 when he says the Word made flesh is \"full of grace and truth\" (John 1:14). Read that way, Jesus is hesed and emet in person: the Father's covenant loyalty with a human face. When Jesus eats with sinners and quotes \"I desire mercy, not sacrifice\" (Matt 9:13), he is not setting aside the Old Testament God; he is showing what that God has always been like.\n\nHesed also tells us what covenant is. It is not a contract in which God's kindness waits on our performance, but a family bond in which God keeps faith first and keeps it to the end. Our hesed toward one another (Mic 6:8) is sharing in his.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H2617A",
+      "section": "voices",
+      "title": "Nelson Glueck: conduct fitting a relationship",
+      "type": "scholarly_interpretation",
+      "by": "nelson-glueck",
+      "consensus": "n/a",
+      "body": "Nelson Glueck's early study set the terms of modern discussion. He argued that hesed is not vague kindness but the conduct that corresponds to a relationship of mutual rights and duties: between relatives, hosts and guests, allies, rulers and subjects, and God and Israel. On this view hesed is essentially covenant loyalty.",
+      "citations": [
+        {
+          "work": "glueck-hesed",
+          "ref": "Hesed in the Bible (whole study)",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H2617A",
+      "section": "voices",
+      "title": "Katharine Sakenfeld: free, needed help within a bond",
+      "type": "scholarly_interpretation",
+      "by": "katharine-sakenfeld",
+      "consensus": "majority",
+      "body": "Katharine Doob Sakenfeld refined Glueck's view. She argued that hesed is typically help given by someone in a position to act to someone in real need, within an existing relationship, but given freely rather than legally enforceable. Its loyalty is real, but so is its generosity: the helper could have refused. This keeps both \"loyalty\" and \"kindness\" in the word.",
+      "citations": [
+        {
+          "work": "sakenfeld-hesed",
+          "ref": "The Meaning of Hesed in the Hebrew Bible",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H2617A",
+      "section": "voices",
+      "title": "James Torrance: covenant, not contract",
+      "type": "scholarly_interpretation",
+      "by": "jb-torrance",
+      "consensus": "n/a",
+      "body": "James B. Torrance distinguished sharply between a *covenant* and a *contract*. A contract is conditional: \"if you do this, I will do that\". A covenant is a promise of love that creates obligations of gratitude but does not depend on them. He argued that much Western theology slid into contract thinking, making God's grace conditional on human repentance or faith. Hesed, the steadfast love of the covenant God, is the Old Testament heart of his alternative.",
+      "citations": [
+        {
+          "work": "jb-torrance-worship",
+          "ref": "Worship, Community and the Triune God of Grace",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H2617A",
+      "section": "fathers",
+      "title": "Mercy rather than sacrifice",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "The early church met hesed mostly through its Greek and Latin dress, *eleos* and *misericordia*. Hos 6:6 (\"I desire mercy, and not sacrifice\") was one of the texts writers used to show that God never needed sacrifices for his own sake. Irenaeus gathers this and similar prophetic texts when he argues that God asked for offerings for Israel's good, not because he lacked anything (Against Heresies 4.17).\n\nAfter the destruction of the Temple, Jewish teachers drew a parallel conclusion. A tradition preserved in *Avot de-Rabbi Natan* (chapter 4) has Yohanan ben Zakkai comfort a disciple weeping over the ruined Temple: Israel still has an atonement as effective as sacrifice, namely deeds of loving-kindness (*gemilut hasadim*), citing Hos 6:6. Jesus' use of the same verse (Matt 9:13) sits in the same Jewish conversation.",
+      "citations": [
+        {
+          "work": "irenaeus-against-heresies",
+          "ref": "Against Heresies 4.17",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "meaning",
+      "title": "Purge, cover, ransom, reconcile",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Kipper* (about 100 times, most in Leviticus and Numbers) is usually translated \"make atonement\". In practice it covers several related actions:\n\n- **Purging what is defiled.** The priest makes atonement *for the altar* and *for the sanctuary* (Exo 29:36; Lev 16:16, Lev 16:33). Things, not only people, are the objects, so the core idea is cleansing and restoring.\n- **Covering or removing sin.** \"The priest shall make an atonement for them, and it shall be forgiven them\" (Lev 4:20). In poetry God himself is the subject: he \"forgave their iniquity\" (Psa 78:38), \"purge away our sins\" (Psa 79:9), \"as for our transgressions, thou shalt purge them away\" (Psa 65:3).\n- **Ransom and life for life.** Linked to *kopher*, a ransom price (Exo 30:15). \"The life of the flesh is in the blood... it is the blood that maketh an atonement for the soul\" (Lev 17:11). Blood shed in murder pollutes the land, and only the killer's blood can atone for it (Num 35:33).\n- **Pacifying a person.** In a few non-ritual texts it means to appease someone angry: Jacob hopes to \"appease\" Esau (Gen 32:20); a wise man \"will pacify\" a king's wrath (Pro 16:14).\n\nAtonement can also come without an animal: incense (Num 16:46), Phinehas' zeal (Num 25:13), Moses' intercession (Exo 32:30), a live coal on Isaiah's lips (Isa 6:7).",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "meaning",
+      "title": "Covering or wiping clean?",
+      "type": "contested",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Where does the word come from?** Two explanations are offered, and the evidence is not decisive.\n\n- **\"Cover.\"** An Arabic root *kfr* means \"to cover\". On this view, atonement covers sin from God's sight. The rare cognate *kaphar* means to coat with pitch (Gen 6:14, a separate lexicon entry).\n- **\"Wipe off, purge.\"** Akkadian *kuppuru* means to wipe or rub clean, and is used in Babylonian temple purification rites. On this view kipper means to purge away defilement.\n\nMost recent scholarship leans toward \"purge\" for the ritual texts, because the objects are so often altars and sanctuaries. But the word's uses are wider than any single root meaning, and context must decide each case.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "culture",
+      "title": "Yom Kippur and the purging of the sanctuary",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**The Day of Atonement.** Once a year, on the tenth day of the seventh month (Lev 16:29; Lev 23:27), the high priest entered the Most Holy Place. He sprinkled blood on and before the *kapporet*, the lid of the ark (the \"mercy seat\"), to cleanse the sanctuary \"because of the uncleanness of the children of Israel\" (Lev 16:16). Two goats were chosen by lot: one died as a purification offering; over the other the high priest confessed Israel's sins and sent it away into the wilderness \"for Azazel\" (Lev 16:21–22). The people fasted and rested. The goal is stated plainly: \"that ye may be clean from all your sins before the LORD\" (Lev 16:30).\n\n**Neighbours.** Babylonian temples had annual purification rites in which priests \"wiped\" (*kuppuru*) the sanctuary, sometimes with an animal carcass that was then thrown away. Israel's rite shares the shape but is addressed to one God, with confession and forgiveness at its centre.\n\n**Second Temple and after.** The Mishnah tractate *Yoma* describes the rite in detail. It adds that the Day atones for sins between a person and God, but sins against a neighbour only when the neighbour has first been reconciled (Yoma 8:9).",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "translation_history",
+      "title": "Exilaskomai, expiare, at-one-ment",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Greek.** The Septuagint usually rendered kipper with *exilaskomai* (from the *hilaskomai* family), and the *kapporet* with *hilastērion*. In ordinary Greek religion that family often meant to placate an angry deity, but in the Septuagint God is never the object being placated in ritual texts; the objects are sins, altars and people. That tension later fuelled the propitiation-versus-expiation debate.\n\n**Latin.** The Vulgate spread kipper across a range of verbs, among them *expiare* (\"to purify, make amends\") and verbs of intercession (\"to pray for\"), often with the result that God becomes *propitius*, \"favourable, well-disposed\". The *kapporet* became the *propitiatorium*. In Latin usage *propitiatio* readily suggested winning over an offended superior.\n\n**English.** Tyndale's Pentateuch (1530) used \"make atonement\", built on the older English \"at one\" (to reconcile). The KJV followed him. \"Atonement\" at first meant reconciliation; only later did it narrow to mean the payment or satisfaction that makes reconciliation possible. Modern versions keep \"make atonement\", with some (e.g. NRSV notes) adding \"purge\" or \"purification\" for the sanctuary rites.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "lens",
+      "title": "God purges in order to dwell with us",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Notice who acts in kipper. In the poetry and prophets, *God* makes atonement: he purges, forgives, covers (Psa 78:38; Psa 79:9; Ezk 16:63). In the rituals God *gives* the means: \"I have given it to you upon the altar to make an atonement for your souls\" (Lev 17:11). Atonement is God's gift for cleansing a relationship, not a payment people make to change God's mind.\n\nThe Day of Atonement is about making the holy place fit for God to dwell among his people again. Its goal is presence and communion: \"that ye may be clean before the LORD\" (Lev 16:30).\n\nHebrews reads Jesus as both high priest and offering, who enters the true sanctuary \"with his own blood\" and cleanses the conscience \"to serve the living God\" (Heb 9:12–14). The point is not that the Father needed blood to stop being angry, but that the Son took our defiled humanity all the way into the Father's presence and made it clean. Jesus does on the cross what the Father has always done: he purges sin, he does not punish it out of us.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "legal_history",
+      "title": "How the legal reading arose",
+      "type": "legal_reading_history",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**How the penal reading of kipper arose.** Western theology came to read the sacrifices of Leviticus through a law-court lens: sin incurs a penalty of death; the animal dies in the sinner's place; God's justice is satisfied and he can forgive.\n\n- **Latin vocabulary.** Words like *satisfactio*, *meritum* and *propitiatio* entered theology through Tertullian and the penitential system, and framed sin as a debt or offence needing equivalent compensation.\n- **Anselm** (Cur Deus Homo 1.11–13) argued that sin robs God of his honour and that God cannot fittingly forgive without satisfaction. He did not yet make it a penalty, but supplied the \"must be paid\" structure.\n- **The Reformers**, especially Calvin, recast satisfaction as Christ bearing the penalty of God's wrath (Institutes 2.16), and read Lev 16 and Isa 53 that way.\n- **Princeton theology** (Charles Hodge) made penal satisfaction the organising key to the sacrificial system.\n\n**Why relational readers differ.** They note that kipper's objects are often altars, not God; that God is the giver, not the receiver, of atonement (Lev 17:11); that many atonements involve no death at all; and that the live goat *carries away* sin rather than being punished. Sacrifice in Leviticus is about purification and restored fellowship, not a court sentence.",
+      "citations": [
+        {
+          "work": "anselm-cur-deus-homo",
+          "ref": "Cur Deus Homo 1.11–13",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "calvin-institutes",
+          "ref": "Institutes 2.16",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "hodge-systematic",
+          "ref": "Systematic Theology, vol. 2, on the satisfaction of Christ",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "voices",
+      "title": "Jacob Milgrom: purging the sanctuary",
+      "type": "scholarly_interpretation",
+      "by": "jacob-milgrom",
+      "consensus": "majority",
+      "body": "Jacob Milgrom argued that the offering usually called the \"sin offering\" (*hattat*) is better named the \"purification offering\". Its blood is not applied to the sinner but to the sanctuary, which becomes polluted by Israel's sins much as a portrait might absorb the marks of its owner's corruption. Kipper in these rites means to purge the sanctuary so that God can continue to dwell there. Milgrom's reading is widely followed in Leviticus studies, though some scholars think it underplays the forgiveness of the person.",
+      "citations": [
+        {
+          "work": "milgrom-leviticus",
+          "ref": "Leviticus 1-16, on the purification offering",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "voices",
+      "title": "T. F. Torrance: the priestly strand of redemption",
+      "type": "scholarly_interpretation",
+      "by": "tf-torrance",
+      "consensus": "n/a",
+      "body": "Thomas F. Torrance read the Hebrew vocabulary of redemption as three strands woven together in Christ: *padah* (redemption by a mighty act), *kipper* (the priestly, cultic strand of atoning cleansing) and *go'el* (redemption by a kinsman who stands in for us). For Torrance, atonement happens within the incarnate Son himself: as priest and offering he carries our humanity through judgment into communion with the Father. Atonement is never something external to God's love.",
+      "citations": [
+        {
+          "work": "tf-torrance-atonement",
+          "ref": "Atonement: The Person and Work of Christ",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "voices",
+      "title": "Darrin Belousek: sacrifice is not punishment",
+      "type": "scholarly_interpretation",
+      "by": "darrin-belousek",
+      "consensus": "minority",
+      "body": "Darrin Snyder Belousek argues that the Levitical sacrifices do not work by penal substitution. Sacrificial death is not presented as punishment; the animal is offered, its blood cleanses, and God forgives. He holds that reading Leviticus through retributive justice imports a later legal framework, and that the biblical goal of atonement is restored covenant peace.",
+      "citations": [
+        {
+          "work": "belousek-atonement-justice-peace",
+          "ref": "Atonement, Justice, and Peace",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H3722A",
+      "section": "fathers",
+      "title": "Two goats and a true High Priest",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Early Christian writers read the Day of Atonement as a picture of Christ.\n\n- The **Epistle of Barnabas** (chapter 7) treats the two goats as types of Jesus: one offered, the other bearing the curse and sent out, foreshadowing his suffering and his return.\n- **Justin Martyr** (Dialogue with Trypho 40) reads the two goats as signs of Christ's two comings.\n- **Origen** preached on Lev 16 (Homilies on Leviticus 9), reading Christ as the true high priest who enters the heavenly sanctuary.\n- **Augustine** defined true sacrifice as every work done so that we may cling to God in holy fellowship (City of God 10.6). For him, Leviticus pointed to union with God, of which Christ's self-offering is the centre.",
+      "citations": [
+        {
+          "work": "barnabas-epistle",
+          "ref": "Epistle of Barnabas 7",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "justin-dialogue-trypho",
+          "ref": "Dialogue with Trypho 40",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "origen-homilies-leviticus",
+          "ref": "Homilies on Leviticus 9",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "augustine-city-of-god",
+          "ref": "City of God 10.6",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H7965G",
+      "section": "meaning",
+      "title": "Wholeness in right relation",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Shalom* (this main sense about 165 times; the lexicon lists further senses such as \"welfare\" and \"greeting\" separately) is far wider than \"absence of war\". Its root idea is wholeness: things as they should be, complete and in right relation.\n\n- **Peace between parties.** An end to hostility, often sealed by covenant: God's \"covenant of peace\" (Num 25:12; Isa 54:10; Ezk 34:25; Ezk 37:26).\n- **Wholeness and well-being.** Dying \"in peace\" at a good old age (Gen 15:15); asking whether someone \"is well\" (in the related welfare sense, Gen 29:6; Gen 43:27).\n- **Social flourishing.** Shalom grows out of justice: \"the work of righteousness shall be peace\" (Isa 32:17); \"righteousness and peace have kissed\" (Psa 85:10). Exiles are told to seek the shalom of Babylon (Jer 29:7).\n- **God's gift.** The priestly blessing ends \"the LORD lift up his countenance upon thee, and give thee peace\" (Num 6:26).\n\nFalse prophets cry \"Peace, peace; when there is no peace\" (Jer 6:14), so shalom is not mere calm but real restoration.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H7965G",
+      "section": "culture",
+      "title": "Peace offerings, treaties and the Pax Romana",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "The root *shlm* also gives words for completing and repaying (*shillem*, to make good a loss) and for the *shelamim* or \"peace offerings\" (Lev 3; Lev 7:11–15), the one sacrifice that ended in a shared meal between worshippers, priests and God. Peace was something you ate together.\n\nAcross the Ancient Near East, the cognate Akkadian *salimu* could mean an alliance or treaty friendship; making \"peace\" meant entering a bond. \"Shalom\" as an everyday greeting (1Sa 25:6) asks after the whole wellbeing of a household.\n\nIn the New Testament world, \"peace\" was also imperial propaganda. Augustus' *Pax Romana* was celebrated by monuments like the Ara Pacis (Altar of Peace) in Rome, and the slogan \"peace and security\" was associated with Roman rule. Paul seems to echo it when he warns that \"when they shall say, Peace and safety; then sudden destruction cometh\" (1Th 5:3). Christians proclaiming the \"gospel of peace\" through Jesus (Act 10:36) were offering an alternative to Caesar's peace, secured not by conquest but by the cross.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H7965G",
+      "section": "translation_history",
+      "title": "Eirēnē and pax",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "The Septuagint usually translated shalom with *eirēnē*. Greek *eirēnē* basically meant the opposite of war, a state of rest; through the Septuagint it took on the fuller Hebrew sense of wholeness and well-being, which is how Jesus and Paul use it. Where shalom means health or safety, the translators sometimes chose other words, for example *hygiainō* (\"to be well\") or *sōtēria* (\"safety, salvation\").\n\nThe Vulgate used *pax*, which carried Roman connotations of order and settled terms. English \"peace\" comes from Latin *pax* through French. All three words lean toward the ending of conflict, so translators sometimes use \"welfare\", \"well-being\" or \"prosperity\" (e.g. Jer 29:7 in modern versions) to catch the broader sense.\n\nIsa 9:6 gave \"Prince of Peace\" (Hebrew *sar shalom*) to English through the KJV and Handel's *Messiah*.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H7965G",
+      "section": "lens",
+      "title": "He is our peace",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Shalom is what God intends for the whole creation: every relationship set right, with God, with one another, with ourselves and with the world. The prophets promised a Prince of Peace whose government and peace would have \"no end\" (Isa 9:6–7), and a messenger who would publish peace (Isa 52:7).\n\nJesus is that peace. The risen Jesus does not greet frightened disciples with accusation but with \"Peace be unto you\" (John 20:19–21), and then sends them out to carry it. Paul says simply, \"he is our peace\", who has broken down the dividing wall (Eph 2:14). Peace with God (Rom 5:1) is not the end of a court case; it is a restored family where enemies become friends.\n\nIsaiah 53:5 says \"the chastisement of our peace was upon him\". Read relationally, the Servant enters fully into the violence of a broken world and absorbs it, so that its cycle ends in him and peace can begin. The Kingdom grows as that peace spreads (Isa 9:7).",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H7965G",
+      "section": "voices",
+      "title": "Darrin Belousek: justice that makes peace",
+      "type": "scholarly_interpretation",
+      "by": "darrin-belousek",
+      "consensus": "n/a",
+      "body": "Darrin Snyder Belousek argues that the cross must be understood within the biblical vision of justice that makes peace (Psa 85:10; Isa 32:17). God's justice, on his reading, is restorative: it aims to put relationships right and create shalom, rather than to balance punishment against offence. The church's mission of peacemaking then flows directly from the atonement.",
+      "citations": [
+        {
+          "work": "belousek-atonement-justice-peace",
+          "ref": "Atonement, Justice, and Peace",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H7965G",
+      "section": "voices",
+      "title": "Augustine: the tranquillity of order",
+      "type": "scholarly_interpretation",
+      "by": "augustine",
+      "consensus": "n/a",
+      "body": "Augustine defined peace as \"the tranquillity of order\": each thing resting in its proper place and relationship, from body and soul to household, city and the whole creation in relation to God. Earthly peace is real but fragile; the heavenly city enjoys perfect peace in God. His definition is close to the Hebrew sense of shalom as wholeness in right relation.",
+      "citations": [
+        {
+          "work": "augustine-city-of-god",
+          "ref": "City of God 19.13",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H7965G",
+      "section": "fathers",
+      "title": "Grace and peace",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "The earliest Christian letters are full of the greeting \"grace and peace\", combining the Greek greeting (*chairein*, near to *charis*, grace) with the Jewish *shalom*. Ignatius of Antioch typically opens and closes his letters with abundant greeting in Jesus Christ and urges unity and concord in the churches, treating division as the opposite of God's peace.\n\n1 Clement, written from Rome to the quarrelling church at Corinth, appeals again and again for peace and concord, pointing to the ordered harmony of creation as a picture of the peace God wills (1 Clement 20).\n\nIrenaeus describes Christ as the one who brings God and humanity back into friendship and concord (Against Heresies 3.18.7), which is shalom in its fullest relational sense.",
+      "citations": [
+        {
+          "work": "clement-1-clement",
+          "ref": "1 Clement 20",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "irenaeus-against-heresies",
+          "ref": "Against Heresies 3.18.7",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H6666",
+      "section": "meaning",
+      "title": "Setting things right",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Tsedaqah* (about 157 times) is usually translated \"righteousness\", but in Hebrew it is a relational word: doing what is right by the people you are bound to, and setting things right where they have gone wrong.\n\n- **Right conduct in relationship.** Abraham is to teach his household \"to do justice and judgment\" (*tsedaqah* and *mishpat*, Gen 18:19). Kings are to execute \"judgment and justice\" for all the people (2Sa 8:15; Jer 23:5).\n- **Saving acts.** Israel sings of \"the righteous acts of the LORD\", meaning his victories and rescues (Jdg 5:11; 1Sa 12:7; Mic 6:5). God's righteousness is often parallel to his salvation: \"my salvation is near to come, and my righteousness to be revealed\" (Isa 56:1; Isa 46:13; Isa 51:6; Psa 98:2).\n- **Standing or vindication.** Abraham \"believed in the LORD; and he counted it to him for righteousness\" (Gen 15:6). Obedience \"shall be our righteousness\" (Deu 6:25).\n- **Social justice.** Paired with *mishpat*: \"let judgment run down as waters, and righteousness as a mighty stream\" (Amo 5:24). Isaiah's wordplay: God looked for *tsedaqah* and found *tse'aqah*, a cry of distress (Isa 5:7).\n\nIt sits close to *hesed* (Psa 103:17) and to God's faithfulness (Psa 71:15).",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H6666",
+      "section": "culture",
+      "title": "Kings, the poor and almsgiving",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Royal justice in the Ancient Near East.** Mesopotamian kings claimed to establish *kittum u mīšarum*, \"truth and equity\". The prologue of Hammurabi's laws presents him as appointed to make justice appear in the land so that the strong would not oppress the weak. Kings also issued *mīšarum* edicts cancelling debts and freeing debt-slaves. Israel's ideal king does the same: \"Give the king thy judgments, O God, and thy righteousness unto the king's son\" so that he will defend the poor (Psa 72:1–4). Righteousness here is rescuing, not just rule-keeping.\n\n**Second Temple Judaism.** By the late Second Temple period *tsedaqah* came to mean, among other things, almsgiving: giving to the poor was \"righteousness\". Tobit says almsgiving delivers from death (Tobit 12:9). The Aramaic cognate in Dan 4:27 (\"break off thy sins by righteousness\") was read this way, and modern Hebrew *tzedakah* still means charity. The Qumran Community Rule (1QS 11) has the worshipper confess that his own justification rests on God's righteousness, not his own.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H6666",
+      "section": "translation_history",
+      "title": "Dikaiosynē, iustitia, righteousness",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Greek.** The Septuagint normally rendered tsedaqah with *dikaiosynē*. This was the key bridge to Paul: when he speaks of \"the righteousness of God\" (Rom 1:17), he is using Greek words loaded with Hebrew meaning, God's faithful, saving action. In a handful of places the translators chose *eleēmosynē* (\"mercy, alms\") instead, for example Deu 6:25 and Deu 24:13, showing how close righteousness and mercy were in their minds.\n\n**Latin.** The Vulgate used *iustitia*. In Roman usage *iustitia* was a legal virtue, famously defined by the jurist Ulpian as \"the constant and perpetual will to render to each his due\" (Digest 1.1.10). Read through that definition, \"the righteousness of God\" sounds like God giving everyone what they deserve, which is quite different from Isaiah's saving righteousness.\n\n**English.** Tyndale and the KJV used \"righteousness\", with \"justice\" where the context is social. Modern versions mix \"righteousness\", \"justice\", \"righteous acts\", \"vindication\" and sometimes \"deliverance\" (e.g. NRSV and NIV in parts of Isaiah and the Psalms) to recover the saving sense.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H6666",
+      "section": "lens",
+      "title": "God's righteousness saves",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "In Hebrew, God's righteousness is not a scale he must balance before he can love. It is his faithfulness in action to set his creation right: rescuing the oppressed, keeping his promises, putting broken relationships back together. That is why Isaiah can put \"a just God and a Saviour\" side by side (Isa 45:21), and why the Psalms appeal to God's righteousness as the reason he will save (Psa 71:15).\n\nJesus is that righteousness in person. He announces good news to the poor and release to captives (Luke 4:18), echoing the royal justice of Psa 72 and the Jubilee. He eats with the unrighteous to restore them, not to condemn them. The cross is God's righteousness revealed: the Father keeping covenant with a faithless world by giving his Son to put it right.\n\nGen 15:6 shows how this works for us. Abraham did not earn tsedaqah; he trusted God's promise, and God counted that trust as the right relationship he was looking for.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:H6666",
+      "section": "legal_history",
+      "title": "How the legal reading arose",
+      "type": "legal_reading_history",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**How the legal reading arose.** Once tsedaqah passed into Latin as *iustitia*, it was read against the background of Roman law, where justice meant rendering each their due. Western theology increasingly asked how a just judge could acquit the guilty.\n\n- **Augustine** read \"the righteousness of God\" in Paul not as God's own justice but as the righteousness God gives to people (On the Spirit and the Letter 9.15). He held this was a gift that makes people righteous, which kept the sense relational, but the debate was now framed in Latin categories.\n- **Anselm** framed God's justice as the requirement that God's honour be satisfied (Cur Deus Homo 1.12–13).\n- **Luther and Calvin** read \"righteousness\" largely as a legal status before God's court, credited to the believer (Calvin, Institutes 3.11.2).\n- **Hodge** and later Reformed theology treated \"justice\" as God's essential attribute requiring punishment of every sin.\n\n**Why relational readers differ.** They argue that Hebrew tsedaqah is covenant faithfulness and saving action, not retributive balance; that the \"righteous acts of the LORD\" are rescues (Jdg 5:11); and that Latin *iustitia* imported a narrower, courtroom frame.",
+      "citations": [
+        {
+          "work": "augustine-spirit-letter",
+          "ref": "On the Spirit and the Letter 9.15",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "anselm-cur-deus-homo",
+          "ref": "Cur Deus Homo 1.12–13",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "calvin-institutes",
+          "ref": "Institutes 3.11.2",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H6666",
+      "section": "voices",
+      "title": "N. T. Wright: covenant faithfulness",
+      "type": "scholarly_interpretation",
+      "by": "nt-wright",
+      "consensus": "n/a",
+      "body": "N. T. Wright argues that \"the righteousness of God\" in Paul draws on the Hebrew Scriptures, where God's tsedaqah is his faithfulness to the covenant with Abraham, through which he will put the whole world right. He uses the law-court picture as part of that covenant story, but denies that righteousness is a substance or moral credit that can be transferred from judge to defendant.",
+      "citations": [
+        {
+          "work": "wright-justification",
+          "ref": "Justification: God's Plan and Paul's Vision",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H6666",
+      "section": "voices",
+      "title": "E. P. Sanders: covenantal nomism",
+      "type": "scholarly_interpretation",
+      "by": "ep-sanders",
+      "consensus": "n/a",
+      "body": "E. P. Sanders argued that Second Temple Judaism was not a religion of earning salvation by works. He called its pattern \"covenantal nomism\": Israel is in the covenant by God's gracious choice, and keeps the law as the proper response, with atonement provided for failure. In this setting \"righteousness\" language describes staying in the covenant, not earning entry to it. His work launched what is now called the \"New Perspective on Paul\".",
+      "citations": [
+        {
+          "work": "sanders-paul-palestinian",
+          "ref": "Paul and Palestinian Judaism",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H6666",
+      "section": "voices",
+      "title": "Darrin Belousek: restorative justice",
+      "type": "scholarly_interpretation",
+      "by": "darrin-belousek",
+      "consensus": "minority",
+      "body": "Darrin Snyder Belousek argues that biblical justice is fundamentally restorative and covenantal: God's righteousness acts to deliver the oppressed and to make right what is wrong, rather than to exact proportional punishment. He contends that penal substitution depends on a retributive idea of justice that the Hebrew Bible's tsedaqah does not support.",
+      "citations": [
+        {
+          "work": "belousek-atonement-justice-peace",
+          "ref": "Atonement, Justice, and Peace",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:H6666",
+      "section": "fathers",
+      "title": "Abraham's faith counted as righteousness",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "The verse most often discussed by early Christian writers was Gen 15:6, where Abraham's faith is \"counted for righteousness\".\n\n- **1 Clement** says that those whom God called are justified \"not through ourselves, nor through our own wisdom or understanding or godliness or works\", but through faith, by which God has justified all people from the beginning (1 Clement 32.4). In the very next chapter, Clement insists that this calls for good works (1 Clement 33).\n- **Justin Martyr** argues that Abraham was justified by faith before he was circumcised, so circumcision was a sign, not the cause, of righteousness (Dialogue with Trypho 23).\n- **Irenaeus** makes the same point: Abraham, uncircumcised and without Sabbath, believed God and was counted righteous (Against Heresies 4.16.2).\n\nThey read righteousness as trust in God's promise inside a living relationship, without yet asking the later Latin question of legal status before a court.",
+      "citations": [
+        {
+          "work": "clement-1-clement",
+          "ref": "1 Clement 32.4",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "justin-dialogue-trypho",
+          "ref": "Dialogue with Trypho 23",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "irenaeus-against-heresies",
+          "ref": "Against Heresies 4.16.2",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G1343",
+      "section": "meaning",
+      "title": "Righteousness and justice",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Dikaiosynē* (91 times in the New Testament) is usually translated \"righteousness\" and sometimes \"justice\". Its uses fall into several overlapping groups:\n\n- **Right living.** \"Except your righteousness shall exceed the righteousness of the scribes and Pharisees\" (Mat 5:20); \"hunger and thirst after righteousness\" (Mat 5:6); \"seek ye first the kingdom of God, and his righteousness\" (Mat 6:33). In Matthew it is faithful obedience to God's will (Mat 3:15).\n- **God's own righteousness.** \"The righteousness of God revealed from faith to faith\" (Rom 1:17); \"now the righteousness of God without the law is manifested\" (Rom 3:21–26); God shows \"his righteousness\" so that he may be \"just, and the justifier\" (Rom 3:26).\n- **Righteousness given or reckoned.** Abraham's faith \"was counted unto him for righteousness\" (Rom 4:3); \"that we might be made the righteousness of God in him\" (2Co 5:21); \"the righteousness which is of God by faith\" (Php 3:9); \"righteousness, and peace, and joy in the Holy Ghost\" (Rom 14:17).\n- **Judgment.** God will \"judge the world in righteousness\" (Act 17:31).\n\nIts verb partner *dikaioō* (\"justify, declare or make right\") shares the same root, a connection English loses by using \"righteous\" and \"justify\".",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G1343",
+      "section": "culture",
+      "title": "Virtue, verdict and covenant",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Greek.** In classical thought *dikaiosynē* was one of the cardinal virtues. Plato's *Republic* explores it as each part of soul and city doing its proper work; Aristotle (Nicomachean Ethics, book 5) distinguished distributive justice (fair shares) from corrective justice (repairing wrongs). For Greeks, justice was a human virtue and a civic order.\n\n**Roman.** Roman law defined *iustitia* as giving each their due (Ulpian, in Digest 1.1.10), and *Iustitia* was personified as a goddess. Augustus advertised his *iustitia* among his virtues. Roman readers of Paul would hear \"justice\" as a ruler's virtue and a court's verdict.\n\n**Jewish.** Paul's own background was the Septuagint, where *dikaiosynē* usually translated Hebrew *tsedaqah*: God's covenant faithfulness and saving action (Isa 51:5–8). Matthew's \"practise righteousness\" (Mat 6:1) touches the Second Temple sense of almsgiving: later manuscripts actually read *eleēmosynē* (alms) there, which is why the KJV has \"alms\".",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G1343",
+      "section": "translation_history",
+      "title": "Iustitia, Gerechtigkeit, righteousness",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**The Hebrew–Greek bridge.** The Septuagint chose *dikaiosynē* for *tsedaqah*, so Paul's \"righteousness of God\" inherits Isaiah and the Psalms, where it is parallel to salvation (Isa 46:13; Psa 98:2).\n\n**Latin.** The Vulgate rendered it *iustitia* and the verb *dikaioō* as *iustificare*, \"to make just\". Latin *iustitia* carried Roman legal associations, and *iustificare* encouraged medieval theology to read justification as God's making a person inwardly just over a lifetime.\n\n**Luther.** Wrestling with Rom 1:17, Luther came to read *iustitia Dei* as the \"passive\" righteousness by which God justifies us through faith (Preface to the Latin Writings, 1545). In his German Bible he rendered Rom 1:17 as \"the righteousness that avails before God\", and in Rom 3:28 he added \"alone\" (*allein*) to \"by faith\".\n\n**English.** Tyndale and the KJV used \"righteousness\" and \"justify\". Some modern scholars and versions (and the debate over *pistis Christou*, \"faith in Christ\" or \"faithfulness of Christ\", Rom 3:22) try to recover the covenant and saving sense with renderings like \"God's saving justice\" or \"the righteousness of God through the faithfulness of Jesus Christ\" (e.g. NRSV and NET notes).",
+      "citations": [
+        {
+          "work": "luther-preface-latin-writings",
+          "ref": "Preface to the Latin Writings (1545)",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G1343",
+      "section": "lens",
+      "title": "Righteousness as being put right with the Father",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "\"The righteousness of God\" is first of all about God: his faithful action to put the world right, revealed in Jesus (Rom 1:17; Rom 3:21–26). It is not first a moral balance-sheet. The Father sets things right by giving the Son, and the Son puts humanity right by living, dying and rising as one of us.\n\nSo \"we might be made the righteousness of God in him\" (2Co 5:21) is union language. We do not receive a legal credit transferred across a courtroom; we are brought *into Christ*, sharing his right relationship with the Father. Righteousness is relational: being rightly joined to God and to one another, and then living it out (Rom 6:18).\n\nJesus told us to seek first \"the kingdom of God, and his righteousness\" (Mat 6:33). Righteousness and the kingdom go together: God's rule spreading through the world to set every relationship right. That is a growing, present reality as well as a future hope.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G1343",
+      "section": "legal_history",
+      "title": "How the legal reading arose",
+      "type": "legal_reading_history",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**How the forensic reading of dikaiosynē arose.**\n\n- **Latin roots.** Tertullian and later Latin writers brought Roman legal vocabulary (*satisfactio*, *meritum*, *reatus*, guilt) into theology. *Iustitia* and *iustificare* framed salvation in courtroom terms.\n- **Augustine** read the righteousness of God as the righteousness God gives, making the ungodly righteous through grace poured into the heart (On the Spirit and the Letter 9.15). Justification was a process of being made just.\n- **Luther** experienced Rom 1:17 as liberation when he saw God's righteousness as a gift received by faith (Preface to the Latin Writings, 1545). He also spoke of a \"joyful exchange\" in which Christ and the soul share all things as bride and groom (The Freedom of a Christian), a deeply relational picture.\n- **Melanchthon and Calvin** sharpened justification into a forensic declaration: forgiveness plus the imputation of Christ's righteousness (Calvin, Institutes 3.11.2).\n- **Hodge** and later Reformed theology made justification purely judicial and distinct from union and renewal.\n\n**Why relational readers differ.** They argue Paul's *dikaiosynē* comes from Hebrew covenant faithfulness, that justification is grounded in union with Christ, and that the law-court picture is one image among many.",
+      "citations": [
+        {
+          "work": "augustine-spirit-letter",
+          "ref": "On the Spirit and the Letter 9.15",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "luther-freedom-christian",
+          "ref": "The Freedom of a Christian",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "calvin-institutes",
+          "ref": "Institutes 3.11.2",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "hodge-systematic",
+          "ref": "Systematic Theology, vol. 3, on justification",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G1343",
+      "section": "voices",
+      "title": "N. T. Wright: covenant faithfulness and the one family",
+      "type": "scholarly_interpretation",
+      "by": "nt-wright",
+      "consensus": "n/a",
+      "body": "N. T. Wright reads \"the righteousness of God\" (Rom 1:17; Rom 3:21–26) as God's faithfulness to his covenant promise to Abraham to bless the world, now fulfilled in the faithful Messiah. Justification, for him, is God's verdict that someone belongs to the one covenant family of Jews and Gentiles, declared over all who believe. He keeps a law-court element but insists that it serves the covenant story rather than replacing it.",
+      "citations": [
+        {
+          "work": "wright-justification",
+          "ref": "Justification: God's Plan and Paul's Vision",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G1343",
+      "section": "voices",
+      "title": "Augustine: the righteousness God gives",
+      "type": "scholarly_interpretation",
+      "by": "augustine",
+      "consensus": "n/a",
+      "body": "Augustine argued that \"the righteousness of God\" in Rom 1:17 and Rom 3:21 is not the righteousness by which God is righteous in himself, but the righteousness with which he clothes people when he justifies the ungodly. For Augustine this was a gift of grace that heals and renews the heart through the Holy Spirit, so that people come to love what is right.",
+      "citations": [
+        {
+          "work": "augustine-spirit-letter",
+          "ref": "On the Spirit and the Letter 9.15",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G1343",
+      "section": "voices",
+      "title": "John Calvin: acceptance and imputation",
+      "type": "scholarly_interpretation",
+      "by": "john-calvin",
+      "consensus": "n/a",
+      "body": "John Calvin defined justification as the acceptance by which God receives us into favour as righteous, consisting in the forgiveness of sins and the imputation of Christ's righteousness. Calvin also insisted that justification comes through union with Christ, and that we receive both justification and sanctification by being joined to him. Later Reformed theology often stressed the forensic half more than the union.",
+      "citations": [
+        {
+          "work": "calvin-institutes",
+          "ref": "Institutes 3.11.2",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G1343",
+      "section": "fathers",
+      "title": "The sweet exchange",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Early writers read *dikaiosynē* mainly as God's gift of new life and right relationship in Christ.\n\n- The **Epistle to Diognetus** (chapter 9) marvels at a \"sweet exchange\": the sin of many is hidden in one righteous one, and the righteousness of one justifies many sinners. This is often quoted by later writers of every tradition.\n- **1 Clement** teaches that we are justified not by our own works but by faith, then calls for good works in response (1 Clement 32–33).\n- **John Chrysostom**, preaching on Rom 1:17, explains that it is called God's righteousness because it is given by God freely, not earned (Homilies on Romans).\n- **Irenaeus** ties righteousness to Abraham's trust, available to Gentiles apart from circumcision (Against Heresies 4.16.2).",
+      "citations": [
+        {
+          "work": "diognetus-epistle",
+          "ref": "Epistle to Diognetus 9",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "clement-1-clement",
+          "ref": "1 Clement 32–33",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "chrysostom-homilies-romans",
+          "ref": "Homilies on Romans, on Rom 1:17",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "irenaeus-against-heresies",
+          "ref": "Against Heresies 4.16.2",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "meaning",
+      "title": "Self-giving love",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Agapē* (116 times in the New Testament) is the main word for love in the Christian Scriptures. Its uses include:\n\n- **God's own nature.** \"God is love\" (1Jn 4:8; 1Jn 4:16). The Father's love for the Son is shared with us: \"that the love wherewith thou hast loved me may be in them\" (Jhn 17:26; Jhn 15:9).\n- **God's love for the world.** \"God commendeth his love toward us, in that, while we were yet sinners, Christ died for us\" (Rom 5:8); nothing can separate us from it (Rom 8:39).\n- **Love poured into us.** \"The love of God is shed abroad in our hearts by the Holy Ghost\" (Rom 5:5); it is the first fruit of the Spirit (Gal 5:22).\n- **Love for others.** The mark of disciples (Jhn 13:35); greater love has no one than to lay down his life (Jhn 15:13); love \"suffereth long, and is kind\" (1Co 13:4) and is the greatest of the three (1Co 13:13).\n- **Love feasts.** In the plural it can mean the church's shared meals (Jud 1:12).\n\nThe verb *agapaō* is not always lofty: Demas \"loved this present world\" (2Ti 4:10), and people \"loved darkness\" (John 3:19). The noun names a direction of the heart, given its character by its object.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "culture",
+      "title": "Erōs, philia and agapē",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Greek words for love.** Greek had several: *erōs* (desire, attraction), *philia* (friendship, affection), *storgē* (family affection) and the verb *agapaō* (to welcome, prefer, be content with). The noun *agapē* is rare outside Jewish and Christian writings before the first century.\n\n**The Septuagint.** Greek-speaking Jews used *agapaō* to translate Hebrew *ahav*, \"love\", including God's love for Israel and the command to love God (Deu 6:5). The noun appears in the Song of Songs (\"love is strong as death\", Sng 8:6) and even of Amnon's twisted passion (2Sa 13:15), so it was not reserved for pure or divine love.\n\n**Covenant love.** In Ancient Near Eastern treaties, \"love\" described the loyalty a vassal owed a great king, and Hiram is called \"a lover of David\" (1Ki 5:1). Deuteronomy's command to love God draws on this covenant language, but fills it with warmth: God loved Israel's fathers (Deu 4:37).\n\n**Patronage.** In the Greco-Roman world, generosity normally flowed from patrons to clients who owed honour in return. The church's love feasts brought rich and poor to one table, which is why Paul was angry when the Corinthians reproduced status divisions at the Lord's Supper (1Co 11:17–22).",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "translation_history",
+      "title": "Caritas, charity, love",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**The Hebrew–Greek bridge.** The Septuagint's use of *agapaō*/*agapē* for Hebrew *ahav* gave the New Testament its ready-made word, already shaped by covenant and by God's love for Israel.\n\n**Latin.** Jerome's Vulgate used two words: *caritas* (dearness, high regard) and *dilectio* (choosing love). 1 Cor 13 has *caritas*.\n\n**Tyndale and More.** Tyndale translated *agapē* as \"love\" throughout, including 1 Cor 13. Thomas More attacked this choice (with others like \"congregation\" for church and \"repent\" for do penance) as undermining Catholic teaching; Tyndale replied that \"love\" was simply the plain meaning.\n\n**KJV.** The King James translators used \"love\" in most places but \"charity\" in 1 Cor 13 and about two dozen other verses, following the Latin *caritas*. Over time \"charity\" narrowed to mean almsgiving, so modern versions use \"love\" everywhere.\n\n**Luther** used *Liebe*.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "meaning",
+      "title": "Agapē versus erōs?",
+      "type": "contested",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Is agapē a unique, divine kind of love?** A popular view, shaped by Anders Nygren's *Agape and Eros*, holds that *agapē* is a distinctively Christian love: unmotivated, self-giving and directed at the unworthy, in sharp contrast to *erōs*, which seeks its own fulfilment.\n\nCritics point out that the word itself does not carry that meaning automatically. The Septuagint uses it for Amnon's lust (2Sa 13:15), and the New Testament for loving darkness or the present world (John 3:19; 2Ti 4:10). Augustine and much of the tradition saw love as both giving and longing for union. The distinctive Christian content of love comes from the cross and the Trinity, not from the dictionary entry.\n\nSimilarly, many sermons build on the switch between *agapaō* and *phileō* in John 21:15–17. Many scholars think John uses them as near-synonyms there, as he does elsewhere; others still see a deliberate contrast.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "lens",
+      "title": "Love is who God is",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "\"God is love\" (1Jn 4:8) means love is not one of God's moods but his very being: the eternal life of the Father loving the Son in the Spirit. Before creation there was already a relationship of self-giving love (Jhn 17:24), and creation and redemption are that love overflowing.\n\nJesus is the clearest picture of it. \"Hereby perceive we the love of God, because he laid down his life for us\" (1Jn 3:16). The cross is not the Son changing the Father's mind about us; it is the Father's love in action: \"God commendeth his love toward us\" (Rom 5:8). Love does not need to be bought.\n\nSalvation is being drawn into this love: \"that the love wherewith thou hast loved me may be in them, and I in them\" (Jhn 17:26). The Spirit pours that love into us (Rom 5:5), and it shows itself in love for one another. \"Perfect love casteth out fear\" (1Jn 4:18): the Father we meet in Jesus is not someone to be afraid of.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "voices",
+      "title": "Anders Nygren: agape against eros",
+      "type": "scholarly_interpretation",
+      "by": "anders-nygren",
+      "consensus": "minority",
+      "body": "Anders Nygren argued that Christian *agapē* and Greek *erōs* are two fundamentally different motifs. *Erōs* is acquisitive love rising toward what is worthy; *agapē* is God's spontaneous, unmotivated love descending to the unworthy and creating worth in them. He thought much of later Christian theology, including Augustine's *caritas*, blended the two. His thesis was hugely influential, though many now think it overdrawn.",
+      "citations": [
+        {
+          "work": "nygren-agape-eros",
+          "ref": "Agape and Eros",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "voices",
+      "title": "Augustine: love and the Trinity",
+      "type": "scholarly_interpretation",
+      "by": "augustine",
+      "consensus": "n/a",
+      "body": "Augustine reflected that where there is love there is a kind of trinity: the lover, the one loved and the love itself. He used this as one of his analogies for the Trinity, suggesting that \"God is love\" (1Jn 4:8) points to the shared life of Father, Son and Spirit. He also summed up the Christian life in the line \"love, and do what you will\": a heart rooted in love will act rightly.",
+      "citations": [
+        {
+          "work": "augustine-trinity",
+          "ref": "On the Trinity 8.10.14",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "augustine-homilies-1john",
+          "ref": "Homilies on the First Epistle of John 7.8",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "voices",
+      "title": "Baxter Kruger: the Trinity's shared life",
+      "type": "scholarly_interpretation",
+      "by": "baxter-kruger",
+      "consensus": "n/a",
+      "body": "C. Baxter Kruger, writing in the tradition of the Torrances, presents the Trinity as an eternal fellowship of love and joy between Father, Son and Spirit, and the incarnation as the Son bringing the human race into that fellowship. In Jesus, God's love has already embraced humanity; the gospel is the announcement of who we are in him, inviting us to believe and live in it.",
+      "citations": [
+        {
+          "work": "kruger-undoing-adam",
+          "ref": "Jesus and the Undoing of Adam",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "voices",
+      "title": "Brad Jersak: a cruciform love",
+      "type": "scholarly_interpretation",
+      "by": "brad-jersak",
+      "consensus": "n/a",
+      "body": "Brad Jersak argues that God is love all the way down, revealed fully in the self-giving, cruciform Jesus. Texts that seem to show God's wrath or violence are to be read through Christ, the clearest image of the Father. God's love is not one attribute balanced against justice; it defines what his justice is.",
+      "citations": [
+        {
+          "work": "jersak-christlike-god",
+          "ref": "A More Christlike God",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G0026",
+      "section": "fathers",
+      "title": "See how they love one another",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Love is everywhere in the early Christian writers.\n\n- **Ignatius of Antioch** writes that faith is the beginning and love the end of life (Ephesians 14.1), and greets the Roman church as the church that \"presides in love\" (Romans, salutation).\n- **1 Clement** has a hymn to love modelled on 1 Cor 13: love binds us to God, covers a multitude of sins, bears all things; in love the Master took us to himself, and Christ gave his blood for us by the will of God (1 Clement 49).\n- **Tertullian** reports pagans saying of Christians, \"See how they love one another\" (Apology 39), and describes their common meal, the *agapē*.\n- **Augustine** made love the key to reading all Scripture and to the Trinity itself (On the Trinity 8.10.14).",
+      "citations": [
+        {
+          "work": "ignatius-letters",
+          "ref": "Ephesians 14.1; Romans, salutation",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "clement-1-clement",
+          "ref": "1 Clement 49",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "tertullian-apology",
+          "ref": "Apology 39",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "augustine-trinity",
+          "ref": "On the Trinity 8.10.14",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "meaning",
+      "title": "The mercy seat",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Hilastērion* appears only twice in the New Testament, but both uses matter:\n\n- **Heb 9:5** describes the ark of the covenant with \"the cherubims of glory shadowing the mercyseat\". Here *hilastērion* plainly means the lid of the ark, the Hebrew *kapporet*.\n- **Rom 3:25** says God \"set forth\" Christ Jesus \"to be a *hilastērion* through faith in his blood, to declare his righteousness for the remission of sins that are past\".\n\nGrammatically it is a neuter form of an adjective meaning \"having to do with *hilasmos*\" (atonement), used as a noun: \"the place or means of atonement\". In the Septuagint it is overwhelmingly the name of the mercy seat (Exod 25:17–22; Lev 16:2, Lev 16:13–15), and it also names a ledge of Ezekiel's altar where blood was applied (Ezk 43:14, Ezk 43:17, Ezk 43:20).\n\nRelated words: *hilaskomai* (\"be merciful\", Luk 18:13; \"make atonement\", Heb 2:17) and *hilasmos* (1Jn 2:2; 1Jn 4:10).",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "culture",
+      "title": "Lid of the ark, meeting place of God",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**The ark's lid.** In the tabernacle, the *kapporet* was a slab of pure gold on top of the ark, with two cherubim whose wings overshadowed it (Exod 25:17–22). It was the place of meeting: \"there I will meet with thee, and I will commune with thee from above the mercy seat\" (Exod 25:22; Num 7:89). It was God's throne-footstool on earth. On the Day of Atonement the high priest sprinkled blood on and before it (Lev 16:14–15).\n\n**Second Temple.** The ark was lost when Babylon destroyed the first Temple. Josephus records that in Herod's Temple the Most Holy Place contained nothing at all (Jewish War 5.219), and the Mishnah says the high priest set the incense on a bare stone (Yoma 5:2). Paul's readers therefore knew the *hilastērion* as a sacred memory and hope: the true meeting place was missing.\n\n**Greek usage.** Outside the Bible, *hilastērion* could mean a votive offering given to a god to win favour; Dio Chrysostom (Oration 11) mentions one dedicated to Athena at Troy. 4 Maccabees 17:22 says the Jewish martyrs' deaths became a kind of *hilastērion* through which God preserved Israel, a text often compared with Rom 3:25.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "translation_history",
+      "title": "Kapporet, propitiatorium, Gnadenstuhl, mercy seat",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**The Hebrew–Greek bridge.** The Septuagint translated *kapporet* with *hilastērion* (first as *hilastērion epithema*, \"atoning cover\", Exod 25:17). This tied the furniture of the tabernacle to the *hilaskomai* word group and to the verb *exilaskomai*, which usually renders *kipper*.\n\n**Latin.** The Vulgate rendered *kapporet* (and *hilastērion* in Heb 9:5) as *propitiatorium*, \"place of propitiation\", and Rom 3:25 as *propitiationem*, \"propitiation\". Latin *propitiare* means to make favourable, so the Latin pointed readers toward changing God's attitude.\n\n**Luther** coined *Gnadenstuhl*, \"throne of grace\", for the mercy seat, and used it in Rom 3:25 as well.\n\n**Tyndale** followed Luther and created the English phrase \"mercy seat\", using \"seat of mercy\" in his Romans.\n\n**KJV** kept \"mercy seat\" in Exodus and Hebrews but chose \"propitiation\" in Rom 3:25, which hid the link between them for English readers.\n\n**Modern versions** divide: \"expiation\" (RSV), \"sacrifice of atonement\" (NIV, NRSV), \"propitiation\" (ESV, NASB), \"mercy seat\" (NET). The choice signals a theological position.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "meaning",
+      "title": "Propitiation, expiation or mercy seat?",
+      "type": "contested",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Propitiation or expiation?** This is one of the longest-running debates in New Testament translation.\n\n- **Propitiation** means turning away someone's anger. Supporters argue that the *hilaskomai* word group in ordinary Greek means appeasing an offended deity, and that Rom 1:18 (\"the wrath of God is revealed\") sets up 3:25 as God's answer to his own wrath.\n- **Expiation** means removing or cleansing sin. Supporters argue that in the Septuagint God is never the object of these verbs in the ritual texts; sins and defilement are what is dealt with, and God is the one who provides the means.\n- **Mercy seat / place of atonement.** Many recent scholars say neither abstract word is quite right: Paul is calling Jesus the new *kapporet*, the place where God meets people and deals with sin. This reading fits Heb 9:5 and the Septuagint's normal usage.\n\nThe debate cannot be settled by dictionary alone; it depends on how one reads Rom 1–3 as a whole.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "lens",
+      "title": "Jesus, the meeting place",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Paul says *God* \"set forth\" Jesus as the *hilastērion* (Rom 3:25). The Father is not the one being appeased; he is the one acting. He provides the meeting place, as he gave Israel the mercy seat (Exo 25:22).\n\nRead this way, Jesus is the mercy seat in person: the place where God and humanity meet, where sin is dealt with, and where the glory dwells. The empty Most Holy Place of the Second Temple is filled again, not with a gold lid but with a crucified and risen human being. Anyone may now come near \"through faith\" (Rom 3:25), and Hebrews urges us to \"come boldly unto the throne of grace\" (Heb 4:16).\n\nThis fits John's words: \"Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation (*hilasmos*) for our sins\" (1Jn 4:10). Love is the cause, not the result, of atonement. The cross shows what the Father has always been like: he comes to meet us where our sin is, and takes it away.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "legal_history",
+      "title": "How the legal reading arose",
+      "type": "legal_reading_history",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**How the propitiatory, legal reading arose.**\n\n- The Vulgate's *propitiatio* and *propitiatorium* framed Rom 3:25 in terms of making God favourable.\n- **Anselm** (Cur Deus Homo 1.11–13; 2.6) argued that sin dishonours God and that only a God-man could render satisfaction.\n- **Calvin** read Christ's death as appeasing God's just wrath by bearing the penalty, while also insisting that God's love was the source of the plan (Institutes 2.16).\n- **Hugo Grotius** proposed that Christ's death upheld God's moral government by showing the seriousness of sin.\n- **Charles Hodge** gave the classic Princeton form: Christ satisfied divine justice by enduring the penalty, and *hilastērion* means a propitiatory sacrifice.\n- In the 20th century **C. H. Dodd** challenged the propitiatory sense and **Leon Morris** defended it, and translations took sides (RSV \"expiation\", ESV \"propitiation\").\n\n**Why relational readers differ.** They note that God himself provides the *hilastērion*; that its normal biblical meaning is the mercy seat, a place of meeting; that Paul never says God is reconciled to us but that he reconciles us (2Co 5:19); and that \"wrath\" in Rom 1 is God handing people over to the consequences of their choices (Rom 1:24–28), from which he rescues them.",
+      "citations": [
+        {
+          "work": "anselm-cur-deus-homo",
+          "ref": "Cur Deus Homo 1.11–13; 2.6",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "calvin-institutes",
+          "ref": "Institutes 2.16",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "grotius-satisfaction",
+          "ref": "A Defence of the Catholic Faith concerning the Satisfaction of Christ",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "hodge-systematic",
+          "ref": "Systematic Theology, vol. 2, on the satisfaction of Christ",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "voices",
+      "title": "C. H. Dodd: expiation",
+      "type": "scholarly_interpretation",
+      "by": "cl-dodd",
+      "consensus": "n/a",
+      "body": "C. H. Dodd argued that in the Septuagint the *hilaskesthai* word group regularly translates Hebrew words for cleansing and forgiving, not appeasing. When God is the subject, it means God forgives or purges; humans are never said to propitiate him. He concluded that Rom 3:25 should be understood as expiation, the removal of sin, and his work lay behind the RSV's \"expiation\".",
+      "citations": [
+        {
+          "work": "dodd-bible-greeks",
+          "ref": "The Bible and the Greeks",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "voices",
+      "title": "Leon Morris: propitiation",
+      "type": "scholarly_interpretation",
+      "by": "leon-morris",
+      "consensus": "n/a",
+      "body": "Leon Morris replied to Dodd that the *hilaskomai* group, both in ordinary Greek and in many biblical contexts, includes the idea of averting wrath, and that Paul's argument from Rom 1:18 onward requires it. He defended \"propitiation\" as the right rendering and saw the cross as God himself providing the means to turn aside his own wrath.",
+      "citations": [
+        {
+          "work": "morris-apostolic-preaching",
+          "ref": "The Apostolic Preaching of the Cross",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "voices",
+      "title": "N. T. Wright: the meeting place of God",
+      "type": "scholarly_interpretation",
+      "by": "nt-wright",
+      "consensus": "n/a",
+      "body": "N. T. Wright reads *hilastērion* in Rom 3:25 as the mercy seat: Jesus is the place where the living God meets his people and deals with their sin, fulfilling the Day of Atonement. He resists the picture of an angry pagan deity being placated, arguing that the cross is the act of the loving God taking responsibility for the world's rescue. He does still speak of sin being condemned in Jesus' flesh (Rom 8:3), so his view keeps a form of substitution within Israel's story.",
+      "citations": [
+        {
+          "work": "wright-day-revolution",
+          "ref": "The Day the Revolution Began",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "fathers",
+      "title": "Origen: Christ the true mercy seat",
+      "type": "scholarly_interpretation",
+      "by": "origen",
+      "consensus": "n/a",
+      "body": "Origen, in his commentary on Romans, connects the *propitiatorium* of Rom 3:25 with the mercy seat of the tabernacle. He reads Christ as the true mercy seat, the place where God meets humanity, and also as the priest and the offering. For Origen the Law's furniture was a shadow, and Christ himself is the reality.",
+      "citations": [
+        {
+          "work": "origen-commentary-romans",
+          "ref": "Commentary on Romans, book 3",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2435",
+      "section": "fathers",
+      "title": "Gregory of Nazianzus: to whom was the blood offered?",
+      "type": "scholarly_interpretation",
+      "by": "gregory-of-nazianzus",
+      "consensus": "n/a",
+      "body": "Gregory of Nazianzus asked directly to whom the blood of Christ was offered. Not to the devil, he answered, which would be outrageous; but not to the Father either in the sense that the Father demanded or needed it, since he did not even accept Isaac. Rather, the Father accepted it because of the plan of salvation, so that humanity might be sanctified by the humanity of God. This is an early refusal to picture the cross as appeasing an angry Father.",
+      "citations": [
+        {
+          "work": "gregory-nazianzus-oration-45",
+          "ref": "Oration 45.22",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2644",
+      "section": "meaning",
+      "title": "Enemies made friends",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Katallassō* means \"to reconcile\": to change a relationship of hostility into one of friendship. It appears six times in the New Testament:\n\n- **Marriage.** A separated wife should \"remain unmarried, or be reconciled to her husband\" (1Co 7:11).\n- **God and humanity.** \"If, when we were enemies, we were reconciled to God by the death of his Son, much more, being reconciled, we shall be saved by his life\" (Rom 5:10, twice).\n- **God reconciling the world.** \"All things are of God, who hath reconciled us to himself by Jesus Christ, and hath given to us the ministry of reconciliation; to wit, that God was in Christ, reconciling the world unto himself, not imputing their trespasses unto them... be ye reconciled to God\" (2Co 5:18–20).\n\nRelated words: the noun *katallagē*, \"reconciliation\" (Rom 5:11; Rom 11:15; 2Co 5:18–19), and the strengthened *apokatallassō*, used of reconciling \"all things\" and Jew and Gentile in one body (Eph 2:16; Col 1:20–22). The root idea is exchange: an enemy exchanged for a friend.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G2644",
+      "section": "culture",
+      "title": "Envoys, peace terms and households",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Diplomacy.** In Greek, *katallassō* and *diallassō* were ordinary words for ending a war or quarrel, between cities, factions or rulers. Envoys (*presbeis*) travelled to propose terms. Paul uses the matching verb of himself: \"we are ambassadors (*presbeuomen*) for Christ, as though God did beseech you by us\" (2Co 5:20; also Eph 6:20). The picture is of a king sending envoys to rebels, not to demand surrender, but to plead with them to accept peace.\n\n**Households.** The word was used of estranged spouses (1Co 7:11) and family members. Jesus uses the related *diallassomai*: \"first be reconciled to thy brother\" (Mat 5:24).\n\n**Jewish usage.** In 2 Maccabees, Jews pray that God will \"be reconciled\" to them, and the martyrs hope he will soon be reconciled with his servants (2 Macc 1:5; 7:33; 8:29). There, the offended God is the one who must be reconciled. Paul's usage is strikingly different: God is never the one reconciled; he is always the one reconciling, and the world is reconciled to him.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G2644",
+      "section": "translation_history",
+      "title": "Reconciliatio, Versöhnung, at-one-ment",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Latin.** The Vulgate rendered *katallassō* with *reconciliare* and *katallagē* with *reconciliatio*, words used in Latin for restoring friendship or settling accounts.\n\n**German.** Luther used *versöhnen* and *Versöhnung*, from *Sühne*, a word that also carries the sense of expiation; this blended reconciliation and atonement in German theology.\n\n**English: the birth of \"atonement\".** Tyndale used \"atonement\" for *katallagē*, from the phrase \"at one\": to \"atone\" two people was to make them one again. The KJV kept this in Rom 5:11: \"by whom we have now received the atonement.\" So the English word \"atonement\" originally meant *reconciliation*.\n\nOver the following centuries \"atonement\" came to mean the satisfaction or payment that makes reconciliation possible, and was used for Hebrew *kipper*. Modern versions all render Rom 5:11 \"reconciliation\", which restores Paul's sense but loses the visible link to the English word.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G2644",
+      "section": "lens",
+      "title": "God was in Christ reconciling",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Paul's reconciliation sentences have a clear grammar: God reconciles, we are reconciled (2Co 5:18–19; Rom 5:10). God is never the one who needs to be won over. \"God was in Christ, reconciling the world unto himself, not imputing their trespasses unto them.\" The Father was not standing apart, waiting to be persuaded; he was *in* Christ, doing the reconciling.\n\nThat changes the picture of the cross. It is not the Son changing the Father's attitude toward us, but the Father and Son together changing our hostility into friendship by entering it and absorbing it. \"When we were enemies\" (Rom 5:10), God made the first move, like the father in Luke 15 running to his son.\n\nReconciliation is also cosmic and social: Jew and Gentile are made one new humanity (Eph 2:14–16), and \"all things\" are reconciled (Col 1:20). The church is given \"the ministry of reconciliation\" (2Co 5:18): we are the envoys pleading with the world to accept the peace that is already made.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G2644",
+      "section": "legal_history",
+      "title": "How the legal reading arose",
+      "type": "legal_reading_history",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**How a legal reading attached to reconciliation.** In Western theology reconciliation came to be explained as the result of a prior legal transaction: God's justice must first be satisfied before he can be reconciled to sinners.\n\n- **Anselm** made satisfaction of God's honour the necessary condition of forgiveness (Cur Deus Homo 1.12–13).\n- **Calvin** spoke of God as \"reconciled to us\" through Christ's sacrifice appeasing his wrath, while affirming, with Augustine, that God loved us even while we were enemies (Institutes 2.16).\n- **Protestant orthodoxy** and **Hodge** distinguished Christ's work toward God (satisfaction) from its effect on us, so that reconciliation became two-sided: God reconciled to us, and us to God.\n- The narrowing of English \"atonement\" from at-one-ment to satisfaction followed this shift.\n\n**Why relational readers differ.** They point out that in the New Testament God is always the subject of reconciliation, never its object; that it happens \"while we were enemies\"; and that \"not imputing their trespasses\" (2Co 5:19) describes forgiveness freely given, not a debt paid elsewhere.",
+      "citations": [
+        {
+          "work": "anselm-cur-deus-homo",
+          "ref": "Cur Deus Homo 1.12–13",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "calvin-institutes",
+          "ref": "Institutes 2.16",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "hodge-systematic",
+          "ref": "Systematic Theology, vol. 2, on the satisfaction of Christ",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2644",
+      "section": "voices",
+      "title": "T. F. Torrance: reconciliation in the Mediator",
+      "type": "scholarly_interpretation",
+      "by": "tf-torrance",
+      "consensus": "n/a",
+      "body": "Thomas F. Torrance taught that reconciliation takes place first within the person of the incarnate Son. In Jesus, God and humanity are united; he lives a human life of perfect response to the Father on our behalf, and so heals our alienation from within. Reconciliation is not a transaction outside God, but an \"atoning exchange\" in which the Son takes what is ours and gives us what is his.",
+      "citations": [
+        {
+          "work": "tf-torrance-mediation",
+          "ref": "The Mediation of Christ",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2644",
+      "section": "voices",
+      "title": "Kenneth Bailey: the running father",
+      "type": "scholarly_interpretation",
+      "by": "kenneth-bailey",
+      "consensus": "n/a",
+      "body": "Kenneth Bailey read the parable of the prodigal son (Luke 15:11–32) through Middle Eastern village culture. In that setting, the father running to meet his son is a costly public act of humiliation that protects the son from the village's hostility and achieves reconciliation before the son can make any speech of repayment. Bailey saw this as a picture of God's costly, self-emptying love that reconciles both rebellious and resentful sons.",
+      "citations": [
+        {
+          "work": "bailey-cross-prodigal",
+          "ref": "The Cross and the Prodigal",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2644",
+      "section": "voices",
+      "title": "Darrin Belousek: God's peacemaking",
+      "type": "scholarly_interpretation",
+      "by": "darrin-belousek",
+      "consensus": "n/a",
+      "body": "Darrin Snyder Belousek argues that the cross should be read as God's peacemaking initiative toward enemies, in line with Jesus' command to love enemies. Reconciliation, on his account, is God taking the initiative to overcome hostility, not God being reconciled to us by receiving punishment; and the church carries this on by practising reconciliation and peace.",
+      "citations": [
+        {
+          "work": "belousek-atonement-justice-peace",
+          "ref": "Atonement, Justice, and Peace",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G2644",
+      "section": "fathers",
+      "title": "Friendship and concord",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "- **Irenaeus** says the Mediator, sharing in both God and humanity, brought the two \"into friendship and concord\" (Against Heresies 3.18.7), and that as we offended God in the first Adam, so we are reconciled in the second Adam, made obedient unto death (Against Heresies 5.16.3).\n- **Athanasius** explains salvation as the Word taking a body so that he could undo death and corruption from within and restore humanity to communion with God (On the Incarnation 6–10).\n- **Gregory of Nyssa** describes the incarnation and cross as God's wise and just way of freeing humanity, and holds that the benefit of the cure reaches so far that even the author of evil is not beyond its healing (Great Catechism 22–26).\n- **John Chrysostom**, preaching on 2 Cor 5, stresses that it is God, the one wronged, who sends ambassadors to beg the wrongdoers to be reconciled (Homilies on Second Corinthians, on 2 Cor 5:17–21).",
+      "citations": [
+        {
+          "work": "irenaeus-against-heresies",
+          "ref": "Against Heresies 3.18.7; 5.16.3",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "athanasius-incarnation",
+          "ref": "On the Incarnation 6–10",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "gregory-nyssa-catechism",
+          "ref": "Great Catechism 22–26",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "chrysostom-homilies-2cor",
+          "ref": "Homilies on Second Corinthians, on 2 Cor 5:17–21",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G3341",
+      "section": "meaning",
+      "title": "A change of mind and direction",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Metanoia* (22 times; the verb *metanoeō* about 34 times) is literally \"a change of mind\" (*meta* + *nous*), but in the New Testament it means a deep turning of the whole person: new thinking, new direction, new life.\n\n- **John's call.** John preached \"the baptism of repentance for the remission of sins\" (Mrk 1:4) and demanded \"fruits meet for repentance\" (Mat 3:8; Luk 3:8).\n- **Jesus' mission.** \"I came not to call the righteous, but sinners to repentance\" (Luk 5:32); \"joy shall be in heaven over one sinner that repenteth\" (Luk 15:7). The verb opens his preaching: \"the kingdom of God is at hand: repent ye, and believe the gospel\" (Mark 1:15).\n- **A gift.** God \"exalted\" Jesus \"to give repentance to Israel\" (Act 5:31) and \"granted repentance unto life\" to the Gentiles (Act 11:18; 2Ti 2:25).\n- **Led by kindness.** \"The goodness of God leadeth thee to repentance\" (Rom 2:4).\n- **Not mere regret.** \"Godly sorrow worketh repentance to salvation\" (2Co 7:10), in contrast to worldly sorrow.\n\nHebrews speaks of a foundation of \"repentance from dead works\" (Heb 6:1) and of Esau, who found no place for repentance (Heb 12:17).",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G3341",
+      "section": "culture",
+      "title": "Second thoughts and turning back",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Greek usage.** In ordinary Greek *metanoia* meant changing one's mind, often with regret: an afterthought, second thoughts about a decision. It did not usually carry the moral and religious depth the New Testament gives it.\n\n**Hebrew background.** The Hebrew Bible's main word for repentance is *shuv*, \"turn\" or \"return\": turning back to God and his ways. The Septuagint usually rendered *shuv* with *epistrephō* (\"turn\"), and used *metanoeō* mostly for Hebrew *nicham*, \"relent, change one's mind\", often of God himself relenting from disaster (Joel 2:13–14; Jonah 3:9–10). The New Testament fuses both: a change of mind that turns the whole life back toward God.\n\n**Second Temple setting.** Repentance (*teshuvah*) was central to Jewish piety. Josephus describes John the Baptist as calling Jews to practise virtue and justice and to come to baptism (Antiquities 18.116–119). In Jesus' day, \"repent\" could also have a political edge: it called people to abandon one way of being Israel, such as violent revolt, and trust another.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G3341",
+      "section": "translation_history",
+      "title": "Paenitentiam agite, do penance, repent",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Latin.** The Vulgate translated *metanoia* as *paenitentia* and *metanoeite* as *paenitentiam agite*, \"do penance\" (Mat 3:2; Mat 4:17). As the church's sacrament of penance developed, with contrition, confession and works of satisfaction, this phrase was read as a command to perform penance.\n\n**Erasmus.** In the notes to his Greek New Testament (from 1516) Erasmus argued that the Greek meant a change of mind, \"coming to one's senses\" (Latin *resipiscere*), not performing penance.\n\n**Luther.** The first of Luther's Ninety-Five Theses (1517) says that when Jesus said \"Repent\", he willed the entire life of believers to be one of repentance, not a sacramental act.\n\n**Tyndale** used \"repent\" and \"repentance\"; Thomas More objected that this undermined the sacrament. The Catholic Douay-Rheims version (1582) kept \"do penance\".\n\n**KJV** and nearly all modern versions use \"repent\". Some modern renderings try to catch the Greek sense more fully, e.g. \"change your hearts and lives\" (CEB).",
+      "citations": [
+        {
+          "work": "erasmus-novum-instrumentum",
+          "ref": "Annotations, on paenitentiam agite (Matt 3:2)",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "luther-95-theses",
+          "ref": "Thesis 1",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G3341",
+      "section": "lens",
+      "title": "Turning home to the Father",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Repentance in the gospel is not paying God back or earning forgiveness by feeling bad enough. It is a change of mind about who God is and who we are, in the light of Jesus. \"The goodness of God leadeth thee to repentance\" (Rom 2:4): kindness comes first, and turning follows.\n\nJesus' call, \"the kingdom of God is at hand: repent ye, and believe the gospel\" (Mark 1:15), is an invitation to rethink everything because the Father's reign has arrived in his Son. In Luke 15 the sheep and coin do nothing but get found; the son's turning home is met by a father who has been watching for him all along. Heaven rejoices, not because a debt is settled, but because a child is home (Luk 15:7).\n\nSo repentance is a lifelong renewing of the mind (Rom 12:2), turning again and again toward the Father we see in Jesus. It is something God gives (Act 5:31; Act 11:18), not a toll we pay.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G3341",
+      "section": "legal_history",
+      "title": "How the legal reading arose",
+      "type": "legal_reading_history",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**How repentance became juridical.** In the Latin West, *paenitentia* became tied to a system of penance with legal shape.\n\n- **Tertullian** (On Repentance) already speaks of repentance as making *satisfactio* to God, using vocabulary from Roman law and debt.\n- **The Shepherd of Hermas** allowed a single repentance after baptism for serious sin (Mandate 4.3), and early church discipline developed public penance for grave sins.\n- **Medieval theology** organised the sacrament of penance as contrition, confession, absolution and works of satisfaction, with remaining temporal punishment handled by penances and, later, indulgences.\n- **The Reformers** rejected satisfaction by human works. Calvin described repentance as a lifelong turning to God in mortification and renewal (Institutes 3.3) and attacked the scholastic system of satisfaction (Institutes 3.4). But Protestant preaching often kept a forensic frame, with repentance as a condition to be met before God could forgive.\n\n**Why relational readers differ.** They read *metanoia* as a gift-led change of mind within restored relationship: the Father's love leads to it (Rom 2:4), rather than repentance paying for or unlocking his love.",
+      "citations": [
+        {
+          "work": "tertullian-on-repentance",
+          "ref": "On Repentance",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "hermas-shepherd",
+          "ref": "Mandate 4.3",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "calvin-institutes",
+          "ref": "Institutes 3.3–3.4",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G3341",
+      "section": "voices",
+      "title": "Kenneth Bailey: accepting being found",
+      "type": "scholarly_interpretation",
+      "by": "kenneth-bailey",
+      "consensus": "n/a",
+      "body": "Kenneth Bailey, reading Luke 15 through Middle Eastern culture, argued that the three parables redefine repentance. The lost sheep and lost coin cannot do anything to be found; the shepherd and the woman do all the searching. Repentance in this chapter becomes *accepting being found*, and in the story of the son, accepting the father's costly welcome rather than a plan to work off the debt.",
+      "citations": [
+        {
+          "work": "bailey-poet-peasant",
+          "ref": "Poet and Peasant, on Luke 15",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G3341",
+      "section": "voices",
+      "title": "N. T. Wright: give up your agenda and trust me",
+      "type": "scholarly_interpretation",
+      "by": "nt-wright",
+      "consensus": "n/a",
+      "body": "N. T. Wright argues that when Jesus called Israel to \"repent and believe\", the phrase carried a national and political meaning in its first-century setting: abandon your current agenda, especially the path of violent revolt against Rome, and trust Jesus' way of being Israel instead. Personal repentance from sin is included, but the call was to a new vision of God's kingdom.",
+      "citations": [
+        {
+          "work": "wright-jesus-victory",
+          "ref": "Jesus and the Victory of God",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G3341",
+      "section": "voices",
+      "title": "Martin Luther: the whole life repentance",
+      "type": "scholarly_interpretation",
+      "by": "martin-luther",
+      "consensus": "n/a",
+      "body": "Martin Luther opened the Ninety-Five Theses by arguing that when Jesus said \"Repent\", he meant the whole life of believers to be repentance, and that the word cannot be understood as the sacrament of penance administered by priests. Repentance, for Luther, is the continual turning of the heart to God in faith.",
+      "citations": [
+        {
+          "work": "luther-95-theses",
+          "ref": "Theses 1–3",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G3341",
+      "section": "fathers",
+      "title": "The grace of repentance to the whole world",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "- **1 Clement** urges readers to fix their eyes on the blood of Christ, \"precious to his Father\", because, poured out for our salvation, it brought the grace of repentance to the whole world; in every generation God gave a place of repentance to those who would turn to him (1 Clement 7.4–5).\n- **Justin Martyr** describes baptism as the washing for those who have repented and chosen new birth, called \"illumination\" (First Apology 61).\n- **The Shepherd of Hermas** is largely a call to repentance for baptised Christians, and allows one further repentance after baptism (Mandate 4.3).\n- **Tertullian** wrote a whole treatise *On Repentance*, explaining it as a turning of the mind that bears fruit, and describing public penitential discipline.",
+      "citations": [
+        {
+          "work": "clement-1-clement",
+          "ref": "1 Clement 7.4–5",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "justin-first-apology",
+          "ref": "First Apology 61",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "hermas-shepherd",
+          "ref": "Mandate 4.3",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "tertullian-on-repentance",
+          "ref": "On Repentance",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G5206",
+      "section": "meaning",
+      "title": "Placed as sons",
+      "type": "lexical_fact",
+      "by": null,
+      "consensus": "consensus",
+      "body": "*Huiothesia* means \"adoption as son\", literally \"placing as a son\" (*huios* + *thesis*). It occurs five times, all in Paul:\n\n- **Rom 8:15** — \"ye have received the Spirit of adoption, whereby we cry, Abba, Father.\"\n- **Rom 8:23** — we groan, \"waiting for the adoption, to wit, the redemption of our body\": adoption is present and also still to be completed at the resurrection.\n- **Rom 9:4** — to Israel \"pertaineth the adoption, and the glory, and the covenants\" (compare Exod 4:22, \"Israel is my son, even my firstborn\").\n- **Gal 4:5** — God sent his Son \"to redeem them that were under the law, that we might receive the adoption of sons\"; then sent \"the Spirit of his Son into your hearts, crying, Abba, Father\" (Gal 4:6).\n- **Eph 1:5** — God \"predestinated us unto the adoption of children by Jesus Christ to himself, according to the good pleasure of his will.\"\n\nThe word does not occur in the Septuagint; Paul takes it from the legal language of the Greco-Roman world.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G5206",
+      "section": "culture",
+      "title": "Roman adoption law and the Caesars",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Roman adoption.** In Roman law a father (*paterfamilias*) held power (*patria potestas*) over his household. Adoption transferred a person fully into a new family: he took the new father's name, came under his authority, and became his heir with the same rights as a natural son. There were two forms: *adoptio*, for someone still under another father's power, and *adrogatio*, for someone independent, which required public approval. Adoption was often of adults and was used to secure an heir.\n\n**Imperial adoptions.** Adoption was at the heart of Roman politics. Julius Caesar adopted Octavian in his will; Octavian became Augustus and styled himself \"son of the divine (Julius)\". Augustus adopted Tiberius, and Claudius adopted Nero. Paul's readers in Rome, Galatia and Ephesus knew that an adopted son could inherit everything, even an empire.\n\n**Greek and Jewish backgrounds.** Greek cities also practised adoption to secure heirs. The Hebrew Bible has no adoption law, but has adoption-like acts (Moses, Exod 2:10; Esther, Est 2:7) and God's covenant sonship: \"I will be his father, and he shall be my son\" (2Sa 7:14), \"Israel is my son\" (Exod 4:22).",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G5206",
+      "section": "culture",
+      "title": "Which background?",
+      "type": "contested",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**Roman law or Jewish covenant?** Scholars disagree about the main background to Paul's word.\n\n- **Roman/Greek background.** The term is a technical legal word from the Greco-Roman world, absent from the Septuagint. Paul writes to churches in Roman settings, uses inheritance language (Gal 4:1–7; Rom 8:17), and the transfer of name, status and heirship fits Roman practice closely.\n- **Jewish background.** Others argue that Paul's thought comes from Israel's sonship (Rom 9:4; Exod 4:22) and especially the promise to David's son, \"I will be his father, and he shall be my son\" (2Sa 7:14), which Paul applies to believers in 2Co 6:18.\n\nMany scholars combine them: Paul uses a Roman legal word to express a Jewish covenant hope fulfilled in the Messiah. Popular claims about details (for instance that seven witnesses were always required, or that all debts were automatically cancelled) are sometimes overstated and should be handled with care.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G5206",
+      "section": "translation_history",
+      "title": "Adoptio, Kindschaft, adoption",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "**No Septuagint bridge.** Unlike most words in this series, *huiothesia* has no Hebrew original; Paul uses a Greek legal term.\n\n**Latin.** The Vulgate rendered it *adoptio filiorum*, \"adoption of sons\" (e.g. Rom 8:15 *spiritum adoptionis filiorum*; Gal 4:5 *adoptionem filiorum*), which kept the Roman legal sense clearly in view.\n\n**Luther** chose *Kindschaft*, \"sonship, being a child\" (*Geist der Kindschaft*, \"Spirit of sonship\"), shifting the stress from the legal act to the resulting relationship.\n\n**English.** Tyndale and the KJV used \"adoption\" (\"the Spirit of adoption\", Rom 8:15). Modern versions vary: \"adoption\" (NRSV), \"adoption as sons\" (ESV), \"adoption to sonship\" (NIV 2011). The question is whether to keep the gendered \"sons\", which carried the full inheritance rights of a Roman heir and so includes daughters as heirs, or to use \"children\".\n\n**Theology.** Reformed confessions gave adoption its own article (Westminster Confession 12), but often treated it as a legal benefit following justification.",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G5206",
+      "section": "lens",
+      "title": "Sharing the Son's Abba",
+      "type": "lens_commentary",
+      "by": null,
+      "consensus": "n/a",
+      "body": "Adoption is the goal of the gospel. The Father sent his Son \"that we might receive the adoption\" (Gal 4:4–5): not merely acquittal, but a place in the family. And this is not a legal fiction. The Father sends \"the Spirit of his Son\" into our hearts, so that we pray Jesus' own prayer, \"Abba, Father\" (Gal 4:6; Rom 8:15). We share the Son's relationship with his Father.\n\nEph 1:5 says this was the Father's plan from before the world: he \"predestinated us unto the adoption of children by Jesus Christ to himself\". The first thing God decided about us was family.\n\nJesus is the true Son; we are sons and daughters *in him*. The Spirit \"beareth witness with our spirit, that we are the children of God\" (Rom 8:16), and makes us \"joint-heirs with Christ\" (Rom 8:17). Adoption is already real and is still growing toward its fullness at the resurrection (Rom 8:23), when the whole creation will share \"the glorious liberty of the children of God\" (Rom 8:21).",
+      "citations": []
+    },
+    {
+      "subject": "lemma:G5206",
+      "section": "voices",
+      "title": "Baxter Kruger: adopted into the Trinity's life",
+      "type": "scholarly_interpretation",
+      "by": "baxter-kruger",
+      "consensus": "n/a",
+      "body": "C. Baxter Kruger argues that the purpose of creation was adoption: the Father, Son and Spirit determined to share their life with human beings. In Jesus, the Son has joined the human race and brought it into his relationship with the Father, undoing Adam's alienation from within. Adoption is not a status we earn or a document we sign, but the truth of who we are in Christ, which the Spirit opens our eyes to see.",
+      "citations": [
+        {
+          "work": "kruger-undoing-adam",
+          "ref": "Jesus and the Undoing of Adam",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G5206",
+      "section": "voices",
+      "title": "James Torrance: sharing the Son's communion",
+      "type": "scholarly_interpretation",
+      "by": "jb-torrance",
+      "consensus": "n/a",
+      "body": "James B. Torrance described Christian worship and life as the gift of participating, through the Spirit, in the incarnate Son's communion with the Father. We do not approach God on our own; Jesus is our High Priest who prays and worships for us and with us, and we are drawn into his sonship. Adoption is thus the heart of worship: sharing the Son's own \"Abba\".",
+      "citations": [
+        {
+          "work": "jb-torrance-worship",
+          "ref": "Worship, Community and the Triune God of Grace",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G5206",
+      "section": "voices",
+      "title": "James M. Scott: the Davidic background",
+      "type": "scholarly_interpretation",
+      "by": "james-m-scott",
+      "consensus": "minority",
+      "body": "James M. Scott argued that Paul's adoption language should be read against Jewish rather than Roman background: the Davidic promise of 2 Sam 7:14, applied in Jewish tradition to the Messiah and to Israel's restoration. On this view, believers' adoption is their share in the messianic Son's adoption, fulfilling Israel's covenant hope (Rom 9:4).",
+      "citations": [
+        {
+          "work": "scott-adoption",
+          "ref": "Adoption as Sons of God",
+          "verified": false,
+          "url": null
+        }
+      ]
+    },
+    {
+      "subject": "lemma:G5206",
+      "section": "fathers",
+      "title": "Sons by grace in the Son by nature",
+      "type": "historical_fact",
+      "by": null,
+      "consensus": "n/a",
+      "body": "The Fathers made adoption central to their account of salvation as sharing in God's life.\n\n- **Irenaeus** writes that the Word of God became man so that humanity, taken into the Word and receiving the adoption, might become the son of God (Against Heresies 3.19.1).\n- **Athanasius** says the Word became man so that we might be made divine (On the Incarnation 54). Elsewhere he distinguishes the Son, who is Son by nature, from us, who become sons by grace and adoption through him, as John 1:12 says (Orations against the Arians 2.59).\n- This line of thought, often called *theosis* or deification, reads adoption not as a legal transfer but as real participation in the Son's communion with the Father by the Spirit.",
+      "citations": [
+        {
+          "work": "irenaeus-against-heresies",
+          "ref": "Against Heresies 3.19.1",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "athanasius-incarnation",
+          "ref": "On the Incarnation 54",
+          "verified": false,
+          "url": null
+        },
+        {
+          "work": "athanasius-against-arians",
+          "ref": "Orations against the Arians 2.59",
+          "verified": false,
+          "url": null
+        }
+      ]
+    }
+  ]
+}
