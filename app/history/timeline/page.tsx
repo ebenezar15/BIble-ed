@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { PageIntro } from "@/components/content/EntryGrid";
 import { Timeline, type TimelineEvent } from "@/components/content/Timeline";
-import { listEntries } from "@/lib/db/content";
+import { data } from "@/lib/data/server";
 
-export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Timeline" };
 
 export default async function Page() {
-  const events: TimelineEvent[] = (await listEntries("timeline")).map((e) => {
+  const events: TimelineEvent[] = (await data.listEntries("timeline")).map((e) => {
     const d = e.data as { year: number; end_year?: number | null; category?: string };
     return { slug: e.slug, title: e.title, summary: e.summary, year: d.year, endYear: d.end_year, category: d.category ?? "other" };
   });

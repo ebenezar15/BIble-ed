@@ -1,4 +1,5 @@
 import { BOOK_BY_ID, bookByName, SINGLE_CHAPTER } from "@/lib/books";
+import { verseHref, withBase } from "@/lib/href";
 
 const ALLOWED = new Set(["b", "i", "br", "sup", "sub"]);
 
@@ -29,7 +30,7 @@ export function sanitizeLexicon(html: string): string {
   let out = html.replace(/<ref='([^']+)'>([\s\S]*?)<\/ref>/gi, (_m, ref: string, text: string) => {
     const target = canonicalRef(ref);
     const inner = filterTags(text);
-    refs.push(target ? `<a href="/verse/${encodeURI(target)}">${inner}</a>` : inner);
+    refs.push(target ? `<a href="${withBase(verseHref(target))}">${inner}</a>` : inner);
     return `\u0000${refs.length - 1}\u0000`;
   });
   out = filterTags(out);

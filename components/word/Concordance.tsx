@@ -1,8 +1,10 @@
 "use client";
 
+import { verseHref } from "@/lib/href";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BOOK_BY_ID, formatRef } from "@/lib/books";
+import { data } from "@/lib/data/browser";
 import { cleanGloss, cleanSurface } from "@/lib/display";
 import { Distribution } from "./Distribution";
 
@@ -28,12 +30,10 @@ export function Concordance({
   useEffect(() => {
     let cancelled = false;
     setLoading(true);
-    const qs = new URLSearchParams({ lemma: lemmaId, page: String(page) });
-    if (book) qs.set("book", book);
-    fetch(`/api/occurrences?${qs}`)
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+    data
+      .getOccurrences(lemmaId, page, 50, book ?? undefined)
       .then((d) => {
-        if (cancelled || !Array.isArray(d.rows)) return;
+        if (cancelled) return;
         setRows((prev) => (page === 0 ? d.rows : [...prev, ...d.rows]));
         setCount(d.total);
       })
@@ -67,7 +67,7 @@ export function Concordance({
         {rows.map((r, i) => (
           <li key={`${r.osis}-${i}`} data-concordance-row className="grid gap-1 py-3 sm:grid-cols-[8rem_1fr]">
             <span>
-              <Link href={`/verse/${r.osis}`} className="font-semibold hover:text-accent">
+              <Link href={verseHref(r.osis)} className="font-semibold hover:text-accent">
                 {formatRef(r.osis)}
               </Link>
               <span className="block text-sm">

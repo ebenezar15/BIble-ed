@@ -1,7 +1,7 @@
-import "server-only";
+import { verseHref, wordHref, nameHref } from "@/lib/href";
 import { BOOK_BY_ID, BOOKS, bookKey, formatRef } from "@/lib/books";
-import { englishForHebrew, getBookChapters, getChapterVerseCount, searchLemmas, searchText, type LemmaRef } from "@/lib/db/queries";
-import { searchContent, searchNames } from "@/lib/db/content";
+import type { Api } from "@/lib/data/api";
+import type { LemmaRef } from "@/lib/data/types";
 import { parseQuery, type Query } from "./parse";
 
 export type SearchItem = {
@@ -20,7 +20,7 @@ const escapeHtml = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;")
 
 export function lemmaItem(l: LemmaRef): SearchItem {
   return {
-    href: `/word/${l.id}`,
+    href: wordHref(l.id),
     title: l.lemma,
     subtitle: l.gloss,
     translit: l.translit,
@@ -56,46 +56,47 @@ export function similarBooks(name: string, limit = 3): string[] {
     .map((x) => x.b.name);
 }
 
-async function resolveReference(q: Extract<Query, { kind: "reference" }>): Promise<SearchResult> {
+async function resolveReference(api: Api, q: Extract<Query, { kind: "reference" }>): Promise<SearchResult> {
   const book = BOOK_BY_ID.get(q.book)!;
-  const chapters = await getBookChapters(q.book);
-  const verses0 = q.chapter >= 1 && q.chapter <= chapters ? await getChapterVerseCount(q.book, q.chapter) : 0;
+  const chapters = await api.getBookChapters(q.book);
+  const verses0 = q.chapter >= 1 && q.chapter <= chapters ? await api.getChapterVerseCount(q.book, q.chapter) : 0;
   if (!verses0 || (q.verse ?? 1) > verses0) {
     // Perhaps it was written in Hebrew numbering (Mal 3:19, Joel 4:1).
-    const english = await englishForHebrew(`${q.book}.${q.chapter}.${q.verse ?? 1}`);
-    if (english) return { query: q, redirect: `/verse/${english}`, groups: [] };
+    const english = await api.englishForHebrew(`${q.book}.${q.chapter}.${q.verse ?? 1}`);
+    if (english) return { query: q, redirect: verseHref(english), groups: [] };
   }
   if (q.chapter < 1 || q.chapter > chapters) {
     const last = `${q.book}.${chapters}.1`;
     return {
       query: q,
       notice: `No such verse: ${book.name} has ${chapters} chapter${chapters === 1 ? "" : "s"}.`,
-      groups: [{ module: "Verses", items: [{ href: `/verse/${last}`, title: formatRef(last), subtitle: "Last chapter" }] }],
+      groups: [{ module: "Verses", items: [{ href: verseHref(last), title: formatRef(last), subtitle: "Last chapter" }] }],
     };
   }
-  const verses = await getChapterVerseCount(q.book, q.chapter);
+  const verses = await api.getChapterVerseCount(q.book, q.chapter);
   const verse = q.verse ?? 1;
   if (verse < 1 || verse > verses) {
     const last = `${q.book}.${q.chapter}.${verses}`;
     return {
       query: q,
       notice: `No such verse: ${book.name} ${q.chapter} has ${verses} verses.`,
-      groups: [{ module: "Verses", items: [{ href: `/verse/${last}`, title: formatRef(last), subtitle: "Last verse" }] }],
+      groups: [{ module: "Verses", items: [{ href: verseHref(last), title: formatRef(last), subtitle: "Last verse" }] }],
     };
   }
-  return { query: q, redirect: `/verse/${q.book}.${q.chapter}.${verse}`, groups: [] };
+  return { query: q, redirect: verseHref(`${q.book}.${q.chapter}.${verse}`), groups: [] };
 }
 
-export async function runSearch(input: string): Promise<SearchResult> {
+/** verses: false skips the Bible-text search (it downloads the full text), for as-you-type suggestions. */
+export async function runSearch(api: Api, input: string, opts: { verses?: boolean } = {}): Promise<SearchResult> {
   const query = parseQuery(input);
   switch (query.kind) {
     case "empty":
       return { query, groups: [] };
     case "reference":
-      return resolveReference(query);
+      return resolveReference(api, query);
     case "strongs": {
-      const lemmas = await searchLemmas(query);
-      if (lemmas.length === 1) return { query, redirect: `/word/${lemmas[0].id}`, groups: [] };
+      const lemmas = await api.searchLemmas(query);
+      if (lemmas.length === 1) return { query, redirect: wordHref(lemmas[0].id), groups: [] };
       return {
         query,
         groups: lemmas.length ? [{ module: "Words", items: lemmas.map(lemmaItem) }] : [],
@@ -104,7 +105,7 @@ export async function runSearch(input: string): Promise<SearchResult> {
     }
     case "hebrew":
     case "greek": {
-      const lemmas = await searchLemmas(query);
+      const lemmas = await api.searchLemmas(query);
       return { query, groups: lemmas.length ? [{ module: "Words", items: lemmas.map(lemmaItem) }] : [] };
     }
     case "text": {
@@ -118,10 +119,10 @@ export async function runSearch(input: string): Promise<SearchResult> {
         textQuery = name;
       }
       const [lemmas, verses, topics, names] = await Promise.all([
-        searchLemmas(shape ? { ...query, raw: textQuery } : query, 12),
-        searchText(textQuery, 20),
-        searchContent(textQuery, 12),
-        searchNames(textQuery, 6),
+        api.searchLemmas(shape ? { ...query, raw: textQuery } : query, 12),
+        opts.verses === false ? Promise.resolve([]) : api.searchText(textQuery, 20),
+        api.searchContent(textQuery, 12),
+        api.searchNames(textQuery, 6),
       ]);
       const groups: SearchGroup[] = [];
       if (topics.length) {
@@ -133,7 +134,7 @@ export async function runSearch(input: string): Promise<SearchResult> {
         groups.push({
           module: "Names",
           items: exactNames.map((n) => ({
-            href: `/names/${encodeURIComponent(n.id)}`,
+            href: nameHref(n.id),
             title: n.name,
             subtitle: escapeHtml(n.brief ?? ""),
             tag: `${n.kind}, ${n.refCount} refs`,
@@ -143,7 +144,7 @@ export async function runSearch(input: string): Promise<SearchResult> {
       if (verses.length) {
         groups.push({
           module: "Verses",
-          items: verses.map((v) => ({ href: `/verse/${v.osis}`, title: formatRef(v.osis), subtitle: v.snippet })),
+          items: verses.map((v) => ({ href: verseHref(v.osis), title: formatRef(v.osis), subtitle: v.snippet })),
         });
       }
       return { query, groups, notice };

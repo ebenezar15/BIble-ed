@@ -1,5 +1,6 @@
 "use client";
 
+import { verseHref } from "@/lib/href";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
@@ -20,13 +21,13 @@ export function ChapterNav({ prev, next }: { prev?: string; next?: string }) {
       const dy = e.changedTouches[0].clientY - y0;
       x0 = null;
       if (Math.abs(dx) < 80 || Math.abs(dy) > Math.abs(dx) / 2) return;
-      if (dx < 0 && next) router.push(`/verse/${next}`);
-      if (dx > 0 && prev) router.push(`/verse/${prev}`);
+      if (dx < 0 && next) router.push(verseHref(next));
+      if (dx > 0 && prev) router.push(verseHref(prev));
     };
     const key = (e: KeyboardEvent) => {
       if ((e.target as HTMLElement)?.closest("input, textarea, select")) return;
-      if (e.key === "ArrowRight" && next) router.push(`/verse/${next}`);
-      if (e.key === "ArrowLeft" && prev) router.push(`/verse/${prev}`);
+      if (e.key === "ArrowRight" && next) router.push(verseHref(next));
+      if (e.key === "ArrowLeft" && prev) router.push(verseHref(prev));
     };
     window.addEventListener("touchstart", start, { passive: true });
     window.addEventListener("touchend", end);
@@ -42,14 +43,14 @@ export function ChapterNav({ prev, next }: { prev?: string; next?: string }) {
   return (
     <nav aria-label="Verse navigation" className="flex gap-2">
       {prev ? (
-        <Link href={`/verse/${prev}`} aria-label="Previous verse" className={cls}>
+        <Link href={verseHref(prev)} aria-label="Previous verse" className={cls}>
           ‹ Prev
         </Link>
       ) : (
         <span className={`${cls} opacity-40`}>‹ Prev</span>
       )}
       {next ? (
-        <Link href={`/verse/${next}`} aria-label="Next verse" className={cls}>
+        <Link href={verseHref(next)} aria-label="Next verse" className={cls}>
           Next ›
         </Link>
       ) : (

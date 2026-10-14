@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EntryGrid, PageIntro } from "@/components/content/EntryGrid";
-import { listEntries, listPeople } from "@/lib/db/content";
+import { data } from "@/lib/data/server";
 import { lifeDates } from "@/lib/format";
 
-export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Church history and theology" };
 
 export default async function Page() {
   const [people, denominations, doctrines] = await Promise.all([
-    listPeople(),
-    listEntries("denomination"),
-    listEntries("doctrine"),
+    data.listPeople(),
+    data.listEntries("denomination"),
+    data.listEntries("doctrine"),
   ]);
   const fathers = people.filter((p) => p.roles.includes("father"));
   return (

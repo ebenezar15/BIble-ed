@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { TypeChip, type ContentType } from "@/components/ui/TypeChip";
-import type { BlockView } from "@/lib/db/content";
+import type { BlockView } from "@/lib/data/types";
 
 const CONSENSUS: Record<string, string> = {
   consensus: "Scholarly consensus",
@@ -48,7 +48,7 @@ export function Citations({ block }: { block: BlockView }) {
 /** One typed, sourced piece of content: type, provenance and citations are always visible. */
 export function Block({ block, showTitle = true }: { block: BlockView; showTitle?: boolean }) {
   return (
-    <article data-block={block.id} data-type={block.type} className="py-4 first:pt-0">
+    <article data-block={block.key} data-type={block.type} className="py-4 first:pt-0">
       <div className="mb-2 flex flex-wrap items-center gap-2">
         <TypeChip type={block.type as ContentType} by={block.by?.name} />
         {CONSENSUS[block.consensus] && (
@@ -93,7 +93,7 @@ export function BlockList({ blocks }: { blocks: BlockView[] }) {
   return (
     <div className="divide-y divide-border">
       {blocks.map((b) => (
-        <Block key={b.id} block={b} />
+        <Block key={b.key} block={b} />
       ))}
     </div>
   );

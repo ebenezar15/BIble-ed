@@ -1,12 +1,10 @@
-import { afterAll, describe, expect, it } from "vitest";
-import { sql } from "@/lib/db/client";
+import { existsSync } from "node:fs";
+import { describe, expect, it } from "vitest";
+import { data } from "@/lib/data/server";
 import { buildUserMessage, SYSTEM_PROMPT } from "./prompt";
 import { retrieve } from "./retrieve";
 
-const hasDb = Boolean(process.env.DATABASE_URL);
-afterAll(async () => {
-  if (hasDb) await sql.end();
-});
+const hasData = existsSync("public/data/meta.json");
 
 describe("Ask prompt", () => {
   it("numbers every source and keeps the question last", () => {
@@ -24,14 +22,14 @@ describe("Ask prompt", () => {
   });
 });
 
-describe.skipIf(!hasDb)("retrieve", () => {
+describe.skipIf(!hasData)("retrieve", () => {
   it("finds word studies, verses and Fathers for a theological question", async () => {
-    const sources = await retrieve("What does hesed mean?");
+    const sources = await retrieve(data, "What does hesed mean?");
     expect(sources.length).toBeGreaterThan(3);
-    expect(sources.some((s) => s.href.startsWith("/word/H2617"))).toBe(true);
+    expect(sources.some((s) => s.href.startsWith("/word/?id=H2617"))).toBe(true);
     expect(sources.map((s) => s.n)).toEqual(sources.map((_, i) => i + 1));
   });
   it("returns nothing for gibberish", async () => {
-    expect(await retrieve("qzxv wpqk")).toEqual([]);
+    expect(await retrieve(data, "qzxv wpqk")).toEqual([]);
   });
 });

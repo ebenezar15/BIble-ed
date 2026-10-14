@@ -1,10 +1,11 @@
+import { verseHref, wordHref } from "@/lib/href";
 import { formatRef } from "@/lib/books";
 import { entryHref } from "./routes";
 
 export function subjectHref(subject: string): string {
   const [kind, id] = [subject.slice(0, subject.indexOf(":")), subject.slice(subject.indexOf(":") + 1)];
-  if (kind === "lemma") return `/word/${id}`;
-  if (kind === "verse") return `/verse/${id}`;
+  if (kind === "lemma") return wordHref(id);
+  if (kind === "verse") return verseHref(id);
   if (kind === "person") return `/history/people/${id}`;
   if (kind === "entry") {
     const [k, slug] = id.split("/");

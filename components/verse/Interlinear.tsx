@@ -1,8 +1,9 @@
 "use client";
 
+import { wordHref } from "@/lib/href";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import type { TokenView } from "@/lib/db/queries";
+import type { TokenView } from "@/lib/data/types";
 import { cleanGloss, cleanSurface, cleanTranslit } from "@/lib/display";
 
 const ROWS = [
@@ -133,7 +134,7 @@ export function Interlinear({ tokens, language }: { tokens: TokenView[]; languag
                   {t.morphLabel && <p className="mt-1 text-muted">{t.morphLabel}</p>}
                   {title && <p className="mt-1 text-muted">Part of the psalm's title (verse 1 in Hebrew).</p>}
                   {t.lemmaId && (
-                    <Link href={`/word/${t.lemmaId}`} className="mt-2 inline-block font-semibold text-accent underline">
+                    <Link href={wordHref(t.lemmaId)} className="mt-2 inline-block font-semibold text-accent underline">
                       Open word study ({t.lemmaId})
                     </Link>
                   )}

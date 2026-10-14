@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { entryHref } from "@/lib/content/routes";
-import type { EntrySummary } from "@/lib/db/content";
+import type { EntrySummary } from "@/lib/data/types";
 
 export function EntryGrid({ entries, empty }: { entries: EntrySummary[]; empty?: string }) {
   if (!entries.length) {

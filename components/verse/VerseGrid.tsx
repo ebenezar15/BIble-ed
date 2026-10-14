@@ -1,3 +1,4 @@
+import { verseHref } from "@/lib/href";
 import Link from "next/link";
 
 /** Jump to any verse in this chapter, or any chapter in this book. */
@@ -28,7 +29,7 @@ export function VerseGrid({
           {Array.from({ length: verses }, (_, i) => i + 1).map((v) => (
             <Link
               key={v}
-              href={`/verse/${book}.${chapter}.${v}`}
+              href={verseHref(`${book}.${chapter}.${v}`)}
               aria-current={v === verse ? "page" : undefined}
               className={`${cell} ${v === verse ? "bg-accent text-bg hover:bg-accent" : ""}`}
             >
@@ -43,7 +44,7 @@ export function VerseGrid({
               {Array.from({ length: chapters }, (_, i) => i + 1).map((c) => (
                 <Link
                   key={c}
-                  href={`/verse/${book}.${c}.1`}
+                  href={verseHref(`${book}.${c}.1`)}
                   aria-current={c === chapter ? "page" : undefined}
                   className={`${cell} ${c === chapter ? "border border-accent" : ""}`}
                 >

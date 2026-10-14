@@ -1,10 +1,10 @@
-// Logos Relational service worker: network-first pages with an offline copy of reading pages you have opened,
-// cache-first static assets. Private pages (notes, editor, sign-in) and API responses are never cached.
-const VERSION = "v2";
+// Logos Relational service worker. Pages and library data: network first, with a saved copy for offline reading of
+// anything already opened. Static assets: cache first. Works under any base path (GitHub Pages serves /<repo>/).
+const VERSION = "v3";
 const PAGES = `pages-${VERSION}`;
 const ASSETS = `assets-${VERSION}`;
-const OFFLINE = "/offline";
-const PRIVATE = /^\/(api|edit|notes|login)(\/|$)/;
+const BASE = new URL(self.registration.scope).pathname; // e.g. "/BIble-ed/"
+const OFFLINE = `${BASE}offline/`;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(PAGES).then((c) => c.add(OFFLINE)).then(() => self.skipWaiting()));
@@ -19,12 +19,25 @@ self.addEventListener("activate", (event) => {
 
 const cacheable = (res) => res.ok && !res.redirected && res.type === "basic";
 
+function networkFirst(req, cacheName, fallback) {
+  return fetch(req)
+    .then((res) => {
+      if (cacheable(res)) {
+        const copy = res.clone();
+        caches.open(cacheName).then((c) => c.put(req, copy));
+      }
+      return res;
+    })
+    .catch(() => caches.match(req).then((hit) => hit || (fallback ? fallback() : Response.error())));
+}
+
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   const url = new URL(req.url);
-  if (req.method !== "GET" || url.origin !== self.location.origin || PRIVATE.test(url.pathname)) return;
+  if (req.method !== "GET" || url.origin !== self.location.origin || !url.pathname.startsWith(BASE)) return;
+  const path = url.pathname.slice(BASE.length - 1);
 
-  if (url.pathname.startsWith("/_next/static/") || /\.(woff2?|svg|png)$/.test(url.pathname)) {
+  if (path.startsWith("/_next/static/") || /\.(woff2?|svg|png)$/.test(path)) {
     event.respondWith(
       caches.match(req).then((hit) => hit || fetch(req).then((res) => {
         if (cacheable(res)) {
@@ -37,15 +50,15 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  if (path.startsWith("/data/")) {
+    event.respondWith(networkFirst(req, PAGES));
+    return;
+  }
+
   if (req.mode === "navigate") {
+    // Verse, word and search pages share one page per route; any saved copy of the route will do offline.
     event.respondWith(
-      fetch(req).then((res) => {
-        if (cacheable(res)) {
-          const copy = res.clone();
-          caches.open(PAGES).then((c) => c.put(req, copy));
-        }
-        return res;
-      }).catch(() => caches.match(req).then((hit) => hit || caches.match(OFFLINE))),
+      networkFirst(req, PAGES, () => caches.match(req, { ignoreSearch: true }).then((hit) => hit || caches.match(OFFLINE))),
     );
   }
 });

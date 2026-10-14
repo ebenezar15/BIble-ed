@@ -1,9 +1,10 @@
 "use client";
 
+import { wordHref } from "@/lib/href";
 import Link from "next/link";
 import { scaleSqrt } from "d3";
 import { useState } from "react";
-import type { LemmaRef } from "@/lib/db/queries";
+import type { LemmaRef } from "@/lib/data/types";
 
 const SIZE = 360;
 const stripped = (s: string) => s.replace(/[\u0591-\u05C7]/g, "");
@@ -47,7 +48,7 @@ export function RootTree({
         {placed.map(({ n, x, y, size }, i) => {
           const isCurrent = n.id === current.id;
           return (
-            <Link key={n.id} href={`/word/${n.id}`} aria-label={`${n.lemma}, ${n.gloss}`}>
+            <Link key={n.id} href={wordHref(n.id)} aria-label={`${n.lemma}, ${n.gloss}`}>
               <g
                 className="root-node"
                 style={{ ["--dx" as string]: `${C - x}px`, ["--dy" as string]: `${C - y}px`, animationDelay: `${i * 35}ms` }}

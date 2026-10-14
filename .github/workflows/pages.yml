@@ -1,0 +1,89 @@
+# Builds the whole library and publishes the app as a static website on GitHub Pages:
+#   https://<owner>.github.io/<repo>/
+# Runs on every push to the default branch, or from Actions → "Publish site" → Run workflow.
+# One-time setup: Settings → Pages → Build and deployment → Source: GitHub Actions.
+name: Publish site
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    services:
+      postgres:
+        # A throwaway database, used only while building: the published site is plain files.
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: logos
+        ports: ["5432:5432"]
+        options: --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/logos
+      NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install importer dependencies
+        run: pip install "psycopg[binary]>=3.2"
+
+      - name: Reuse downloaded datasets
+        uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: datasets-${{ hashFiles('etl/logos_etl/sources.py') }}
+
+      - name: Import and validate the library
+        working-directory: etl
+        run: python -m logos_etl.run_all
+
+      - name: Export the library as static data files
+        working-directory: etl
+        run: python -m logos_etl.export_static
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Build the static site
+        run: npm run build
+
+      - name: Browser tests
+        run: npx playwright install --with-deps chromium && npm run e2e
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

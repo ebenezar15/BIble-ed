@@ -1,3 +1,4 @@
+import { verseHref } from "@/lib/href";
 import Link from "next/link";
 import { formatRef } from "@/lib/books";
 import { festivalDate } from "@/lib/format";
@@ -10,7 +11,7 @@ function refLink(ref: string) {
   const [a, b] = ref.split("-");
   const label = b ? `${formatRef(a)}–${b.split(".").slice(a.split(".")[0] === b.split(".")[0] && a.split(".")[1] === b.split(".")[1] ? 2 : 1).join(":")}` : formatRef(a);
   return (
-    <Link key={ref} href={`/verse/${a}`} className="underline decoration-dotted underline-offset-2 hover:text-accent">
+    <Link key={ref} href={verseHref(a)} className="underline decoration-dotted underline-offset-2 hover:text-accent">
       {label}
     </Link>
   );

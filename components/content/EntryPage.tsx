@@ -1,10 +1,10 @@
+import { wordHref } from "@/lib/href";
 import Link from "next/link";
 import { NotesPanel } from "@/components/edit/NotesPanel";
 import { notFound } from "next/navigation";
-import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
-import { StudyCard } from "@/components/word/StudyCard";
+import { BlockSections } from "@/components/content/BlockSections";
 import { KIND_LABEL } from "@/lib/content/routes";
-import { getEntry } from "@/lib/db/content";
+import { data } from "@/lib/data/server";
 import { safeDecode } from "@/lib/decode";
 import { EntryData, RefList } from "./EntryData";
 
@@ -20,9 +20,8 @@ export async function EntryPage({
   children?: React.ReactNode;
 }) {
   const decoded = safeDecode(slug);
-  const entry = decoded ? await getEntry(kind, decoded) : null;
+  const entry = decoded ? await data.getEntry(kind, decoded) : null;
   if (!entry) notFound();
-  const sections = groupBySection(entry.blocks);
   return (
     <main className="mx-auto max-w-5xl px-4 pb-24">
       <nav className="pt-6 text-sm">
@@ -45,7 +44,7 @@ export async function EntryPage({
           <ul className="mt-4 flex flex-wrap gap-2">
             {entry.lemmas.map((l) => (
               <li key={l.id}>
-                <Link href={`/word/${l.id}`} className="flex items-baseline gap-2 rounded-full border border-border px-3 py-1 hover:border-accent">
+                <Link href={wordHref(l.id)} className="flex items-baseline gap-2 rounded-full border border-border px-3 py-1 hover:border-accent">
                   <span lang={l.language === "grc" ? "grc" : "he"} className={l.language === "grc" ? "text-greek" : "text-hebrew"}>
                     {l.lemma}
                   </span>
@@ -60,14 +59,11 @@ export async function EntryPage({
         <EntryData kind={kind} data={entry.data} />
       </section>
       {children}
-      {sections.map(([section, items]) => (
-        <StudyCard key={section} title={SECTION_TITLES[section] ?? section} open>
-          <BlockList blocks={items} />
-        </StudyCard>
-      ))}
-      {!sections.length && (
-        <p className="border-t border-border pt-6 text-muted">No commentary has been written for this entry yet.</p>
-      )}
+      <BlockSections
+        subject={`entry:${kind}/${entry.slug}`}
+        blocks={entry.blocks}
+        empty={<p className="border-t border-border pt-6 text-muted">No commentary has been written for this entry yet.</p>}
+      />
       <NotesPanel subject={`entry:${kind}/${entry.slug}`} />
     </main>
   );

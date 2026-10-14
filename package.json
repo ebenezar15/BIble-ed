@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node scripts/serve.mjs",
     "test": "vitest run",
     "e2e": "playwright test",
     "db:migrate": "cd etl && python3 -m logos_etl.migrate",
-    "etl": "cd etl && python3 -m logos_etl.run_all"
+    "etl": "cd etl && python3 -m logos_etl.run_all",
+    "export-data": "cd etl && python3 -m logos_etl.export_static"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.133.0",
@@ -20,7 +21,6 @@
     "d3": "^7.9.0",
     "markdown-it": "^15.0.2",
     "next": "^15.5.27",
-    "postgres": "^3.4.9",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "server-only": "^0.0.1"

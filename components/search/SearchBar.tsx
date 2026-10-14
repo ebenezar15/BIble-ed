@@ -2,7 +2,22 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
-import type { SearchItem } from "@/lib/search/run";
+import { formatRef } from "@/lib/books";
+import { data } from "@/lib/data/browser";
+import { searchHref } from "@/lib/href";
+import { runSearch, type SearchItem } from "@/lib/search/run";
+
+/** Up to eight suggestions for what has been typed so far. */
+async function suggest(q: string): Promise<{ items: SearchItem[]; notice?: string }> {
+  const r = await runSearch(data, q, { verses: false });
+  if (r.redirect) {
+    const target = new URLSearchParams(r.redirect.split("?")[1]).values().next().value ?? "";
+    const title = r.redirect.startsWith("/verse/") ? formatRef(target) : target;
+    return { items: [{ href: r.redirect, title, subtitle: "Open" }] };
+  }
+  const items = r.groups.flatMap((g) => g.items.slice(0, g.module === "Words" ? 6 : 3)).slice(0, 8);
+  return { items, notice: r.notice };
+}
 
 const HEBREW = /[֐-׿]/;
 
@@ -34,19 +49,21 @@ export function SearchBar({ autoFocus = false, large = false }: { autoFocus?: bo
       setNotice(null);
       return;
     }
-    const ctrl = new AbortController();
+    let live = true;
     const t = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/suggest?q=${encodeURIComponent(q)}`, { signal: ctrl.signal });
-        const data = await res.json();
-        setItems(data.items ?? []);
-        setNotice(data.notice ?? null);
+        const res = await suggest(q);
+        if (!live) return;
+        setItems(res.items);
+        setNotice(res.notice ?? null);
         setActive(-1);
-      } catch {}
+      } catch {
+        if (live) setNotice("Search is unavailable right now.");
+      }
     }, 160);
     return () => {
+      live = false;
       clearTimeout(t);
-      ctrl.abort();
     };
   }, [q]);
 
@@ -58,7 +75,7 @@ export function SearchBar({ autoFocus = false, large = false }: { autoFocus?: bo
   function submit(e: React.FormEvent) {
     e.preventDefault();
     if (active >= 0 && items[active]) return go(items[active].href);
-    if (q.trim()) go(`/search?q=${encodeURIComponent(q.trim())}`);
+    if (q.trim()) go(searchHref(q.trim()));
   }
 
   function onKeyDown(e: React.KeyboardEvent) {

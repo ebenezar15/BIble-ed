@@ -4,9 +4,8 @@ import { CalendarWheel, type FestivalPoint } from "@/components/content/Calendar
 import { EntryGrid, PageIntro } from "@/components/content/EntryGrid";
 import { TabernaclePlan, type TabernacleItem } from "@/components/content/TabernaclePlan";
 import { KIND_LABEL } from "@/lib/content/routes";
-import { listEntries } from "@/lib/db/content";
+import { data } from "@/lib/data/server";
 
-export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Torah, worship and patterns" };
 
 const SECTIONS: [string, string][] = [
@@ -21,9 +20,9 @@ const SECTIONS: [string, string][] = [
 
 export default async function Page() {
   const [festivals, tabernacle, ...rest] = await Promise.all([
-    listEntries("festival"),
-    listEntries("tabernacle"),
-    ...SECTIONS.map(([k]) => listEntries(k)),
+    data.listEntries("festival"),
+    data.listEntries("tabernacle"),
+    ...SECTIONS.map(([k]) => data.listEntries(k)),
   ]);
   const points: FestivalPoint[] = festivals
     .filter((f) => (f.data as { month?: number }).month)

@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageIntro } from "@/components/content/EntryGrid";
 import { BOOKS } from "@/lib/books";
-import { listEntries } from "@/lib/db/content";
+import { data } from "@/lib/data/server";
 
-export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Books of the Bible" };
 
 export default async function Page() {
-  const entries = new Map((await listEntries("book")).map((e) => [e.slug, e]));
+  const entries = new Map((await data.listEntries("book")).map((e) => [e.slug, e]));
   return (
     <main className="mx-auto max-w-5xl px-4 pb-24">
       <PageIntro title="Books of the Bible">

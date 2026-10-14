@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { listSources } from "@/lib/db/queries";
+import { data } from "@/lib/data/server";
 
-export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Sources and licences" };
 
 export default async function SourcesPage() {
-  const sources = await listSources();
+  const sources = await data.listSources();
   return (
     <main className="mx-auto max-w-5xl px-4 py-10 pb-24">
       <h1 className="text-3xl font-semibold">Sources and licences</h1>

@@ -1,5 +1,6 @@
 "use client";
 
+import { verseHref } from "@/lib/href";
 import Link from "next/link";
 import { useState } from "react";
 import { formatRef } from "@/lib/books";
@@ -34,7 +35,7 @@ export function ChiasmLadder({ levels, form = "chiasm" }: { levels: Level[]; for
             <span className="min-w-0">
               <span className="block">{l.text}</span>
               {l.ref && (
-                <Link href={`/verse/${l.ref.split("-")[0]}`} className="text-xs text-muted underline decoration-dotted">
+                <Link href={verseHref(l.ref.split("-")[0])} className="text-xs text-muted underline decoration-dotted">
                   {formatRef(l.ref.split("-")[0])}
                   {l.ref.includes("-") && `–${l.ref.split("-")[1].split(".").slice(2).join("")}`}
                 </Link>

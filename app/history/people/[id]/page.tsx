@@ -1,21 +1,24 @@
 import Link from "next/link";
 import { NotesPanel } from "@/components/edit/NotesPanel";
 import { notFound } from "next/navigation";
-import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
+import { SECTION_TITLES } from "@/components/content/Block";
+import { BlockSections } from "@/components/content/BlockSections";
 import { StudyCard } from "@/components/word/StudyCard";
-import { getPerson } from "@/lib/db/content";
-import { sql } from "@/lib/db/client";
+import { data } from "@/lib/data/server";
 import { subjectHref, subjectLabel } from "@/lib/content/subject";
 import { lifeDates } from "@/lib/format";
 
-export const dynamic = "force-dynamic";
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return (await data.listPeople()).map((p) => ({ id: p.id }));
+}
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const p = await getPerson(id);
+  const p = await data.getPerson(id);
   if (!p) notFound();
-  const cited = await sql<{ kind: string; id: string; section: string }[]>`
-    select subject_kind as kind, subject_id as id, section from content_block where by_person = ${id} limit 60`;
+  const cited = p.cited;
   return (
     <main className="mx-auto max-w-5xl px-4 pb-24">
       <nav className="pt-6 text-sm"><Link href="/history/people" className="text-muted hover:text-accent">‹ People and their works</Link></nav>
@@ -42,11 +45,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           </ul>
         </StudyCard>
       )}
-      {groupBySection(p.blocks).map(([section, items]) => (
-        <StudyCard key={section} title={SECTION_TITLES[section] ?? section} open>
-          <BlockList blocks={items} />
-        </StudyCard>
-      ))}
+      <BlockSections subject={`person:${p.id}`} blocks={p.blocks} />
       {cited.length > 0 && (
         <StudyCard title={`Where ${p.name} is cited`}>
           <ul className="space-y-1 text-sm">

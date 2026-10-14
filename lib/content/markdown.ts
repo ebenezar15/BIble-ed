@@ -1,5 +1,6 @@
 import MarkdownIt from "markdown-it";
 import { bookByName } from "@/lib/books";
+import { verseHref, withBase } from "@/lib/href";
 
 const md = new MarkdownIt({ html: false, linkify: false, typographer: true });
 
@@ -17,7 +18,7 @@ export function linkifyRefs(src: string): string {
         ? part
         : part.replace(REF, (whole, num: string | undefined, name: string, ch: string, vs: string) => {
             const book = bookByName(`${num ?? ""}${name.replace(/\.$/, "")}`);
-            return book ? `[${whole}](/verse/${book.id}.${Number(ch)}.${Number(vs)})` : whole;
+            return book ? `[${whole}](${withBase(verseHref(`${book.id}.${Number(ch)}.${Number(vs)}`))})` : whole;
           }),
     )
     .join("");

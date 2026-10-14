@@ -1,8 +1,73 @@
 "use client";
 
+import Anthropic from "@anthropic-ai/sdk";
 import Link from "next/link";
-import { useRef, useState } from "react";
-import type { Source } from "@/lib/ask/prompt";
+import { useEffect, useRef, useState } from "react";
+import { buildUserMessage, SYSTEM_PROMPT, type Source } from "@/lib/ask/prompt";
+import { retrieve } from "@/lib/ask/retrieve";
+import { data } from "@/lib/data/browser";
+
+const MODEL = "claude-opus-5-5";
+const KEY = "logos.anthropicKey";
+
+function readKey(): string {
+  try {
+    return window.localStorage.getItem(KEY) ?? "";
+  } catch {
+    return "";
+  }
+}
+
+/** Ask runs in the browser with the reader's own Anthropic API key, kept only in this browser. */
+function KeySettings({ apiKey, onChange }: { apiKey: string; onChange: (k: string) => void }) {
+  const [editing, setEditing] = useState(false);
+  if (apiKey && !editing) {
+    return (
+      <p className="mb-4 text-sm text-muted">
+        Using your Anthropic API key saved in this browser.{" "}
+        <button type="button" className="underline" onClick={() => setEditing(true)}>Change</button>{" "}
+        <button
+          type="button"
+          className="underline"
+          onClick={() => {
+            try {
+              window.localStorage.removeItem(KEY);
+            } catch {}
+            onChange("");
+          }}
+        >
+          Forget it
+        </button>
+      </p>
+    );
+  }
+  return (
+    <form
+      className="mb-6 rounded-xl border border-border bg-surface-2 p-4 text-sm"
+      onSubmit={(e) => {
+        e.preventDefault();
+        const k = String(new FormData(e.currentTarget).get("key") ?? "").trim();
+        if (!k) return;
+        try {
+          window.localStorage.setItem(KEY, k);
+        } catch {}
+        onChange(k);
+        setEditing(false);
+      }}
+    >
+      <p className="max-w-prose">
+        Ask uses Claude through your own Anthropic API key (from console.anthropic.com). The key is saved only in this
+        browser and sent only to Anthropic. Anyone with access to this browser could use it, so don't save it on a shared
+        computer. Everything else in the app works without a key.
+      </p>
+      <div className="mt-3 flex flex-wrap gap-2">
+        <input name="key" type="password" autoComplete="off" placeholder="sk-ant-…" aria-label="Anthropic API key"
+          className="min-w-0 flex-1 rounded border border-border bg-surface px-2 py-1" />
+        <button className="rounded-full bg-accent px-4 py-1 font-semibold text-bg">Save key</button>
+      </div>
+    </form>
+  );
+}
 
 const EXAMPLES = [
   "What does hesed tell us about God?",
@@ -42,57 +107,72 @@ export function AskBox() {
   const [busy, setBusy] = useState(false);
   const ctrl = useRef<AbortController | null>(null);
 
+  const [apiKey, setApiKey] = useState("");
+  useEffect(() => setApiKey(readKey()), []);
+
   async function ask(question: string) {
-    if (!question.trim() || busy) return;
+    const q = question.trim().slice(0, 2000);
+    if (!q || busy) return;
     ctrl.current?.abort();
-    ctrl.current = new AbortController();
+    const controller = new AbortController();
+    ctrl.current = controller;
     setBusy(true);
     setText("");
     setError(null);
     setSources([]);
     try {
-      const res = await fetch("/api/ask", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ question }),
-        signal: ctrl.current.signal,
-      });
-      if (res.redirected || !(res.headers.get("content-type") ?? "").includes("json")) {
-        throw new Error("Your sign-in has expired. Reload the page and sign in again.");
+      const found = await retrieve(data, q);
+      if (controller.signal.aborted) return;
+      setSources(found);
+      if (!found.length) {
+        setText("That isn't in the library yet. Nothing in the word studies, articles, Bible text or Church Fathers matched your question. Try different words, or a Hebrew or Greek term.");
+        return;
       }
-      if (!res.ok || !res.body) {
-        const data = await res.json().catch(() => ({}));
-        throw new Error(data.error ?? "The question could not be sent.");
+      if (!apiKey) {
+        setError("Add your Anthropic API key above to get an answer. The sources below were found without it.");
+        return;
       }
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
-      let buf = "";
-      let finished = false;
-      for (;;) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        buf += decoder.decode(value, { stream: true });
-        const lines = buf.split("\n");
-        buf = lines.pop() ?? "";
-        for (const l of lines) {
-          if (!l.trim()) continue;
-          const ev = JSON.parse(l);
-          if (ev.type === "sources") setSources(ev.sources);
-          else if (ev.type === "text") setText((t) => t + ev.text);
-          else if (ev.type === "error") (setError(ev.message), (finished = true));
-          else if (ev.type === "done") finished = true;
+      const client = new Anthropic({ apiKey, dangerouslyAllowBrowser: true });
+      const stream = client.beta.messages.stream(
+        {
+          model: MODEL,
+          max_tokens: 16000,
+          betas: ["server-side-fallback-2026-07-01"],
+          fallbacks: "default",
+          output_config: { effort: "medium" },
+          system: [{ type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } }],
+          messages: [{ role: "user", content: buildUserMessage(q, found) }],
+        },
+        { signal: controller.signal },
+      );
+      for await (const event of stream) {
+        if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
+          const t = event.delta.text;
+          setText((prev) => prev + t);
         }
       }
-      if (!finished) setError("The answer stopped before it finished. Try asking again.");
-    } catch (e) {
-      if ((e as Error).name !== "AbortError") setError((e as Error).message);
+      const final = await stream.finalMessage();
+      if (final.stop_reason === "refusal") setError("The model declined to answer this question. Try rephrasing it.");
+      else if (final.stop_reason === "max_tokens") setError("The answer was cut off because it ran too long. Ask a narrower question.");
+    } catch (err) {
+      if (controller.signal.aborted || err instanceof Anthropic.APIUserAbortError) return;
+      let message = "Something went wrong while answering. Try again in a moment.";
+      if (err instanceof Anthropic.AuthenticationError) message = "Anthropic did not accept the API key. Check it and save it again.";
+      else if (err instanceof Anthropic.RateLimitError) message = "The model is busy right now (rate limit). Try again in a minute.";
+      else if (err instanceof Anthropic.APIError && err.status) message = `The model service returned an error (${err.status}). Try again shortly.`;
+      else if (err instanceof Anthropic.APIConnectionError) message = "Could not reach Anthropic. Check your connection.";
+      else if (err instanceof Error && !(err instanceof Anthropic.APIError)) message = err.message;
+      setError(message);
     } finally {
-      setBusy(false);
+      if (ctrl.current === controller) setBusy(false);
     }
   }
 
+  useEffect(() => () => ctrl.current?.abort(), []);
+
   return (
     <div>
+      <KeySettings apiKey={apiKey} onChange={setApiKey} />
       <form
         onSubmit={(e) => {
           e.preventDefault();

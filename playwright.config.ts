@@ -16,9 +16,10 @@ export default defineConfig({
     ...devices["Pixel 7"],
     launchOptions: { executablePath },
   },
+  // Serves the static build in out/ (run `npm run build` first) under the same base path as GitHub Pages.
   webServer: {
-    command: `npx next start -p ${PORT}`,
-    url: `http://localhost:${PORT}`,
+    command: `node scripts/serve.mjs ${PORT}`,
+    url: `http://localhost:${PORT}${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/`,
     reuseExistingServer: true,
     timeout: 60_000,
   },

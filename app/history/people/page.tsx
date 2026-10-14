@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageIntro } from "@/components/content/EntryGrid";
-import { listPeople } from "@/lib/db/content";
+import { data } from "@/lib/data/server";
 import { lifeDates } from "@/lib/format";
 
-export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "People and their works" };
 
 export default async function Page() {
-  const people = await listPeople();
+  const people = await data.listPeople();
   return (
     <main className="mx-auto max-w-5xl px-4 pb-24">
       <PageIntro title="People and their works">Fathers, reformers, scholars and teachers cited in this library, with their works. Copyrighted books are listed by title only.</PageIntro>

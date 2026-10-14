@@ -1,16 +1,10 @@
+import { wordHref } from "@/lib/href";
 import Link from "next/link";
 import { SearchBar } from "@/components/search/SearchBar";
-import { formatRef } from "@/lib/books";
-import { getVerse } from "@/lib/db/queries";
-import { EXAMPLE_WORDS, verseForDay } from "@/lib/examples";
+import { VerseOfDay } from "@/components/home/VerseOfDay";
+import { EXAMPLE_WORDS } from "@/lib/examples";
 
-export const dynamic = "force-dynamic";
-
-export default async function Home() {
-  const osis = verseForDay(new Date());
-  const verse = await getVerse(osis).catch(() => null);
-  const text = verse?.translations.find((t) => t.id === "bsb") ?? verse?.translations[0];
-
+export default function Home() {
   return (
     <main className="mx-auto max-w-5xl px-4 pb-24">
       <section className="pt-14 pb-12 sm:pt-20">
@@ -37,7 +31,7 @@ export default async function Home() {
           {EXAMPLE_WORDS.map((w) => (
             <li key={w.id} data-example-word>
               <Link
-                href={`/word/${w.id}`}
+                href={wordHref(w.id)}
                 aria-label={`${w.translit}: ${w.gloss}`}
                 className="group flex h-full flex-col rounded-xl border border-border bg-surface p-4 transition-colors hover:border-accent focus-visible:border-accent"
               >
@@ -58,20 +52,7 @@ export default async function Home() {
         </ul>
       </section>
 
-      {verse && text && (
-        <section aria-labelledby="today" className="mt-14 border-t border-border pt-8">
-          <h2 id="today" className="text-sm text-muted">
-            A verse for today
-          </h2>
-          <blockquote className="mt-3 max-w-3xl text-2xl leading-snug sm:text-3xl">{text.text}</blockquote>
-          <p className="mt-3 text-sm">
-            <Link href={`/verse/${osis}`} className="font-semibold underline decoration-dotted underline-offset-4 hover:text-accent">
-              {formatRef(osis)}
-            </Link>{" "}
-            <span className="text-muted">{text.name}. Open it to read word by word in {verse.language === "heb" ? "Hebrew" : "Greek"}.</span>
-          </p>
-        </section>
-      )}
+      <VerseOfDay />
     </main>
   );
 }
