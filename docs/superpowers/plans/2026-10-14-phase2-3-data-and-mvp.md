@@ -43,8 +43,8 @@ TTESV (CC BY-NC) is excluded. bereanbible.org and ebible.org are blocked by the 
 ## Review Focus
 
 1. **Hebrew/English verse-numbering mismatch.** Malachi 4:1 in KJV is Hebrew 3:19, and Psalm titles are verse 1 in Hebrew. Expected: opening `/verse/Mal.4.1` shows the Hebrew of 3:19 with a "Hebrew 3:19" note. Test in Task 5.
-2. **Hebrew typed without vowels or accents.** Searching for `חסד` should still find חֶסֶד. Test in Task 7.
-3. **Ambiguous Strong's number** (`2617` or `Strong's 26` with no H/G). Expected: both the Hebrew and Greek candidates are offered, and nothing crashes. Test in Task 7.
+2. **Hebrew typed without vowels or accents.** Searching for `חסד` should still find חֶסֶד. Test in Task 8.
+3. **Ambiguous Strong's number** (`2617` or `Strong's 26` with no H/G). Expected: both the Hebrew and Greek candidates are offered, and nothing crashes. Test in Task 8.
 4. **An unknown reference** (e.g. "John 30:1", "Hezekiah 1:1"). Expected: a "no such verse" result with suggestions, not a 500 error. Test in Task 11.
 5. **A Strong's number with a disambiguation letter** (H2617A vs H2617B; hesed "kindness" vs "shame"). Expected: the word page separates the two senses, and the concordance links each occurrence to the right sense. Test in Task 5.
 
