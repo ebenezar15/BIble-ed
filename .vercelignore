@@ -1,0 +1,6 @@
+data/
+etl/
+.superpowers/
+test-results/
+playwright-report/
+e2e/
