@@ -1,0 +1,1192 @@
+{
+ "people": [
+  {
+   "id": "ignatius",
+   "name": "Ignatius of Antioch",
+   "born": null,
+   "died": null,
+   "era": "Apostolic Fathers",
+   "tradition": "Early Church",
+   "roles": [
+    "father"
+   ],
+   "summary": "Bishop of Antioch martyred in Rome in the early second century; seven letters survive."
+  },
+  {
+   "id": "justin-martyr",
+   "name": "Justin Martyr",
+   "born": 100,
+   "died": 165,
+   "era": "Ante-Nicene",
+   "tradition": "Early Church",
+   "roles": [
+    "father"
+   ],
+   "summary": "Philosopher and apologist who presented Christ as the Logos to the Greco-Roman world."
+  },
+  {
+   "id": "irenaeus",
+   "name": "Irenaeus of Lyons",
+   "born": 130,
+   "died": 202,
+   "era": "Ante-Nicene",
+   "tradition": "Early Church",
+   "roles": [
+    "father"
+   ],
+   "summary": "Bishop of Lyons whose recapitulation theology presents Christ retracing and healing Adam's path."
+  },
+  {
+   "id": "tertullian",
+   "name": "Tertullian",
+   "born": 155,
+   "died": 220,
+   "era": "Ante-Nicene",
+   "tradition": "Early Church (North Africa)",
+   "roles": [
+    "father"
+   ],
+   "summary": "Latin theologian of Carthage who shaped Western theological vocabulary, including legal terms."
+  },
+  {
+   "id": "clement-of-alexandria",
+   "name": "Clement of Alexandria",
+   "born": 150,
+   "died": 215,
+   "era": "Ante-Nicene",
+   "tradition": "Early Church (Alexandria)",
+   "roles": [
+    "father"
+   ],
+   "summary": "Alexandrian teacher who spoke of the Word educating humanity toward union with God."
+  },
+  {
+   "id": "origen",
+   "name": "Origen of Alexandria",
+   "born": 185,
+   "died": 253,
+   "era": "Ante-Nicene",
+   "tradition": "Early Church (Alexandria)",
+   "roles": [
+    "father"
+   ],
+   "summary": "Prolific scholar and exegete; compiled the Hexapla and wrote extensive commentaries."
+  },
+  {
+   "id": "athanasius",
+   "name": "Athanasius of Alexandria",
+   "born": 296,
+   "died": 373,
+   "era": "Nicene",
+   "tradition": "Early Church (Alexandria)",
+   "roles": [
+    "father"
+   ],
+   "summary": "Defender of Nicaea; On the Incarnation explains salvation as the Word restoring humanity from corruption to life."
+  },
+  {
+   "id": "basil-of-caesarea",
+   "name": "Basil of Caesarea",
+   "born": 330,
+   "died": 379,
+   "era": "Nicene",
+   "tradition": "Cappadocian",
+   "roles": [
+    "father"
+   ],
+   "summary": "Cappadocian bishop and theologian of the Holy Spirit."
+  },
+  {
+   "id": "gregory-of-nazianzus",
+   "name": "Gregory of Nazianzus",
+   "born": 329,
+   "died": 390,
+   "era": "Nicene",
+   "tradition": "Cappadocian",
+   "roles": [
+    "father"
+   ],
+   "summary": "Cappadocian theologian: 'what is not assumed is not healed'."
+  },
+  {
+   "id": "gregory-of-nyssa",
+   "name": "Gregory of Nyssa",
+   "born": 335,
+   "died": 395,
+   "era": "Nicene",
+   "tradition": "Cappadocian",
+   "roles": [
+    "father"
+   ],
+   "summary": "Cappadocian theologian of endless ascent into God and of the ransom image of the atonement."
+  },
+  {
+   "id": "john-chrysostom",
+   "name": "John Chrysostom",
+   "born": 347,
+   "died": 407,
+   "era": "Nicene",
+   "tradition": "Early Church (Antioch/Constantinople)",
+   "roles": [
+    "father",
+    "pastor"
+   ],
+   "summary": "Preacher of Antioch and Constantinople known for verse-by-verse homilies."
+  },
+  {
+   "id": "jerome",
+   "name": "Jerome",
+   "born": 347,
+   "died": 420,
+   "era": "Nicene",
+   "tradition": "Latin Church",
+   "roles": [
+    "father"
+   ],
+   "summary": "Translator of the Latin Vulgate."
+  },
+  {
+   "id": "augustine",
+   "name": "Augustine of Hippo",
+   "born": 354,
+   "died": 430,
+   "era": "Nicene",
+   "tradition": "Latin Church",
+   "roles": [
+    "father"
+   ],
+   "summary": "Bishop of Hippo whose teaching on grace and original sin shaped Western theology."
+  },
+  {
+   "id": "cyril-of-alexandria",
+   "name": "Cyril of Alexandria",
+   "born": 376,
+   "died": 444,
+   "era": "Post-Nicene",
+   "tradition": "Early Church (Alexandria)",
+   "roles": [
+    "father"
+   ],
+   "summary": "Theologian of the union of natures in Christ."
+  },
+  {
+   "id": "maximus-the-confessor",
+   "name": "Maximus the Confessor",
+   "born": 580,
+   "died": 662,
+   "era": "Byzantine",
+   "tradition": "Eastern Orthodox",
+   "roles": [
+    "father"
+   ],
+   "summary": "Theologian of deification and of Christ's two wills."
+  },
+  {
+   "id": "john-of-damascus",
+   "name": "John of Damascus",
+   "born": 675,
+   "died": 749,
+   "era": "Byzantine",
+   "tradition": "Eastern Orthodox",
+   "roles": [
+    "father"
+   ],
+   "summary": "Summarised Greek patristic theology in The Fount of Knowledge."
+  },
+  {
+   "id": "anselm",
+   "name": "Anselm of Canterbury",
+   "born": 1033,
+   "died": 1109,
+   "era": "Medieval",
+   "tradition": "Latin Church",
+   "roles": [
+    "theologian"
+   ],
+   "summary": "Archbishop whose Cur Deus Homo framed the atonement as satisfaction of God's honour."
+  },
+  {
+   "id": "thomas-aquinas",
+   "name": "Thomas Aquinas",
+   "born": 1225,
+   "died": 1274,
+   "era": "Medieval",
+   "tradition": "Latin Church",
+   "roles": [
+    "theologian"
+   ],
+   "summary": "Dominican theologian whose Summa systematised medieval Western theology."
+  },
+  {
+   "id": "martin-luther",
+   "name": "Martin Luther",
+   "born": 1483,
+   "died": 1546,
+   "era": "Reformation",
+   "tradition": "Lutheran",
+   "roles": [
+    "reformer"
+   ],
+   "summary": "German reformer and Bible translator."
+  },
+  {
+   "id": "william-tyndale",
+   "name": "William Tyndale",
+   "born": null,
+   "died": 1536,
+   "era": "Reformation",
+   "tradition": "English Reformation",
+   "roles": [
+    "reformer",
+    "author"
+   ],
+   "summary": "First to translate the New Testament into English from Greek; much of his wording passed into the KJV."
+  },
+  {
+   "id": "john-calvin",
+   "name": "John Calvin",
+   "born": 1509,
+   "died": 1564,
+   "era": "Reformation",
+   "tradition": "Reformed",
+   "roles": [
+    "reformer"
+   ],
+   "summary": "Genevan reformer whose Institutes systematised Reformed theology, including penal substitution."
+  },
+  {
+   "id": "hugo-grotius",
+   "name": "Hugo Grotius",
+   "born": 1583,
+   "died": 1645,
+   "era": "Early modern",
+   "tradition": "Dutch Remonstrant",
+   "roles": [
+    "theologian"
+   ],
+   "summary": "Jurist who proposed the governmental theory of the atonement."
+  },
+  {
+   "id": "jonathan-edwards",
+   "name": "Jonathan Edwards",
+   "born": 1703,
+   "died": 1758,
+   "era": "Early modern",
+   "tradition": "Reformed (New England)",
+   "roles": [
+    "theologian",
+    "pastor"
+   ],
+   "summary": "New England theologian of revival with an optimistic, postmillennial hope."
+  },
+  {
+   "id": "charles-hodge",
+   "name": "Charles Hodge",
+   "born": 1797,
+   "died": 1878,
+   "era": "Modern",
+   "tradition": "Reformed (Princeton)",
+   "roles": [
+    "theologian"
+   ],
+   "summary": "Princeton theologian whose Systematic Theology gave classic form to penal substitution in America."
+  },
+  {
+   "id": "bb-warfield",
+   "name": "B. B. Warfield",
+   "born": 1851,
+   "died": 1921,
+   "era": "Modern",
+   "tradition": "Reformed (Princeton)",
+   "roles": [
+    "theologian"
+   ],
+   "summary": "Princeton theologian; held a postmillennial eschatology."
+  },
+  {
+   "id": "gustaf-aulen",
+   "name": "Gustaf Aulén",
+   "born": 1879,
+   "died": 1977,
+   "era": "Modern",
+   "tradition": "Lutheran (Sweden)",
+   "roles": [
+    "theologian"
+   ],
+   "summary": "Swedish bishop whose Christus Victor named the 'classic' patristic view of the atonement."
+  },
+  {
+   "id": "loraine-boettner",
+   "name": "Loraine Boettner",
+   "born": 1901,
+   "died": 1990,
+   "era": "Modern",
+   "tradition": "Reformed",
+   "roles": [
+    "theologian"
+   ],
+   "summary": "American author of a standard defence of postmillennialism."
+  },
+  {
+   "id": "j-marcellus-kik",
+   "name": "J. Marcellus Kik",
+   "born": 1903,
+   "died": 1965,
+   "era": "Modern",
+   "tradition": "Reformed",
+   "roles": [
+    "pastor",
+    "author"
+   ],
+   "summary": "Author of An Eschatology of Victory, a postmillennial and partial-preterist reading."
+  },
+  {
+   "id": "tf-torrance",
+   "name": "Thomas F. Torrance",
+   "born": 1913,
+   "died": 2007,
+   "era": "Modern",
+   "tradition": "Church of Scotland",
+   "roles": [
+    "theologian"
+   ],
+   "summary": "Scottish theologian of the vicarious humanity of Christ and the Trinity."
+  },
+  {
+   "id": "jat-robinson",
+   "name": "John A. T. Robinson",
+   "born": 1919,
+   "died": 1983,
+   "era": "Modern",
+   "tradition": "Anglican",
+   "roles": [
+    "scholar"
+   ],
+   "summary": "New Testament scholar who argued in Redating the New Testament that every NT book was written before AD 70."
+  },
+  {
+   "id": "jb-torrance",
+   "name": "James B. Torrance",
+   "born": 1923,
+   "died": 2003,
+   "era": "Modern",
+   "tradition": "Church of Scotland",
+   "roles": [
+    "theologian"
+   ],
+   "summary": "Theologian of worship as sharing in the Son's communion with the Father."
+  },
+  {
+   "id": "kenneth-bailey",
+   "name": "Kenneth E. Bailey",
+   "born": 1930,
+   "died": 2016,
+   "era": "Modern",
+   "tradition": "Presbyterian",
+   "roles": [
+    "scholar"
+   ],
+   "summary": "Scholar who read the Gospels through Middle Eastern peasant culture after decades in the region."
+  },
+  {
+   "id": "iain-murray",
+   "name": "Iain H. Murray",
+   "born": 1931,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Reformed",
+   "roles": [
+    "historian",
+    "author"
+   ],
+   "summary": "Historian of Puritan eschatological hope."
+  },
+  {
+   "id": "nt-wright",
+   "name": "N. T. Wright",
+   "born": 1948,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Anglican",
+   "roles": [
+    "scholar"
+   ],
+   "summary": "New Testament scholar of Second Temple Judaism, Paul and the kingdom of God."
+  },
+  {
+   "id": "bill-johnson",
+   "name": "Bill Johnson",
+   "born": 1951,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Charismatic",
+   "roles": [
+    "pastor",
+    "teacher"
+   ],
+   "summary": "Pastor of Bethel Church, Redding, known for the phrase 'Jesus is perfect theology'."
+  },
+  {
+   "id": "douglas-wilson",
+   "name": "Douglas Wilson",
+   "born": 1953,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Reformed",
+   "roles": [
+    "pastor",
+    "author"
+   ],
+   "summary": "Pastor and author who defends postmillennialism."
+  },
+  {
+   "id": "michael-heiser",
+   "name": "Michael S. Heiser",
+   "born": 1963,
+   "died": 2023,
+   "era": "Modern",
+   "tradition": "Evangelical",
+   "roles": [
+    "scholar"
+   ],
+   "summary": "Hebrew Bible scholar of the divine council and the supernatural worldview of Scripture."
+  },
+  {
+   "id": "kenneth-gentry",
+   "name": "Kenneth L. Gentry Jr.",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Reformed",
+   "roles": [
+    "theologian",
+    "author"
+   ],
+   "summary": "Advocate of postmillennialism and of dating Revelation before AD 70."
+  },
+  {
+   "id": "keith-mathison",
+   "name": "Keith A. Mathison",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Reformed",
+   "roles": [
+    "theologian",
+    "author"
+   ],
+   "summary": "Author of a modern defence of postmillennialism."
+  },
+  {
+   "id": "gary-demar",
+   "name": "Gary DeMar",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Reformed",
+   "roles": [
+    "author"
+   ],
+   "summary": "Author on partial-preterist readings of biblical prophecy."
+  },
+  {
+   "id": "baxter-kruger",
+   "name": "C. Baxter Kruger",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Trinitarian theology",
+   "roles": [
+    "theologian",
+    "author"
+   ],
+   "summary": "Theologian of the Trinity and adoption, writing in the tradition of the Torrances."
+  },
+  {
+   "id": "brad-jersak",
+   "name": "Bradley Jersak",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Eastern Orthodox",
+   "roles": [
+    "theologian",
+    "author"
+   ],
+   "summary": "Author of A More Christlike God, presenting the cruciform God revealed in Jesus."
+  },
+  {
+   "id": "eitan-bar",
+   "name": "Eitan Bar",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Messianic Jewish",
+   "roles": [
+    "teacher",
+    "author"
+   ],
+   "summary": "Israeli Messianic Jewish teacher and author on the gospel and atonement."
+  },
+  {
+   "id": "phil-bray",
+   "name": "Phil Bray",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": null,
+   "roles": [
+    "author"
+   ],
+   "summary": "Author of Leviticus on the Butcher's Block."
+  },
+  {
+   "id": "kenneth-tanner",
+   "name": "Kenneth Tanner",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": null,
+   "roles": [
+    "pastor",
+    "author"
+   ],
+   "summary": "Author of The Vulnerable God."
+  },
+  {
+   "id": "martin-trench",
+   "name": "Martin Trench",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": null,
+   "roles": [
+    "author"
+   ],
+   "summary": "Author of The God Who Never Changed."
+  },
+  {
+   "id": "james-hamilton",
+   "name": "James M. Hamilton Jr.",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Baptist",
+   "roles": [
+    "scholar"
+   ],
+   "summary": "Biblical theologian; author of Typology: Understanding the Bible's Promise-Shaped Patterns."
+  },
+  {
+   "id": "carl-laney",
+   "name": "J. Carl Laney",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Evangelical",
+   "roles": [
+    "scholar"
+   ],
+   "summary": "Author of Essential Bible Background."
+  },
+  {
+   "id": "darrin-belousek",
+   "name": "Darrin W. Snyder Belousek",
+   "born": null,
+   "died": null,
+   "era": "Modern",
+   "tradition": "Mennonite",
+   "roles": [
+    "scholar"
+   ],
+   "summary": "Author of Atonement, Justice, and Peace, a critique of penal substitution in favour of restorative justice."
+  },
+  {
+   "id": "eusebius",
+   "name": "Eusebius of Caesarea",
+   "born": 260,
+   "died": 339,
+   "era": "Nicene",
+   "tradition": "Early Church",
+   "roles": [
+    "father",
+    "historian"
+   ],
+   "summary": "Bishop and first church historian; records early lists of accepted books."
+  }
+ ],
+ "works": [
+  {
+   "id": "ignatius-letters",
+   "person": "ignatius",
+   "title": "Letters (Ephesians, Magnesians, Trallians, Romans, Philadelphians, Smyrnaeans, Polycarp)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "ANF vol. 1",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "justin-first-apology",
+   "person": "justin-martyr",
+   "title": "First Apology",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "ANF vol. 1",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "justin-dialogue-trypho",
+   "person": "justin-martyr",
+   "title": "Dialogue with Trypho",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "ANF vol. 1",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "irenaeus-against-heresies",
+   "person": "irenaeus",
+   "title": "Against Heresies",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "ANF vol. 1",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "irenaeus-demonstration",
+   "person": "irenaeus",
+   "title": "Demonstration of the Apostolic Preaching",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "tr. J. Armitage Robinson (1920)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "tertullian-against-marcion",
+   "person": "tertullian",
+   "title": "Against Marcion",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "ANF vol. 3",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "clement-exhortation",
+   "person": "clement-of-alexandria",
+   "title": "Exhortation to the Heathen (Protrepticus)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "ANF vol. 2",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "origen-first-principles",
+   "person": "origen",
+   "title": "On First Principles",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "ANF vol. 4",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "athanasius-incarnation",
+   "person": "athanasius",
+   "title": "On the Incarnation of the Word",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "NPNF series 2, vol. 4",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "athanasius-festal-39",
+   "person": "athanasius",
+   "title": "Festal Letter 39",
+   "year": 367,
+   "copyright": "public_domain",
+   "edition": "NPNF series 2, vol. 4",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "gregory-nazianzus-letter-101",
+   "person": "gregory-of-nazianzus",
+   "title": "Letter 101 (to Cledonius)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "NPNF series 2, vol. 7",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "gregory-nyssa-catechism",
+   "person": "gregory-of-nyssa",
+   "title": "The Great Catechism (Catechetical Oration)",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "NPNF series 2, vol. 5",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "chrysostom-homilies-john",
+   "person": "john-chrysostom",
+   "title": "Homilies on the Gospel of John",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "NPNF series 1, vol. 14",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "chrysostom-homilies-romans",
+   "person": "john-chrysostom",
+   "title": "Homilies on Romans",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "NPNF series 1, vol. 11",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "augustine-city-of-god",
+   "person": "augustine",
+   "title": "The City of God",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "NPNF series 1, vol. 2",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "augustine-enchiridion",
+   "person": "augustine",
+   "title": "Enchiridion",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "NPNF series 1, vol. 3",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "eusebius-church-history",
+   "person": "eusebius",
+   "title": "Church History",
+   "year": null,
+   "copyright": "public_domain",
+   "edition": "NPNF series 2, vol. 1",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "anselm-cur-deus-homo",
+   "person": "anselm",
+   "title": "Cur Deus Homo (Why God Became Man)",
+   "year": 1098,
+   "copyright": "public_domain",
+   "edition": "tr. S. N. Deane (1903)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "calvin-institutes",
+   "person": "john-calvin",
+   "title": "Institutes of the Christian Religion",
+   "year": 1559,
+   "copyright": "public_domain",
+   "edition": "tr. Henry Beveridge (1845)",
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "grotius-satisfaction",
+   "person": "hugo-grotius",
+   "title": "A Defence of the Catholic Faith concerning the Satisfaction of Christ",
+   "year": 1617,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "hodge-systematic",
+   "person": "charles-hodge",
+   "title": "Systematic Theology",
+   "year": 1872,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "edwards-history-redemption",
+   "person": "jonathan-edwards",
+   "title": "A History of the Work of Redemption",
+   "year": 1774,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "warfield-millennium-apocalypse",
+   "person": "bb-warfield",
+   "title": "The Millennium and the Apocalypse",
+   "year": 1904,
+   "copyright": "public_domain",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "aulen-christus-victor",
+   "person": "gustaf-aulen",
+   "title": "Christus Victor",
+   "year": 1931,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "boettner-millennium",
+   "person": "loraine-boettner",
+   "title": "The Millennium",
+   "year": 1957,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "kik-eschatology-victory",
+   "person": "j-marcellus-kik",
+   "title": "An Eschatology of Victory",
+   "year": 1971,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "murray-puritan-hope",
+   "person": "iain-murray",
+   "title": "The Puritan Hope",
+   "year": 1971,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "tf-torrance-mediation",
+   "person": "tf-torrance",
+   "title": "The Mediation of Christ",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "tf-torrance-atonement",
+   "person": "tf-torrance",
+   "title": "Atonement: The Person and Work of Christ",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "jb-torrance-worship",
+   "person": "jb-torrance",
+   "title": "Worship, Community and the Triune God of Grace",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "robinson-redating",
+   "person": "jat-robinson",
+   "title": "Redating the New Testament",
+   "year": 1976,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "bailey-poet-peasant",
+   "person": "kenneth-bailey",
+   "title": "Poet and Peasant",
+   "year": 1976,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "bailey-peasant-eyes",
+   "person": "kenneth-bailey",
+   "title": "Through Peasant Eyes",
+   "year": 1980,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "bailey-middle-eastern-eyes",
+   "person": "kenneth-bailey",
+   "title": "Jesus Through Middle Eastern Eyes",
+   "year": 2008,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "bailey-cross-prodigal",
+   "person": "kenneth-bailey",
+   "title": "The Cross and the Prodigal",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "wright-day-revolution",
+   "person": "nt-wright",
+   "title": "The Day the Revolution Began",
+   "year": 2016,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "wright-justification",
+   "person": "nt-wright",
+   "title": "Justification: God's Plan and Paul's Vision",
+   "year": 2009,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "wright-jesus-victory",
+   "person": "nt-wright",
+   "title": "Jesus and the Victory of God",
+   "year": 1996,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "wright-surprised-hope",
+   "person": "nt-wright",
+   "title": "Surprised by Hope",
+   "year": 2008,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "heiser-unseen-realm",
+   "person": "michael-heiser",
+   "title": "The Unseen Realm",
+   "year": 2015,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "jersak-christlike-god",
+   "person": "brad-jersak",
+   "title": "A More Christlike God",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "kruger-undoing-adam",
+   "person": "baxter-kruger",
+   "title": "Jesus and the Undoing of Adam",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "bray-leviticus-butchers-block",
+   "person": "phil-bray",
+   "title": "Leviticus on the Butcher's Block",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "tanner-vulnerable-god",
+   "person": "kenneth-tanner",
+   "title": "The Vulnerable God",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "trench-god-never-changed",
+   "person": "martin-trench",
+   "title": "The God Who Never Changed",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "hamilton-typology",
+   "person": "james-hamilton",
+   "title": "Typology: Understanding the Bible's Promise-Shaped Patterns",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "laney-essential-background",
+   "person": "carl-laney",
+   "title": "Essential Bible Background",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "belousek-atonement-justice-peace",
+   "person": "darrin-belousek",
+   "title": "Atonement, Justice, and Peace",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "gentry-dominion",
+   "person": "kenneth-gentry",
+   "title": "He Shall Have Dominion",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "mathison-postmillennialism",
+   "person": "keith-mathison",
+   "title": "Postmillennialism: An Eschatology of Hope",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "demar-last-days-madness",
+   "person": "gary-demar",
+   "title": "Last Days Madness",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  },
+  {
+   "id": "wilson-heaven-misplaced",
+   "person": "douglas-wilson",
+   "title": "Heaven Misplaced",
+   "year": null,
+   "copyright": "copyrighted",
+   "edition": null,
+   "publisher": null,
+   "isbn": null,
+   "url": null
+  }
+ ]
+}
