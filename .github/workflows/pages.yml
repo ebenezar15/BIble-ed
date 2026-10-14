@@ -30,10 +30,9 @@ jobs:
           POSTGRES_PASSWORD: postgres
           POSTGRES_DB: logos
         ports: ["5432:5432"]
-        options: --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 20
+        options: --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 20
     env:
       DATABASE_URL: postgresql://postgres:postgres@localhost:5432/logos
-      NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
     steps:
       - uses: actions/checkout@v4
 
@@ -68,10 +67,15 @@ jobs:
       - name: Unit tests
         run: npm test
 
+      # GitHub Pages serves the site under /<repo>/.
       - name: Build the static site
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
         run: npm run build
 
       - name: Browser tests
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
         run: npx playwright install --with-deps chromium && npm run e2e
 
       - uses: actions/upload-pages-artifact@v3
