@@ -49,6 +49,11 @@ describe.skipIf(!hasDb)("runSearch", () => {
     const verses = r.groups.find((g) => g.module === "Verses");
     expect(verses?.items.map((i) => i.href)).toContain("/verse/Jhn.3.16");
   });
+  it("finds proper names", async () => {
+    const r = await runSearch("Melchizedek");
+    const names = r.groups.find((g) => g.module === "Names");
+    expect(names?.items[0].href).toMatch(/^\/names\/Melchizedek/);
+  });
   it("returns nothing for empty input", async () => {
     expect((await runSearch("  ")).groups).toEqual([]);
   });

@@ -65,7 +65,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
       {result.groups.map((g) => (
         <section key={g.module} className="mt-8" aria-labelledby={`group-${g.module}`}>
           <h2 id={`group-${g.module}`} className="text-lg font-semibold">
-            {g.module === "Words" ? "Hebrew and Greek words" : g.module}
+            {g.module === "Words" ? "Hebrew and Greek words" : g.module === "Topics" ? "In the library" : g.module}
             <span className="ml-2 text-sm font-normal text-muted">{g.items.length}</span>
           </h2>
           {g.module === "Words" ? (
@@ -81,6 +81,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
                   <Link href={it.href} className="font-semibold hover:text-accent">
                     {it.title}
                   </Link>
+                  {it.tag && <span className="ml-2 text-xs text-muted">{it.tag}</span>}
                   <p
                     className="mt-1 max-w-prose text-sm [&_mark]:rounded [&_mark]:bg-accent/20 [&_mark]:px-0.5 [&_mark]:text-ink"
                     dangerouslySetInnerHTML={{ __html: it.subtitle }}

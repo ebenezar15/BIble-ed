@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { ThemeStudio } from "@/components/theme/ThemeStudio";
+import { NavMenu } from "./NavMenu";
+
+export const NAV = [
+  { href: "/explore", label: "Explore" },
+  { href: "/ask", label: "Ask" },
+  { href: "/notes", label: "My notes" },
+];
 
 export function Header({ search }: { search?: React.ReactNode }) {
   return (
@@ -10,7 +17,15 @@ export function Header({ search }: { search?: React.ReactNode }) {
           <span className="hidden sm:inline">Logos Relational</span>
         </Link>
         <div className="min-w-0 flex-1">{search}</div>
+        <nav aria-label="Main" className="hidden items-center gap-4 text-sm md:flex">
+          {NAV.map((n) => (
+            <Link key={n.href} href={n.href} className="hover:text-accent">
+              {n.label}
+            </Link>
+          ))}
+        </nav>
         <ThemeStudio />
+        <NavMenu items={NAV} />
       </div>
     </header>
   );

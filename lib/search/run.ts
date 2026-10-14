@@ -1,6 +1,7 @@
 import "server-only";
 import { BOOK_BY_ID, BOOKS, bookKey, formatRef } from "@/lib/books";
 import { getBookChapters, getChapterVerseCount, searchLemmas, searchText, type LemmaRef } from "@/lib/db/queries";
+import { searchContent, searchNames } from "@/lib/db/content";
 import { parseQuery, type Query } from "./parse";
 
 export type SearchItem = {
@@ -12,8 +13,10 @@ export type SearchItem = {
   tag?: string; // Strong's id
   count?: number;
 };
-export type SearchGroup = { module: "Words" | "Verses" | "Topics"; items: SearchItem[] };
+export type SearchGroup = { module: "Words" | "Verses" | "Topics" | "Names"; items: SearchItem[] };
 export type SearchResult = { query: Query; redirect?: string; groups: SearchGroup[]; notice?: string };
+
+const escapeHtml = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 export function lemmaItem(l: LemmaRef): SearchItem {
   return {
@@ -108,12 +111,29 @@ export async function runSearch(input: string): Promise<SearchResult> {
         notice = `No book called “${name}”.` + (near.length ? ` Did you mean ${near.join(", ")}?` : "");
         textQuery = name;
       }
-      const [lemmas, verses] = await Promise.all([
+      const [lemmas, verses, topics, names] = await Promise.all([
         searchLemmas(shape ? { ...query, raw: textQuery } : query, 12),
         searchText(textQuery, 20),
+        searchContent(textQuery, 12),
+        searchNames(textQuery, 6),
       ]);
       const groups: SearchGroup[] = [];
+      if (topics.length) {
+        groups.push({ module: "Topics", items: topics.map((t) => ({ href: t.href, title: t.title, subtitle: escapeHtml(t.subtitle), tag: t.label })) });
+      }
       if (lemmas.length) groups.push({ module: "Words", items: lemmas.map(lemmaItem) });
+      const exactNames = names.filter((n) => n.name.toLowerCase() === textQuery.toLowerCase() || names.length <= 3);
+      if (exactNames.length) {
+        groups.push({
+          module: "Names",
+          items: exactNames.map((n) => ({
+            href: `/names/${encodeURIComponent(n.id)}`,
+            title: n.name,
+            subtitle: escapeHtml(n.brief ?? ""),
+            tag: `${n.kind}, ${n.refCount} refs`,
+          })),
+        });
+      }
       if (verses.length) {
         groups.push({
           module: "Verses",
