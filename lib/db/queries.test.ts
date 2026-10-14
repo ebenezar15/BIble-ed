@@ -51,6 +51,9 @@ describe.skipIf(!hasDb)("query layer (integration)", () => {
     expect(page.total).toBe(116);
     expect(page.rows).toHaveLength(10);
     expect(page.rows[0].kjv.length).toBeGreaterThan(0);
+    const john = await getOccurrences("G0026", 0, 50, "Jhn");
+    expect(john.total).toBe(7);
+    expect(john.rows.every((r) => r.osis.startsWith("Jhn."))).toBe(true);
   });
 
   it("searchLemmas finds unpointed Hebrew, Strong's bases and transliterations", async () => {

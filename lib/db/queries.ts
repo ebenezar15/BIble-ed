@@ -1,6 +1,7 @@
 import "server-only";
 import type { Query } from "@/lib/search/parse";
 import { sql } from "./client";
+import { groupGlosses } from "./gloss";
 import { sanitizeLexicon } from "./lexhtml";
 import { morphParts } from "./morph";
 
@@ -154,7 +155,7 @@ export async function getLemma(id: string): Promise<LemmaView | null> {
       where t.lemma_id = ${id} group by b.id, b.name, b.ord order by b.ord`,
     sql<{ gloss: string; count: number }[]>`
       select lower(trim(gloss)) as gloss, count(*)::int as count from token
-      where lemma_id = ${id} and coalesce(gloss, '') <> '' group by 1 order by 2 desc limit 12`,
+      where lemma_id = ${id} and coalesce(gloss, '') <> '' group by 1 order by 2 desc limit 300`,
   ]);
   return {
     id: l.id,
@@ -169,7 +170,7 @@ export async function getLemma(id: string): Promise<LemmaView | null> {
     root: root[0] ? { ...root[0], family: [...family] } : null,
     senses: [...senses],
     distribution: [...distribution],
-    glosses: [...glosses],
+    glosses: groupGlosses([...glosses]),
     sourceAttribution: l.attribution,
   };
 }
@@ -178,14 +179,17 @@ export async function getOccurrences(
   lemmaId: string,
   page: number,
   pageSize = 50,
+  book?: string,
 ): Promise<{ total: number; rows: { osis: string; surface: string; gloss: string; kjv: string }[] }> {
+  const inBook = book ? sql`and v.book_id = ${book}` : sql``;
   const [{ total }] = await sql<{ total: number }[]>`
-    select count(*)::int as total from token where lemma_id = ${lemmaId}`;
+    select count(*)::int as total from token t join verse v on v.id = t.verse_id
+    where t.lemma_id = ${lemmaId} ${inBook}`;
   const rows = await sql<{ osis: string; surface: string; gloss: string; kjv: string }[]>`
     select v.osis, t.surface, coalesce(t.gloss, '') as gloss, coalesce(tv.text, '') as kjv
     from token t join verse v on v.id = t.verse_id
     left join translation_verse tv on tv.verse_id = v.id and tv.translation_id = 'kjv'
-    where t.lemma_id = ${lemmaId} order by v.id, t.pos
+    where t.lemma_id = ${lemmaId} ${inBook} order by v.id, t.pos
     limit ${pageSize} offset ${page * pageSize}`;
   return { total, rows: [...rows] };
 }

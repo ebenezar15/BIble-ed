@@ -63,3 +63,12 @@ dialog.studio[open] {
     scroll-behavior: auto !important;
   }
 }
+
+/* Root tree: nodes bloom out from the root once, on first view. */
+.root-node {
+  animation: bloom 520ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes bloom {
+  from { transform: translate(var(--dx), var(--dy)) scale(0.3); opacity: 0; }
+}
+.root-node:hover circle, .root-node:focus circle { stroke-width: 3; }
