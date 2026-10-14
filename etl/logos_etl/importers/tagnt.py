@@ -1,5 +1,6 @@
 """TAGNT: Greek NT words tagged with the editions containing them. We keep the SBLGNT text."""
 import re
+import unicodedata
 from dataclasses import dataclass
 
 from .. import fetch, sources
@@ -40,7 +41,7 @@ def parse_line(line: str) -> TagntWord | None:
         return None
     sm = _SURFACE.match(cols[1])
     greek, translit = (sm["greek"], sm["translit"]) if sm else (cols[1], "")
-    greek = greek.replace("¶", "").strip()
+    greek = unicodedata.normalize("NFC", greek.replace("¶", "").strip())
     lm = _LEMMA.match(cols[3].strip())
     return TagntWord(
         ref=(f"{m['book']}.{int(m['kch'])}.{int(m['kvs'])}" if m["kch"]

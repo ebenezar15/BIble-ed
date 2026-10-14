@@ -1,5 +1,6 @@
 """STEPBible brief lexicons (TBESH/TBESG), morphology code expansions, and OSHB roots."""
 import re
+import unicodedata
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 
@@ -35,7 +36,7 @@ def parse_lexicon_line(line: str, lang: str) -> Lemma | None:
     language = lang
     if lang == "heb" and morph.startswith("A:"):
         language = "arc"
-    word = cols[3].strip()
+    word = unicodedata.normalize("NFC", cols[3].strip())
     plain = strip_hebrew(word) if lang == "heb" else strip_greek(word)
     return Lemma(
         id=lemma_id,

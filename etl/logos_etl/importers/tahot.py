@@ -5,6 +5,7 @@ Refs look like 'Gen.1.1#01=L' or, where Hebrew numbering differs from English,
 we attach them to English verse 1 so every token belongs to a real verse.
 """
 import re
+import unicodedata
 from dataclasses import dataclass
 
 from .. import fetch, sources
@@ -56,7 +57,7 @@ def parse_line(line: str) -> TahotWord | None:
         src_ref=src_ref,
         word_no=int(m["no"]),
         type=m["type"],
-        surface=cols[1].strip(),
+        surface=unicodedata.normalize("NFC", cols[1].strip()),
         surface_plain=strip_hebrew(cols[1]),
         translit=cols[2].strip(),
         gloss=cols[3].strip(),

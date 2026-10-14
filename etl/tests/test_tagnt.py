@@ -71,3 +71,11 @@ def test_agape_count_in_sblgnt(conn):
     if n == 0:
         pytest.skip("TAGNT not imported yet")
     assert 115 <= n <= 118
+
+
+def test_surface_is_nfc_normalised():
+    import unicodedata
+
+    oxia = "Jhn.3.16#03=NKO\tἠγάπησεν (ēgapēsen)\tloved\tG0025=V-AAI-3S\tἀγαπάω=to love\tNA28+SBL".replace("ά", "ά")
+    w = tagnt.parse_line(oxia)
+    assert w.surface == unicodedata.normalize("NFC", "ἠγάπησεν")
