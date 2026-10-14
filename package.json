@@ -12,6 +12,7 @@
     "etl": "cd etl && python3 -m logos_etl.run_all"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
     "@fontsource/gentium-plus": "^5.3.0",
     "@fontsource/noto-serif-hebrew": "^5.3.0",
     "@fontsource/nunito-sans": "^5.3.0",

@@ -37,7 +37,7 @@ def main() -> int:
     )
     stats["lxx bridge"] = lxx.import_bridge(conn)
     stats["content"] = content.import_all(conn)
-    conn.execute("analyze")
+    conn.execute("vacuum (full, analyze)")  # re-imports leave dead rows; compacting halves the size
 
     eng = stats["english"]
     notes = {

@@ -6,6 +6,7 @@ import { Concordance } from "@/components/word/Concordance";
 import { GlossBars } from "@/components/word/GlossBars";
 import { RootTree } from "@/components/word/RootTree";
 import { StudyCard } from "@/components/word/StudyCard";
+import { Pronounce } from "@/components/word/Pronounce";
 import { BlockList, groupBySection, SECTION_TITLES } from "@/components/content/Block";
 import { getBlocks, getLxxBridge } from "@/lib/db/content";
 import { getLemma, type LemmaRef } from "@/lib/db/queries";
@@ -89,7 +90,10 @@ export default async function WordPage({ params }: Props) {
             </span>
             <span className="text-2xl italic text-muted">{word.translit}</span>
           </h1>
-          <p className="mt-4 text-2xl font-semibold">{word.gloss}</p>
+          <p className="mt-4 flex flex-wrap items-center gap-3 text-2xl font-semibold">
+            {word.gloss}
+            <Pronounce text={word.lemma.replace(/[\u0591-\u05AF]/g, "")} language={lang} />
+          </p>
           <p className="mt-1 text-muted">
             {word.count.toLocaleString("en")} {word.count === 1 ? "occurrence" : "occurrences"}
           </p>

@@ -9,6 +9,7 @@ import "@fontsource/gentium-plus/700.css";
 import "./globals.css";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { ServiceWorker } from "@/components/layout/ServiceWorker";
 import { SearchBar } from "@/components/search/SearchBar";
 import { PresetStyles } from "@/components/theme/PresetStyles";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   description: "Hebrew and Greek word and verse study through a relational-gospel lens",
 };
 
-export const viewport: Viewport = { width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#7a4f00" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header search={<SearchBar />} />
           {children}
           <Footer />
+          <ServiceWorker />
         </ThemeProvider>
       </body>
     </html>

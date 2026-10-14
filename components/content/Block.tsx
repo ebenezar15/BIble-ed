@@ -78,30 +78,8 @@ export function Block({ block, showTitle = true }: { block: BlockView; showTitle
   );
 }
 
-export const SECTION_TITLES: Record<string, string> = {
-  overview: "Overview",
-  meaning: "Range of meaning",
-  culture: "Culture and background",
-  background: "Background",
-  translation_history: "Translation history",
-  lens: "Relational reading",
-  legal_history: "How the legal reading arose",
-  voices: "Voices",
-  fathers: "Church Fathers",
-  structure: "Literary structure",
-  fulfillment: "Fulfilment in Christ",
-  misunderstanding: "Common misunderstandings",
-  hearers: "How first hearers understood it",
-  dating: "Date",
-  authorship: "Authorship",
-  outline: "Outline",
-  themes: "Themes",
-  christ: "Reading it through Christ",
-  history: "History",
-  practice: "Practice",
-  caution: "A caution",
-  notes: "Notes",
-};
+export { SECTION_TITLES } from "@/lib/content/sections";
+import { SECTION_TITLES } from "@/lib/content/sections";
 
 const SECTION_ORDER = Object.keys(SECTION_TITLES);
 

@@ -7,7 +7,7 @@ export async function authToken(password: string): Promise<string> {
   return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
-const PUBLIC = [/^\/login/, /^\/_next\//, /^\/manifest\.webmanifest$/, /^\/sw\.js$/, /^\/icon/, /^\/apple-icon/, /^\/favicon/];
+const PUBLIC = [/^\/login/, /^\/_next\//, /^\/manifest\.webmanifest$/, /^\/sw\.js$/, /^\/offline$/, /^\/icon/, /^\/apple-icon/, /^\/favicon/];
 
 export function isPublicPath(path: string): boolean {
   return PUBLIC.some((p) => p.test(path));
