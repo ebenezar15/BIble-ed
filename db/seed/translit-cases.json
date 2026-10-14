@@ -1,0 +1,20 @@
+{
+  "_comment": "Shared by etl/tests/test_text.py and lib/search/normalize.test.ts so Python and TypeScript fold transliterations identically.",
+  "equal_groups": [
+    ["hesed", "chesed", "che.sed", "ḥeseḏ", "Chesed", "khesed"],
+    ["agape", "agapē", "Agapē", "a.ga.pe"],
+    ["tsedaqah", "ṣədāqâ", "tse.da.qah", "tsedaqa"],
+    ["shalom", "sha.Lom", "šālôm"],
+    ["dikaiosyne", "dikaiosynē", "dikaiosune"],
+    ["hilasterion", "hilastērion"],
+    ["katallasso", "katallassō"],
+    ["metanoia", "metánoia"],
+    ["huiothesia", "huiothesía"]
+  ],
+  "different": [
+    ["hesed", "shalom"],
+    ["agape", "agapao"]
+  ],
+  "hebrew_plain": [["חֶ֫סֶד", "חסד"], ["בְּ/רֵאשִׁ֖ית", "בראשית"], ["הָאָֽרֶץ׃", "הארץ"]],
+  "greek_plain": [["ἀγάπη", "αγαπη"], ["Βίβλος", "βιβλοσ"], ["ἠγάπησεν", "ηγαπησεν"]]
+}
