@@ -1,0 +1,668 @@
+[
+ {
+  "id": "Gen",
+  "ord": 1,
+  "testament": "OT",
+  "name": "Genesis",
+  "abbrevs": [
+   "Ge",
+   "Gn",
+   "Gen"
+  ]
+ },
+ {
+  "id": "Exo",
+  "ord": 2,
+  "testament": "OT",
+  "name": "Exodus",
+  "abbrevs": [
+   "Ex",
+   "Exod"
+  ]
+ },
+ {
+  "id": "Lev",
+  "ord": 3,
+  "testament": "OT",
+  "name": "Leviticus",
+  "abbrevs": [
+   "Le",
+   "Lv"
+  ]
+ },
+ {
+  "id": "Num",
+  "ord": 4,
+  "testament": "OT",
+  "name": "Numbers",
+  "abbrevs": [
+   "Nu",
+   "Nm",
+   "Nb"
+  ]
+ },
+ {
+  "id": "Deu",
+  "ord": 5,
+  "testament": "OT",
+  "name": "Deuteronomy",
+  "abbrevs": [
+   "Dt",
+   "De",
+   "Deut"
+  ]
+ },
+ {
+  "id": "Jos",
+  "ord": 6,
+  "testament": "OT",
+  "name": "Joshua",
+  "abbrevs": [
+   "Josh",
+   "Jsh"
+  ]
+ },
+ {
+  "id": "Jdg",
+  "ord": 7,
+  "testament": "OT",
+  "name": "Judges",
+  "abbrevs": [
+   "Judg",
+   "Jg",
+   "Jdgs"
+  ]
+ },
+ {
+  "id": "Rut",
+  "ord": 8,
+  "testament": "OT",
+  "name": "Ruth",
+  "abbrevs": [
+   "Ru",
+   "Rth"
+  ]
+ },
+ {
+  "id": "1Sa",
+  "ord": 9,
+  "testament": "OT",
+  "name": "1 Samuel",
+  "abbrevs": [
+   "1 Sam",
+   "1 Sm",
+   "1 S"
+  ]
+ },
+ {
+  "id": "2Sa",
+  "ord": 10,
+  "testament": "OT",
+  "name": "2 Samuel",
+  "abbrevs": [
+   "2 Sam",
+   "2 Sm",
+   "2 S"
+  ]
+ },
+ {
+  "id": "1Ki",
+  "ord": 11,
+  "testament": "OT",
+  "name": "1 Kings",
+  "abbrevs": [
+   "1 Kgs",
+   "1 Kg",
+   "1 Kin"
+  ]
+ },
+ {
+  "id": "2Ki",
+  "ord": 12,
+  "testament": "OT",
+  "name": "2 Kings",
+  "abbrevs": [
+   "2 Kgs",
+   "2 Kg",
+   "2 Kin"
+  ]
+ },
+ {
+  "id": "1Ch",
+  "ord": 13,
+  "testament": "OT",
+  "name": "1 Chronicles",
+  "abbrevs": [
+   "1 Chr",
+   "1 Chron"
+  ]
+ },
+ {
+  "id": "2Ch",
+  "ord": 14,
+  "testament": "OT",
+  "name": "2 Chronicles",
+  "abbrevs": [
+   "2 Chr",
+   "2 Chron"
+  ]
+ },
+ {
+  "id": "Ezr",
+  "ord": 15,
+  "testament": "OT",
+  "name": "Ezra",
+  "abbrevs": [
+   "Ez"
+  ]
+ },
+ {
+  "id": "Neh",
+  "ord": 16,
+  "testament": "OT",
+  "name": "Nehemiah",
+  "abbrevs": [
+   "Ne"
+  ]
+ },
+ {
+  "id": "Est",
+  "ord": 17,
+  "testament": "OT",
+  "name": "Esther",
+  "abbrevs": [
+   "Es",
+   "Esth"
+  ]
+ },
+ {
+  "id": "Job",
+  "ord": 18,
+  "testament": "OT",
+  "name": "Job",
+  "abbrevs": [
+   "Jb"
+  ]
+ },
+ {
+  "id": "Psa",
+  "ord": 19,
+  "testament": "OT",
+  "name": "Psalms",
+  "abbrevs": [
+   "Ps",
+   "Psalm",
+   "Pss",
+   "Psm"
+  ]
+ },
+ {
+  "id": "Pro",
+  "ord": 20,
+  "testament": "OT",
+  "name": "Proverbs",
+  "abbrevs": [
+   "Prov",
+   "Pr",
+   "Prv"
+  ]
+ },
+ {
+  "id": "Ecc",
+  "ord": 21,
+  "testament": "OT",
+  "name": "Ecclesiastes",
+  "abbrevs": [
+   "Eccl",
+   "Ec",
+   "Qoh",
+   "Qoheleth"
+  ]
+ },
+ {
+  "id": "Sng",
+  "ord": 22,
+  "testament": "OT",
+  "name": "Song of Songs",
+  "abbrevs": [
+   "Song",
+   "Song of Solomon",
+   "SoS",
+   "Canticles",
+   "Cant",
+   "Sg"
+  ]
+ },
+ {
+  "id": "Isa",
+  "ord": 23,
+  "testament": "OT",
+  "name": "Isaiah",
+  "abbrevs": [
+   "Is"
+  ]
+ },
+ {
+  "id": "Jer",
+  "ord": 24,
+  "testament": "OT",
+  "name": "Jeremiah",
+  "abbrevs": [
+   "Je",
+   "Jr"
+  ]
+ },
+ {
+  "id": "Lam",
+  "ord": 25,
+  "testament": "OT",
+  "name": "Lamentations",
+  "abbrevs": [
+   "La"
+  ]
+ },
+ {
+  "id": "Ezk",
+  "ord": 26,
+  "testament": "OT",
+  "name": "Ezekiel",
+  "abbrevs": [
+   "Ezek",
+   "Eze"
+  ]
+ },
+ {
+  "id": "Dan",
+  "ord": 27,
+  "testament": "OT",
+  "name": "Daniel",
+  "abbrevs": [
+   "Da",
+   "Dn"
+  ]
+ },
+ {
+  "id": "Hos",
+  "ord": 28,
+  "testament": "OT",
+  "name": "Hosea",
+  "abbrevs": [
+   "Ho"
+  ]
+ },
+ {
+  "id": "Jol",
+  "ord": 29,
+  "testament": "OT",
+  "name": "Joel",
+  "abbrevs": [
+   "Jl",
+   "Joe"
+  ]
+ },
+ {
+  "id": "Amo",
+  "ord": 30,
+  "testament": "OT",
+  "name": "Amos",
+  "abbrevs": [
+   "Am"
+  ]
+ },
+ {
+  "id": "Oba",
+  "ord": 31,
+  "testament": "OT",
+  "name": "Obadiah",
+  "abbrevs": [
+   "Ob",
+   "Obad"
+  ]
+ },
+ {
+  "id": "Jon",
+  "ord": 32,
+  "testament": "OT",
+  "name": "Jonah",
+  "abbrevs": [
+   "Jnh"
+  ]
+ },
+ {
+  "id": "Mic",
+  "ord": 33,
+  "testament": "OT",
+  "name": "Micah",
+  "abbrevs": [
+   "Mi",
+   "Mc"
+  ]
+ },
+ {
+  "id": "Nam",
+  "ord": 34,
+  "testament": "OT",
+  "name": "Nahum",
+  "abbrevs": [
+   "Na",
+   "Nah"
+  ]
+ },
+ {
+  "id": "Hab",
+  "ord": 35,
+  "testament": "OT",
+  "name": "Habakkuk",
+  "abbrevs": [
+   "Hb"
+  ]
+ },
+ {
+  "id": "Zep",
+  "ord": 36,
+  "testament": "OT",
+  "name": "Zephaniah",
+  "abbrevs": [
+   "Zeph",
+   "Zp"
+  ]
+ },
+ {
+  "id": "Hag",
+  "ord": 37,
+  "testament": "OT",
+  "name": "Haggai",
+  "abbrevs": [
+   "Hg"
+  ]
+ },
+ {
+  "id": "Zec",
+  "ord": 38,
+  "testament": "OT",
+  "name": "Zechariah",
+  "abbrevs": [
+   "Zech",
+   "Zc"
+  ]
+ },
+ {
+  "id": "Mal",
+  "ord": 39,
+  "testament": "OT",
+  "name": "Malachi",
+  "abbrevs": [
+   "Ml"
+  ]
+ },
+ {
+  "id": "Mat",
+  "ord": 40,
+  "testament": "NT",
+  "name": "Matthew",
+  "abbrevs": [
+   "Mt",
+   "Matt"
+  ]
+ },
+ {
+  "id": "Mrk",
+  "ord": 41,
+  "testament": "NT",
+  "name": "Mark",
+  "abbrevs": [
+   "Mk",
+   "Mr",
+   "Mar"
+  ]
+ },
+ {
+  "id": "Luk",
+  "ord": 42,
+  "testament": "NT",
+  "name": "Luke",
+  "abbrevs": [
+   "Lk",
+   "Lu"
+  ]
+ },
+ {
+  "id": "Jhn",
+  "ord": 43,
+  "testament": "NT",
+  "name": "John",
+  "abbrevs": [
+   "Jn",
+   "Joh"
+  ]
+ },
+ {
+  "id": "Act",
+  "ord": 44,
+  "testament": "NT",
+  "name": "Acts",
+  "abbrevs": [
+   "Ac",
+   "Acts of the Apostles"
+  ]
+ },
+ {
+  "id": "Rom",
+  "ord": 45,
+  "testament": "NT",
+  "name": "Romans",
+  "abbrevs": [
+   "Ro",
+   "Rm"
+  ]
+ },
+ {
+  "id": "1Co",
+  "ord": 46,
+  "testament": "NT",
+  "name": "1 Corinthians",
+  "abbrevs": [
+   "1 Cor"
+  ]
+ },
+ {
+  "id": "2Co",
+  "ord": 47,
+  "testament": "NT",
+  "name": "2 Corinthians",
+  "abbrevs": [
+   "2 Cor"
+  ]
+ },
+ {
+  "id": "Gal",
+  "ord": 48,
+  "testament": "NT",
+  "name": "Galatians",
+  "abbrevs": [
+   "Ga"
+  ]
+ },
+ {
+  "id": "Eph",
+  "ord": 49,
+  "testament": "NT",
+  "name": "Ephesians",
+  "abbrevs": [
+   "Ephes"
+  ]
+ },
+ {
+  "id": "Php",
+  "ord": 50,
+  "testament": "NT",
+  "name": "Philippians",
+  "abbrevs": [
+   "Phil",
+   "Pp"
+  ]
+ },
+ {
+  "id": "Col",
+  "ord": 51,
+  "testament": "NT",
+  "name": "Colossians",
+  "abbrevs": [
+   "Co"
+  ]
+ },
+ {
+  "id": "1Th",
+  "ord": 52,
+  "testament": "NT",
+  "name": "1 Thessalonians",
+  "abbrevs": [
+   "1 Thess",
+   "1 Thes"
+  ]
+ },
+ {
+  "id": "2Th",
+  "ord": 53,
+  "testament": "NT",
+  "name": "2 Thessalonians",
+  "abbrevs": [
+   "2 Thess",
+   "2 Thes"
+  ]
+ },
+ {
+  "id": "1Ti",
+  "ord": 54,
+  "testament": "NT",
+  "name": "1 Timothy",
+  "abbrevs": [
+   "1 Tim",
+   "1 Tm"
+  ]
+ },
+ {
+  "id": "2Ti",
+  "ord": 55,
+  "testament": "NT",
+  "name": "2 Timothy",
+  "abbrevs": [
+   "2 Tim",
+   "2 Tm"
+  ]
+ },
+ {
+  "id": "Tit",
+  "ord": 56,
+  "testament": "NT",
+  "name": "Titus",
+  "abbrevs": [
+   "Ti"
+  ]
+ },
+ {
+  "id": "Phm",
+  "ord": 57,
+  "testament": "NT",
+  "name": "Philemon",
+  "abbrevs": [
+   "Philem",
+   "Phlm"
+  ]
+ },
+ {
+  "id": "Heb",
+  "ord": 58,
+  "testament": "NT",
+  "name": "Hebrews",
+  "abbrevs": [
+   "He"
+  ]
+ },
+ {
+  "id": "Jas",
+  "ord": 59,
+  "testament": "NT",
+  "name": "James",
+  "abbrevs": [
+   "Jm",
+   "Jam"
+  ]
+ },
+ {
+  "id": "1Pe",
+  "ord": 60,
+  "testament": "NT",
+  "name": "1 Peter",
+  "abbrevs": [
+   "1 Pet",
+   "1 Pt"
+  ]
+ },
+ {
+  "id": "2Pe",
+  "ord": 61,
+  "testament": "NT",
+  "name": "2 Peter",
+  "abbrevs": [
+   "2 Pet",
+   "2 Pt"
+  ]
+ },
+ {
+  "id": "1Jn",
+  "ord": 62,
+  "testament": "NT",
+  "name": "1 John",
+  "abbrevs": [
+   "1 Jo",
+   "1 Joh",
+   "1 Jhn"
+  ]
+ },
+ {
+  "id": "2Jn",
+  "ord": 63,
+  "testament": "NT",
+  "name": "2 John",
+  "abbrevs": [
+   "2 Jo",
+   "2 Joh",
+   "2 Jhn"
+  ]
+ },
+ {
+  "id": "3Jn",
+  "ord": 64,
+  "testament": "NT",
+  "name": "3 John",
+  "abbrevs": [
+   "3 Jo",
+   "3 Joh",
+   "3 Jhn"
+  ]
+ },
+ {
+  "id": "Jud",
+  "ord": 65,
+  "testament": "NT",
+  "name": "Jude",
+  "abbrevs": [
+   "Jd",
+   "Jde"
+  ]
+ },
+ {
+  "id": "Rev",
+  "ord": 66,
+  "testament": "NT",
+  "name": "Revelation",
+  "abbrevs": [
+   "Re",
+   "Rv",
+   "Revelations",
+   "Apocalypse",
+   "Revelation of John"
+  ]
+ }
+]
