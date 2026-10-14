@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BOOK_BY_ID, formatRef } from "@/lib/books";
+import { cleanGloss, cleanSurface } from "@/lib/display";
 import { Distribution } from "./Distribution";
 
 type Row = { osis: string; surface: string; gloss: string; kjv: string };
@@ -70,9 +71,9 @@ export function Concordance({
               </Link>
               <span className="block text-sm">
                 <span lang={lang} dir={lang === "he" ? "rtl" : undefined} className={lang === "he" ? "text-hebrew" : "text-greek"}>
-                  {r.surface}
+                  {cleanSurface(r.surface)}
                 </span>{" "}
-                <span className="text-muted">{r.gloss}</span>
+                <span className="text-muted">{cleanGloss(r.gloss)}</span>
               </span>
             </span>
             <span className="text-sm leading-relaxed">{r.kjv}</span>
